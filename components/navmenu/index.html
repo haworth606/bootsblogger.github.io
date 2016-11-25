@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+    Navmenu &middot; Bootsblogger
+  
+</title>
+
+<!-- Twitter -->
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Navmenu">
+  <meta name="twitter:description" content="Navmenu sederhana dengan dukungan `fixed to left` dan `fixed to right`, kemudahan mengatur warna, dan dukungan konten lainnya.">
+  <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
+
+
+<!-- Facebook -->
+
+  <meta property="og:url" content="/components/navmenu/">
+  <meta property="og:title" content="Navmenu">
+  <meta property="og:description" content="Navmenu sederhana dengan dukungan `fixed to left` dan `fixed to right`, kemudahan mengatur warna, dan dukungan konten lainnya.">
+
+<meta property="og:image" content="/assets/brand/bootstrap-social.png">
+
+<!-- Meta -->
+<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang luar biasa.">
+<meta name="author" content="Igoy Nawamreh">
+
+
+<!-- Bootstrap core CSS -->
+<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootsblogger core CSS -->
+<link href="/assets/bootsblogger/css/bootsblogger.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="/assets/icon-fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="/assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Bootsblogger JSON -->
+<script src="/assets/bootsblogger/js/bootsblogger-json.min.js"></script>
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <div class="modal fade image-blogger-layout" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/blogger-layout.png" alt="Blogger layout">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade image-post-options" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/post-options.png" alt="Post options">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-light navbar-static-top bd-navbar">
+  <div class="container">
+    <nav>
+      <div class="clearfix">
+        <button class="navbar-toggler float-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <a class="navbar-brand hidden-md-up" href="/">
+          Bootsblogger
+        </a>
+      </div>
+      <div class="collapse navbar-toggleable-sm" id="bd-main-nav">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-item nav-link " href="/">Bootsblogger</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link " href="/examples/">Examples</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="">Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="bd-pageheader">
+      <div class="container">
+        
+  <h1>Components</h1>
+  <p class="lead">
+    Selain banyaknya komponen dari Bootstrap, Bootsblogger meliputi komponen yang dispesifikasikan untuk memenuhi kebutuhan pada Blogger, seperti posting, widget, dan lainnya.
+  </p>
+
+
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar">
+          <form class="bd-search hidden-sm-down">
+  <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
+  <div class="dropdown-menu bd-search-results" id="search-results"></div>
+</form>
+
+<nav class="bd-links" id="docsNavbarContent">
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item ">
+      
+        <a class="bd-toc-link" href="/getting-started/introduction/">
+      
+      Getting started
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/introduction/">
+              Introduction
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/download/">
+              Download
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/contents/">
+              Contents
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/build-tools/">
+              Build tools
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item ">
+      
+        <a class="bd-toc-link" href="/core-template/overview/">
+      
+      Core template
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/core-template/overview/">
+              Overview
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/core-template/head/">
+              Head
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/core-template/body-class/">
+              Body class
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/core-template/blog-posts/">
+              Blog posts
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item active">
+      
+        <a class="bd-toc-link" href="/components/posts/">
+      
+      Components
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/posts/">
+              Posts
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="active bd-sidenav-active">
+            <a href="/components/navmenu/">
+              Navmenu
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/widget-basic/">
+              Widget basic
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/widget-box/">
+              Widget box
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/widget-panel/">
+              Widget panel
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/widget-title/">
+              Widget title
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/widget-columns/">
+              Widget columns
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/widget-grid/">
+              Widget grid
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item ">
+      
+        <a class="bd-toc-link" href="/utilities/colors/">
+      
+      Utilities
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/utilities/colors/">
+              Colors
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/utilities/backgrounds/">
+              Backgrounds
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/utilities/width/">
+              Width
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/utilities/figures/">
+              Figures
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item ">
+      
+        <a class="bd-toc-link" href="/blogger-json-feeds/retrieving-json-feeds/">
+      
+      Blogger JSON feeds
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/retrieving-json-feeds/">
+              Retrieving JSON feeds
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/posts-default/">
+              Posts default
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/posts-card/">
+              Posts card
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/labels-lists/">
+              Labels lists
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/labels-custom/">
+              Labels custom
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/labels-select/">
+              Labels select
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/blogger-json-feeds/count/">
+              Count
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item ">
+      
+        <a class="bd-toc-link" href="/best-practices/template-precompiled/">
+      
+      Best practices
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/best-practices/template-precompiled/">
+              Template precompiled
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/best-practices/template-source-code/">
+              Template source code
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/best-practices/sass-files/">
+              Sass files
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+    
+    
+    
+
+    
+
+    <div class="bd-toc-item ">
+      
+        <a class="bd-toc-link" href="/about/history/">
+      
+      About
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/about/history/">
+              History
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/about/team/">
+              Team
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/about/license/">
+              License
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/about/donation/">
+              Donation
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div><!-- /.bd-toc-item -->
+  
+</nav>
+
+        </div>
+        <div class="col-xs-12 col-md-9 pull-md-3 bd-content">
+          <h1 class="bd-title" id="content">Navmenu</h1>
+          <p>Navmenu sederhana dengan dukungan <em>fixed to left</em> dan <em>fixed to right</em>, kemudahan mengatur warna, dan dukungan konten lainnya.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#basic-example" id="markdown-toc-basic-example">Basic example</a></li>
+  <li><a href="#supported-content" id="markdown-toc-supported-content">Supported content</a></li>
+  <li><a href="#color-schemes" id="markdown-toc-color-schemes">Color schemes</a></li>
+  <li><a href="#dropdowns" id="markdown-toc-dropdowns">Dropdowns</a></li>
+  <li><a href="#placement" id="markdown-toc-placement">Placement</a></li>
+</ul>
+
+<h2 id="basic-example">Basic example</h2>
+
+<p>Gunakan <code class="highlighter-rouge">.navmenu</code> untuk membungkus konten dan tambahkan kelas <a href="#color-schemes">skema warna</a>.</p>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link active" href="#">Active</a>
+    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<h2 id="supported-content">Supported content</h2>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <!-- Brand -->
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+
+  <!-- Nav -->
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+
+  <!-- Form -->
+  <div class="navmenu-form">
+    <form>
+      <input class="form-control" type="text" placeholder="Search" />
+    </form>
+  </div>
+
+  <!-- Button -->
+  <div class="navmenu-btn">
+    <button type="button" class="btn btn-block btn-primary">Button</button>
+  </div>
+
+  <!-- Text -->
+  <div class="navmenu-text">
+    <p class="text-green">Bootsblogger is awesome.</p>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Brand --&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+
+  <span class="c">&lt;!-- Nav --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Form --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Button --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Text --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-text"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-green"</span><span class="nt">&gt;</span>Bootsblogger is awesome.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<h2 id="color-schemes">Color schemes</h2>
+
+<p>Untuk mengubah warna navmenu sangatlah mudah, gunakan <code class="highlighter-rouge">.navmenu-light</code> atau <code class="highlighter-rouge">.navmenu-dark</code> untuk menyesuaikan warna teks dengan latar belakang yang terang atau gelap. Untuk warna latar belakang dapat menggunakan kelas utilitas atau dengan menambahkan <code class="highlighter-rouge">background-color</code>.</p>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light" style="background-color: #e3f2fd;">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light"</span> <span class="na">style=</span><span class="s">"background-color: #e3f2fd;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-dark bg-blue">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-dark bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-dark" style="background-color: #ef6c00;">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-dark"</span> <span class="na">style=</span><span class="s">"background-color: #ef6c00;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<h2 id="dropdowns">Dropdowns</h2>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <ul class="nav navmenu-nav">
+    <li class="nav-item"><a class="nav-link" href="#">Nav item</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Nav item again</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="javascript:;" id="navmenuDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navmenuDropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropup">
+      <a class="nav-link dropdown-toggle" href="javascript:;" id="navmenuDropupMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropup
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navmenuDropupMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">id=</span><span class="s">"navmenuDropdownMenuLink"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        Dropdown link
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"navmenuDropdownMenuLink"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropup"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">id=</span><span class="s">"navmenuDropupMenuLink"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        Dropup
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"navmenuDropupMenuLink"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<h2 id="placement">Placement</h2>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-fixed-left navmenu-dark bg-orange">
+  <a class="navmenu-brand" href="#">Fixed left</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-fixed-left navmenu-dark bg-orange"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Fixed left<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-fixed-right navmenu-dark bg-orange">
+  <a class="navmenu-brand" href="#">Fixed right</a>
+  <div class="nav navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-fixed-right navmenu-dark bg-orange"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Fixed right<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="bd-footer text-muted">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://plus.google.com/">Google+</a></li>
+      <li><a href="https://facebook.com/">Facebook</a></li>
+      <li><a href="/examples/">Examples</a></li>
+      <li><a href="/about/history/">About</a></li>
+      <li><a href="/about/donation/">Donation</a></li>
+    </ul>
+    <p>Dibuat dengan penuh cinta oleh <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Dikelola oleh <a href="https://github.com/orgs/bootsblogger/people">tim utama</a> dengan bantuan para <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">kontributor</a>.</p>
+    <p>Saat ini v1.0.0-alpha.1. Lisensi kode <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, dokumentasi <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+    <p>Halaman dokumentasi ini dibuat menggunakan berkas-berkas dokumentasi Bootstrap, dengan sedikit modifikasi.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/vendor/jquery.min.js"></script>
+
+<script src="/assets/js/vendor/tether.min.js"></script>
+
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="/assets/bootsblogger/js/bootsblogger.min.js"></script>
+
+<script src="/assets/js/docs.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/ie-emulation-modes-warning.js"></script>
+
+
+  <script src="/assets/js/vendor/jekyll-search.min.js"></script>
+  <script>
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    searchResultTemplate: '<a class="dropdown-item" href="{url}">{title}</a>',
+    noResultsText: '<div class="dropdown-item no-results">Sorry, there are no results for that search.</div>',
+    json: '/search.json'
+  })
+  </script>
+
+
+<script>
+Holder.addTheme('gray', {
+  bg: '#777',
+  fg: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+})
+</script>
+
+  </body>
+</html>
