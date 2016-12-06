@@ -16,6 +16,13 @@
 
     
         {
+            "title" : "Best practices",
+            "url"   : "/getting-started/best-practices/"
+        } ,
+    
+
+    
+        {
             "title" : "Blog posts",
             "url"   : "/core-template/blog-posts/"
         } ,
@@ -53,6 +60,13 @@
         {
             "title" : "Count",
             "url"   : "/blogger-json-feeds/count/"
+        } ,
+    
+
+    
+        {
+            "title" : "Customization options",
+            "url"   : "/getting-started/options/"
         } ,
     
 

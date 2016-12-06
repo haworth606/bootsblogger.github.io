@@ -215,6 +215,34 @@
             
           </li>
         
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/options/">
+              Options
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/best-practices/">
+              Best practices
+            </a>
+
+            
+          </li>
+        
       </ul>
     </div><!-- /.bd-toc-item -->
   
@@ -620,66 +648,6 @@
 
     <div class="bd-toc-item ">
       
-        <a class="bd-toc-link" href="/best-practices/template-precompiled/">
-      
-      Best practices
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/best-practices/template-precompiled/">
-              Template precompiled
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/best-practices/template-source-code/">
-              Template source code
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/best-practices/sass-files/">
-              Sass files
-            </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item ">
-      
         <a class="bd-toc-link" href="/about/history/">
       
       About
@@ -782,35 +750,26 @@
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">grunt</code></td>
-      <td>Perintah <code class="highlighter-rouge">grunt</code> akan menjalankan pengujian, kompilasi, dan kompresi; kompilasi dan kompresi CSS dan JavaScript Bootsblogger dan Bootstrap ke dalam <code class="highlighter-rouge">/template/includes/assets</code>; kompilasi template ke dalam<code class="highlighter-rouge">/dist</code>; kompilasi dan kompresi berkas-berkas dokumentasi. <strong>Menggunakan <a href="https://github.com/gruntjs/grunt-contrib-sass">Sass</a>, <a href="https://github.com/gruntjs/grunt-contrib-uglify">UglifyJS</a>, <a href="https://github.com/MathiasPaumgarten/grunt-bake">Bake</a>, dan <a href="https://github.com/dannygarcia/grunt-jekyll">Grunt Jekyll plugin</a>.</strong></td>
+      <td>Jalankan perintah <code class="highlighter-rouge">grunt</code> untuk menjalankan pengujian secara lokal dan kompilasi CSS dan JavaScript Bootsblogger dan Bootstrap ke dalam <code class="highlighter-rouge">/template-src/includes/assets</code>; kompilasi template ke dalam<code class="highlighter-rouge">/dist</code>; dan kompilasi CSS dan JavaScript dokumentasi. <strong>Menggunakan <a href="https://github.com/gruntjs/grunt-contrib-sass">Sass (grunt-contrib-sass)</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="https://github.com/gruntjs/grunt-contrib-uglify">UglifyJS (grunt-contrib-uglify)</a>, dan <a href="https://github.com/MathiasPaumgarten/grunt-bake">Bake (grunt-bake)</a>.</strong></td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt dist</code></td>
-      <td>Kompilasi dan kompresi CSS dan JavaScript Bootsblogger dan Bootstrap ke dalam <code class="highlighter-rouge">/template/includes/assets</code>; dan kemudian kompilasi template ke dalam direktori <code class="highlighter-rouge">/dist</code>.</td>
+      <td>Kompilasi CSS dan JavaScript Bootsblogger dan Bootstrap ke dalam <code class="highlighter-rouge">/template-src/includes/assets</code> dan kompilasi template ke dalam <code class="highlighter-rouge">/dist</code>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt test</code></td>
-      <td>Menguji CSS, HTML, dan JavaScript untuk disesuaikan dengan aturan yang telah ditentukan. <strong>Menggunakan <a href="https://github.com/ahmednuaman/grunt-scss-lint">scss-lint</a>, <a href="https://github.com/jscs-dev/grunt-jscs">JSCS</a>, <a href="https://github.com/jzaefferer/grunt-html">HTML validation</a>, dan <a href="https://github.com/yaniswang/grunt-htmlhint">HTMLHint</a></strong>.</td>
+      <td>Menjalankan <a href="https://github.com/ahmednuaman/grunt-scss-lint">scss-lint (grunt-scss-lint)</a>, <a href="https://github.com/jscs-dev/grunt-jscs">JSCS (grunt-jscs)</a>, <a href="https://github.com/jzaefferer/grunt-html">HTML validation (grunt-html)</a>, dan <a href="https://github.com/yaniswang/grunt-htmlhint">HTML validation (grunt-htmlhint)</a> (digunakan untuk CI).</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt docs</code></td>
-      <td>Pengujian, kompilasi, dan kompresi CSS, JavaScript, dan asset lainnya yang digunakan dalam menjalankan dokumentasi secara lokal dengan <code class="highlighter-rouge">jekyll serve</code>.</td>
+      <td>Membangun dan menguji CSS, JavaScript, dan asset lainnya yang digunakan dalam menjalankan dokumentasi secara lokal dengan <code class="highlighter-rouge">jekyll serve</code>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt watch</code></td>
-      <td>Gunakan perintah ini untuk kenyamanan dalam bekerja pada kode sumber Bootsblogger. Dengan perintah ini, otomatis akan melakukan pengujian, kompilasi, dan kompresi CSS, JavaScript, template, dan Jekyll ketika Anda menyimpan perubahan yang Anda lakukan.</td>
+      <td>Gunakan perintah ini untuk kenyamanan dalam bekerja pada kode sumber Bootsblogger. Dengan perintah ini, otomatis akan melakukan pengujian dan kompilasi CSS, JavaScript, dan template ketika Anda menyimpan perubahan yang Anda lakukan.</td>
     </tr>
   </tbody>
 </table>
-
-<p>Untuk lebih jelas, berikut adalah cara kerja yang paling nyaman pada kode sumber Bootsblogger:</p>
-
-<ol>
-  <li>Buka dua <em>command line</em>.</li>
-  <li>Dari <em>command line</em>, pindah ke direktori <code class="highlighter-rouge">/bootsblogger</code> dan jalankan perintah <code class="highlighter-rouge">grunt watch</code> dan <code class="highlighter-rouge">bundle exec jekyll serve</code> pada masing-masing <em>command line</em>.</li>
-  <li>Mulai bekerja dengan kode sumber.</li>
-  <li>Dan setelah semuanya selesai, keluarkan perintah nomor 2, dan jalankan perintah <code class="highlighter-rouge">grunt test</code> dan terakhir <code class="highlighter-rouge">grunt</code>.</li>
-</ol>
 
 <h2 id="local-documentation">Local documentation</h2>
 
