@@ -30,7 +30,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang luar biasa.">
+<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang kekinian.">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -725,19 +725,17 @@
 
 <p>Bootsblogger yang terkompilasi hanya berisi template dasar Bootsblogger hasil kompilasi dari kode sumber.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bootsblogger/
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
 └── dist/
     └── template.xml</code></pre></figure>
 
 <p>Pilihan ini tersedia untuk Anda yang ingin membangun template dengan hanya menggunakan template editor Blogger, di dalam berkas ini sudah terdapat CSS dan JavaScript Bootstrap dan Bootsblogger, dan juga <a href="https://fontawesome.io">Font Awesome</a>. Jika Anda memilih metode ini, Anda tidak akan dapat mengubah CSS dan JavaScript Bootstrap maupun Bootsblogger, karena CSS dan JavaScript tersebut hasil kompilasi dan kompresi dari kode sumber. Walaupun demikian, Anda tetap dapat mengubah komponen tertentu—baik itu komponen Bootstrap maupun Bootsblogger, dengan cara membuat <em>custom styles</em>—disarankan untuk membuat <em>custom styles</em> pada bagian main CSS.</p>
 
-<p>Pelajari bagaimana <a href="#">membangun template menggunakan Bootsblogger yang terkompilasi</a>.</p>
-
 <h2 id="kode-sumber-bootsblogger">Kode sumber Bootsblogger</h2>
 
 <p>Kode sumber Bootsblogger berisi CSS, JavaScript, dan template yang terkompilasi. Dan juga kode sumber Sass, JavaScript, template, dan berkas-berkas dokumentasi. Untuk lebih jelas lihat struktur di bawah ini:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bootsblogger/
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
 ├── dist/
 │   └── template.xml
 ├── docs/
@@ -756,11 +754,9 @@
 
 <p>Di dalam direktori <code class="highlighter-rouge">scss/</code> dan <code class="highlighter-rouge">js/</code> terdapat kode sumber untuk CSS dan JavaScript Bootstrap dan Bootsblogger yang akan dikompilasi ke dalam <code class="highlighter-rouge">template-src/includes/assets/</code>.</p>
 
-<p>Berkas <code class="highlighter-rouge">scss/_custom.scss</code> digunakan untuk membuat <em>custom variable</em> Bootstrap dan Bootsblogger tanpa mengubah variabel asli, dengan cara menyalin variabel bawaan dari <code class="highlighter-rouge">bootstrap/_variables.scss</code> dan <code class="highlighter-rouge">bootsblogger/_variables.scss</code> ke dalam berkas ini, jangan lupa untuk menghapus nilai <code class="highlighter-rouge">!default</code>.</p>
+<p>Berkas <code class="highlighter-rouge">scss/_custom.scss</code> digunakan untuk <a href="/getting-started/options/">mengubahsuaikan variabel Sass</a> Bootstrap dan Bootsblogger.</p>
 
-<p>Berkas <code class="highlighter-rouge">template-src/template-src.xml</code> adalah kode sumber untuk <code class="highlighter-rouge">dist/template.xml</code>—dan merupakan berkas utama yang digunakan untuk membangun template, ini menggunakan <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">Bake</a></strong>—untuk mengurai template menjadi beberapa bagian, sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur-fitur Bake yang tersedia, seperti dengan adanya <code class="highlighter-rouge">config.json</code>.</p>
-
-<p>Pelajari bagaimana <a href="#">membangun template menggunakan kode sumber Bootsblogger</a>.</p>
+<p>Berkas <code class="highlighter-rouge">template-src/template-src.xml</code> adalah berkas utama template yang akan dikompilasi ke dalam <code class="highlighter-rouge">dist/</code>, ini menggunakan <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">Bake</a></strong>—untuk mengurai template menjadi beberapa bagian sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur-fitur Bake yang tersedia, seperti dengan adanya <code class="highlighter-rouge">config.json</code> dan lainnya.</p>
 
         </div>
       </div>
