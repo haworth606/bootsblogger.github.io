@@ -1,6 +1,6 @@
 /*!
  * Bootsblogger v1.0.0-alpha.1 (https://bootsblogger.github.io)
- * Copyright 2016 Igoy Nawamreh (@igoynawamreh)
+ * Copyright 2016-2017 Igoy Nawamreh (@igoynawamreh)
  * Licensed under MIT (https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE)
  */
 
@@ -65,11 +65,11 @@
       })
     })
 
-    $('.wg-collapse.open-all > .widget > .widget-collapse').addClass('in')
+    $('.wg-collapse.open-all > .widget > .widget-collapse').addClass('show')
     $('.wg-collapse.open-all > .widget > h2').removeClass('collapsed')
     $('.wg-collapse.open-all > .widget > h2 .indicator').removeClass('fa-plus-circle').addClass('fa-minus-circle')
 
-    $('.wg-collapse.open-first > .widget:first-child > .widget-collapse').addClass('in')
+    $('.wg-collapse.open-first > .widget:first-child > .widget-collapse').addClass('show')
     $('.wg-collapse.open-first > .widget:first-child > h2').removeClass('collapsed')
     $('.wg-collapse.open-first > .widget:first-child > h2 .indicator').removeClass('fa-plus-circle').addClass('fa-minus-circle')
 
@@ -116,7 +116,7 @@
       })
     })
 
-    $('.wg-accordion.open-first > .widget:first-child > .widget-collapse').addClass('in')
+    $('.wg-accordion.open-first > .widget:first-child > .widget-collapse').addClass('show')
     $('.wg-accordion.open-first > .widget:first-child > h2').removeClass('collapsed')
     $('.wg-accordion.open-first > .widget:first-child > h2 .indicator').removeClass('fa-chevron-right').addClass('fa-chevron-down')
 
@@ -164,21 +164,21 @@
     })
 
 
-    // Add/remove `.open` for `add comment` and `cancel reply` wrapper
+    // Add/remove `.show` for `add comment` and `cancel reply` wrapper
 
     $('.js-comment-action').on('click', function () {
       $('.comment-form-container-original').each(function () {
         if ($(this).find('.comment-form').length) {
-          $('body').find('.comment-add-wrapper').removeClass('open')
+          $('body').find('.comment-add-wrapper').removeClass('show')
         } else {
-          $('body').find('.comment-add-wrapper').addClass('open')
+          $('body').find('.comment-add-wrapper').addClass('show')
         }
       })
       $('.comment-form-container-reply').each(function () {
         if ($(this).find('.comment-form').length) {
-          $('body').find('.comment-cancel-wrapper').addClass('open')
+          $('body').find('.comment-cancel-wrapper').addClass('show')
         } else {
-          $('body').find('.comment-cancel-wrapper:not(.open)').removeClass('open')
+          $('body').find('.comment-cancel-wrapper:not(.show)').removeClass('show')
         }
       })
     })

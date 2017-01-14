@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>
@@ -82,42 +81,43 @@
 </div>
 
 
-    <header class="navbar navbar-light navbar-static-top bd-navbar">
-  <div class="container">
-    <nav>
-      <div class="clearfix">
-        <button class="navbar-toggler float-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <a class="navbar-brand hidden-md-up" href="/">
-          Bootsblogger
-        </a>
-      </div>
-      <div class="collapse navbar-toggleable-sm" id="bd-main-nav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-item nav-link " href="/">Bootsblogger</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link " href="/examples/">Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="">Templates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <header class="navbar navbar-light navbar-toggleable-sm bd-navbar">
+  <nav class="container">
+    <div class="d-flex justify-content-between hidden-md-up">
+      <a class="navbar-brand" href="/">
+        Bootsblogger
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bd-main-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">Bootsblogger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/examples/">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="">Templates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 
@@ -136,7 +136,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
           <form class="bd-search hidden-sm-down">
   <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
   <div class="dropdown-menu bd-search-results" id="search-results"></div>
@@ -717,7 +717,7 @@
 </nav>
 
         </div>
-        <div class="col-xs-12 col-md-9 pull-md-3 bd-content">
+        <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Widget grid</h1>
           <p>Sistem grid untuk widget.</p>
 
@@ -732,66 +732,64 @@
 
 <h2 id="grid-options">Grid options</h2>
 
-<div class="table-responsive">
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th></th>
-        <th class="text-xs-center">
-          Extra small<br />
-          <small>&lt;576px</small>
-        </th>
-        <th class="text-xs-center">
-          Small<br />
-          <small>&ge;576px</small>
-        </th>
-        <th class="text-xs-center">
-          Medium<br />
-          <small>&ge;768px</small>
-        </th>
-        <th class="text-xs-center">
-          Large<br />
-          <small>&ge;992px</small>
-        </th>
-        <th class="text-xs-center">
-          Extra large<br />
-          <small>&ge;1200px</small>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th class="text-nowrap" scope="row">Grid behavior</th>
-        <td>Horizontal at all times</td>
-        <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Class prefix</th>
-        <td><code>.wg-xs-</code></td>
-        <td><code>.wg-sm-</code></td>
-        <td><code>.wg-md-</code></td>
-        <td><code>.wg-lg-</code></td>
-        <td><code>.wg-xl-</code></td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row"># of columns</th>
-        <td colspan="5">12</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Gutter width</th>
-        <td colspan="5">30px (15px on each side of a column)</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Offsets</th>
-        <td colspan="5">No</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Column ordering</th>
-        <td colspan="5">No</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table class="table table-bordered table-striped table-responsive">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="text-center">
+        Extra small<br />
+        <small>&lt;576px</small>
+      </th>
+      <th class="text-center">
+        Small<br />
+        <small>&ge;576px</small>
+      </th>
+      <th class="text-center">
+        Medium<br />
+        <small>&ge;768px</small>
+      </th>
+      <th class="text-center">
+        Large<br />
+        <small>&ge;992px</small>
+      </th>
+      <th class="text-center">
+        Extra large<br />
+        <small>&ge;1200px</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Grid behavior</th>
+      <td>Horizontal at all times</td>
+      <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.wg-xs-</code></td>
+      <td><code>.wg-sm-</code></td>
+      <td><code>.wg-md-</code></td>
+      <td><code>.wg-lg-</code></td>
+      <td><code>.wg-xl-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td colspan="5">12</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Gutter width</th>
+      <td colspan="5">30px (15px on each side of a column)</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Offsets</th>
+      <td colspan="5">No</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Column ordering</th>
+      <td colspan="5">No</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="examples">Examples</h2>
 
@@ -898,7 +896,7 @@
   </div>
 </footer>
 
-<script src="/assets/js/vendor/jquery.min.js"></script>
+<script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
 <script src="/assets/js/vendor/tether.min.js"></script>
 

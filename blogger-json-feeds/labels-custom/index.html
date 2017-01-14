@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>
@@ -82,42 +81,43 @@
 </div>
 
 
-    <header class="navbar navbar-light navbar-static-top bd-navbar">
-  <div class="container">
-    <nav>
-      <div class="clearfix">
-        <button class="navbar-toggler float-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <a class="navbar-brand hidden-md-up" href="/">
-          Bootsblogger
-        </a>
-      </div>
-      <div class="collapse navbar-toggleable-sm" id="bd-main-nav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-item nav-link " href="/">Bootsblogger</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link " href="/examples/">Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="">Templates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <header class="navbar navbar-light navbar-toggleable-sm bd-navbar">
+  <nav class="container">
+    <div class="d-flex justify-content-between hidden-md-up">
+      <a class="navbar-brand" href="/">
+        Bootsblogger
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bd-main-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">Bootsblogger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/examples/">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="">Templates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 
@@ -136,7 +136,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
           <form class="bd-search hidden-sm-down">
   <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
   <div class="dropdown-menu bd-search-results" id="search-results"></div>
@@ -717,7 +717,7 @@
 </nav>
 
         </div>
-        <div class="col-xs-12 col-md-9 pull-md-3 bd-content">
+        <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Labels - custom</h1>
           <p>Menampilkan daftar label dari data JSON menggunakan beberapa komponen yang sesuai.</p>
 
@@ -730,7 +730,7 @@
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">base</span><span class="p">:</span> <span class="s1">'Base class'</span><span class="p">,</span>
     <span class="na">item</span><span class="p">:</span> <span class="s1">'Item class'</span><span class="p">,</span>
-    <span class="na">badge</span><span class="p">:</span> <span class="s1">'tag tag-default tag-pill'</span>
+    <span class="na">badge</span><span class="p">:</span> <span class="s1">'badge badge-default badge-pill'</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
@@ -753,7 +753,7 @@ var config = {
   classes: {
     base: 'list-group',
     item: 'list-group-item list-group-item-action',
-    badge: 'tag tag-default tag-pill float-xs-right'
+    badge: 'badge badge-default badge-pill float-right'
   }
 }
 </script>
@@ -766,7 +766,7 @@ var config = {
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">base</span><span class="p">:</span> <span class="s1">'list-group'</span><span class="p">,</span>
     <span class="na">item</span><span class="p">:</span> <span class="s1">'list-group-item list-group-item-action'</span><span class="p">,</span>
-    <span class="na">badge</span><span class="p">:</span> <span class="s1">'tag tag-default tag-pill float-xs-right'</span>
+    <span class="na">badge</span><span class="p">:</span> <span class="s1">'badge badge-default badge-pill float-right'</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span>
@@ -786,7 +786,7 @@ var config = {
     classes: {
       base: 'dropdown-menu',
       item: 'dropdown-item',
-      badge: 'tag tag-default tag-pill'
+      badge: 'badge badge-default badge-pill'
     }
   }
   </script>
@@ -804,7 +804,7 @@ var config = {
     <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
       <span class="na">base</span><span class="p">:</span> <span class="s1">'dropdown-menu'</span><span class="p">,</span>
       <span class="na">item</span><span class="p">:</span> <span class="s1">'dropdown-item'</span><span class="p">,</span>
-      <span class="na">badge</span><span class="p">:</span> <span class="s1">'tag tag-default tag-pill'</span>
+      <span class="na">badge</span><span class="p">:</span> <span class="s1">'badge badge-default badge-pill'</span>
     <span class="p">}</span>
   <span class="p">}</span>
   <span class="nt">&lt;/script&gt;</span>
@@ -821,7 +821,7 @@ var config = {
   classes: {
     base: 'nav nav-inline',
     item: 'nav-link',
-    badge: 'tag tag-default tag-pill'
+    badge: 'badge badge-default badge-pill'
   }
 }
 </script>
@@ -834,7 +834,7 @@ var config = {
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">base</span><span class="p">:</span> <span class="s1">'nav nav-inline'</span><span class="p">,</span>
     <span class="na">item</span><span class="p">:</span> <span class="s1">'nav-link'</span><span class="p">,</span>
-    <span class="na">badge</span><span class="p">:</span> <span class="s1">'tag tag-default tag-pill'</span>
+    <span class="na">badge</span><span class="p">:</span> <span class="s1">'badge badge-default badge-pill'</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span>
@@ -862,7 +862,7 @@ var config = {
   </div>
 </footer>
 
-<script src="/assets/js/vendor/jquery.min.js"></script>
+<script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
 <script src="/assets/js/vendor/tether.min.js"></script>
 

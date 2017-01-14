@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>
@@ -82,42 +81,43 @@
 </div>
 
 
-    <header class="navbar navbar-light navbar-static-top bd-navbar">
-  <div class="container">
-    <nav>
-      <div class="clearfix">
-        <button class="navbar-toggler float-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <a class="navbar-brand hidden-md-up" href="/">
-          Bootsblogger
-        </a>
-      </div>
-      <div class="collapse navbar-toggleable-sm" id="bd-main-nav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-item nav-link " href="/">Bootsblogger</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link " href="/examples/">Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="">Templates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <header class="navbar navbar-light navbar-toggleable-sm bd-navbar">
+  <nav class="container">
+    <div class="d-flex justify-content-between hidden-md-up">
+      <a class="navbar-brand" href="/">
+        Bootsblogger
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bd-main-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">Bootsblogger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/examples/">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="">Templates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 
@@ -136,7 +136,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
           <form class="bd-search hidden-sm-down">
   <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
   <div class="dropdown-menu bd-search-results" id="search-results"></div>
@@ -717,7 +717,7 @@
 </nav>
 
         </div>
-        <div class="col-xs-12 col-md-9 pull-md-3 bd-content">
+        <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Posts</h1>
           <p>Bootsblogger menyediakan komponen untuk tampilan posting, dengan beragam tampilan, warna, dan fitur.</p>
 
@@ -788,6 +788,7 @@
     </ul>
   </li>
   <li><a href="#post-clickable" id="markdown-toc-post-clickable">Post clickable</a></li>
+  <li><a href="#mix-and-match" id="markdown-toc-mix-and-match">Mix and match</a></li>
 </ul>
 
 <h2 id="basic-example">Basic example</h2>
@@ -2880,7 +2881,7 @@
 
 <h2 id="columns">Columns</h2>
 
-<p>Bungkus semua <code class="highlighter-rouge">.post</code> dengan <code class="highlighter-rouge">.post-columns</code>. <strong>Perhatian!</strong> Ini <strong>tidak bekerja di IE9 ke bawah</strong>, karena mereka tidak mendukung properti CSS <code class="highlighter-rouge">column-*</code>.</p>
+<p>Bungkus semua <code class="highlighter-rouge">.post</code> dengan <code class="highlighter-rouge">.post-columns</code>.</p>
 
 <p>Hanya diterapkan pada perangkat kecil ke atas. Pada perangkat kecil ke atas (≥576px) akan tampil dua kolom dan pada perangkat sedang ke atas (≥768px) akan tampil tiga kolom, pada perangkat sangat kecil (&lt;576px) hanya tampil satu kolom.</p>
 
@@ -3035,7 +3036,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div>
     <div class="post-content">
-      <p class="text-xs-right"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-right"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3057,7 +3058,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3076,7 +3077,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div>
     <div class="post-content">
-      <p class="text-xs-right"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-right"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3103,7 +3104,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3120,7 +3121,7 @@
       </div>
     </div>
     <div class="post-content">
-      <p class="text-xs-center"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-center"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3147,7 +3148,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-center'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-center'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3155,7 +3156,7 @@
 <div class="bd-example">
   <div class="post">
     <div class="post-content">
-      <h2 class="post-title text-xs-center"><a class="post-title-link" href="#">Post title</a></h2>
+      <h2 class="post-title text-center"><a class="post-title-link" href="#">Post title</a></h2>
     </div>
     <div class="post-content">
       <div class="post-img-only">
@@ -3171,7 +3172,7 @@
     <span class="c">&lt;!-- Content title --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.title'</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">'post-title text-xs-center'</span> <span class="na">itemprop=</span><span class="s">'name headline'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">'post-title text-center'</span> <span class="na">itemprop=</span><span class="s">'name headline'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">'post-title-link'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span><span class="nt">&gt;&lt;data:post</span><span class="err">.</span><span class="na">title</span><span class="nt">/&gt;&lt;/a&gt;</span>
         <span class="nt">&lt;/h2&gt;</span>
       <span class="nt">&lt;/b:if&gt;</span>
@@ -3193,7 +3194,7 @@
       </div>
     </div>
     <div class="post-content">
-      <h2 class="post-title text-xs-center"><a class="post-title-link" href="#">Post title</a></h2>
+      <h2 class="post-title text-center"><a class="post-title-link" href="#">Post title</a></h2>
     </div>
   </div>
 </div>
@@ -3210,7 +3211,7 @@
     <span class="c">&lt;!-- Content title --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.title'</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">'post-title text-xs-center'</span> <span class="na">itemprop=</span><span class="s">'name headline'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">'post-title text-center'</span> <span class="na">itemprop=</span><span class="s">'name headline'</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">'post-title-link'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span><span class="nt">&gt;&lt;data:post</span><span class="err">.</span><span class="na">title</span><span class="nt">/&gt;&lt;/a&gt;</span>
         <span class="nt">&lt;/h2&gt;</span>
       <span class="nt">&lt;/b:if&gt;</span>
@@ -3230,7 +3231,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div>
     <div class="post-content">
-      <p class="text-xs-right"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-right"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3255,7 +3256,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3272,7 +3273,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div>
     <div class="post-content">
-      <p class="text-xs-right"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-right"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3298,7 +3299,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3310,7 +3311,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div>
     <div class="post-content">
-      <p class="text-xs-center"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-center"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
     <div class="post-img-bottom">
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
@@ -3334,7 +3335,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-center'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-center'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Image --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-bottom'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
@@ -3353,7 +3354,7 @@
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
     </div>
     <div class="post-content">
-      <p class="text-xs-center"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-center"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3378,7 +3379,7 @@
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-bottom --&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-center'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-center'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3401,7 +3402,7 @@
       </div>
     </div>
     <div class="post-content">
-      <p class="text-xs-right"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-right"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3433,7 +3434,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3454,7 +3455,7 @@
       </div>
     </div>
     <div class="post-content">
-      <p class="text-xs-right"><a class="btn btn-primary" href="#">Read more</a></p>
+      <p class="text-right"><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
   </div>
 </div>
@@ -3486,7 +3487,7 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="c">&lt;!-- Content button --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-content'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-xs-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'text-right'</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
@@ -3595,6 +3596,116 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
+<h2 id="mix-and-match">Mix and match</h2>
+
+<div class="bd-example">
+  <div class="post">
+    <div class="post-horizontal">
+      <div class="post-img-left post-img-padding post-orange">
+        <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
+      </div>
+      <div class="post-content">
+        <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+        <p><a class="btn btn-primary" href="#">Read more</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding post-orange"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+  <div class="post">
+    <div class="post-horizontal">
+      <div class="post-img-left post-img-padding">
+        <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
+      </div>
+      <div class="post-content post-inverse post-orange">
+        <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+        <p><a class="btn btn-primary" href="#">Read more</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse post-orange"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+  <div class="post">
+    <div class="post-horizontal">
+      <div class="post-img-left post-img-padding post-gray">
+        <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
+      </div>
+      <div class="post-content post-inverse post-orange">
+        <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+        <p><a class="btn btn-primary" href="#">Read more</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding post-gray"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse post-orange"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+  <div class="post post-inverse post-red">
+    <div class="post-horizontal">
+      <div class="post-img-left post-img-padding post-gray">
+        <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
+      </div>
+      <div class="post-content post-orange">
+        <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+        <p><a class="btn btn-primary" href="#">Read more</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-red"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding post-gray"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-orange"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
         </div>
       </div>
@@ -3617,7 +3728,7 @@
   </div>
 </footer>
 
-<script src="/assets/js/vendor/jquery.min.js"></script>
+<script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
 <script src="/assets/js/vendor/tether.min.js"></script>
 

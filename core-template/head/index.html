@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>
@@ -82,42 +81,43 @@
 </div>
 
 
-    <header class="navbar navbar-light navbar-static-top bd-navbar">
-  <div class="container">
-    <nav>
-      <div class="clearfix">
-        <button class="navbar-toggler float-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <a class="navbar-brand hidden-md-up" href="/">
-          Bootsblogger
-        </a>
-      </div>
-      <div class="collapse navbar-toggleable-sm" id="bd-main-nav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-item nav-link " href="/">Bootsblogger</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link " href="/examples/">Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="">Templates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <header class="navbar navbar-light navbar-toggleable-sm bd-navbar">
+  <nav class="container">
+    <div class="d-flex justify-content-between hidden-md-up">
+      <a class="navbar-brand" href="/">
+        Bootsblogger
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bd-main-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">Bootsblogger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/examples/">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="">Templates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 
@@ -136,7 +136,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
           <form class="bd-search hidden-sm-down">
   <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
   <div class="dropdown-menu bd-search-results" id="search-results"></div>
@@ -717,7 +717,7 @@
 </nav>
 
         </div>
-        <div class="col-xs-12 col-md-9 pull-md-3 bd-content">
+        <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Head</h1>
           <p>Berikut ini adalah konten yang ada di dalam <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
 
@@ -725,24 +725,24 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#custom-all-head-content-small-classtext-mutedcustom-all-head-contentxmlsmall" id="markdown-toc-custom-all-head-content-small-classtext-mutedcustom-all-head-contentxmlsmall">Custom all-head-content <small class="text-muted">custom-all-head-content.xml</small></a></li>
-  <li><a href="#title-small-classtext-mutedtitlexmlsmall" id="markdown-toc-title-small-classtext-mutedtitlexmlsmall">Title <small class="text-muted">title.xml</small></a></li>
+  <li><a href="#custom-all-head-content-custom-all-head-contentxml" id="markdown-toc-custom-all-head-content-custom-all-head-contentxml">Custom all-head-content <small class="text-muted">custom-all-head-content.xml</small></a></li>
+  <li><a href="#title-titlexml" id="markdown-toc-title-titlexml">Title <small class="text-muted">title.xml</small></a></li>
   <li><a href="#meta-and-link-tags" id="markdown-toc-meta-and-link-tags">Meta and link tags</a>    <ul>
-      <li><a href="#required-meta-tags-small-classtext-mutedmeta-tags-requiredxmlsmall" id="markdown-toc-required-meta-tags-small-classtext-mutedmeta-tags-requiredxmlsmall">Required meta tags <small class="text-muted">meta-tags-required.xml</small></a></li>
-      <li><a href="#default-small-classtext-mutedmeta-tags-defaultxmlsmall" id="markdown-toc-default-small-classtext-mutedmeta-tags-defaultxmlsmall">Default <small class="text-muted">meta-tags-default.xml</small></a></li>
-      <li><a href="#twitter-cards-small-classtext-mutedmeta-tags-twitterxmlsmall" id="markdown-toc-twitter-cards-small-classtext-mutedmeta-tags-twitterxmlsmall">Twitter Cards <small class="text-muted">meta-tags-twitter.xml</small></a></li>
-      <li><a href="#facebook-open-graph-small-classtext-mutedmeta-tags-facebookxmlsmall" id="markdown-toc-facebook-open-graph-small-classtext-mutedmeta-tags-facebookxmlsmall">Facebook Open Graph <small class="text-muted">meta-tags-facebook.xml</small></a></li>
+      <li><a href="#required-meta-tags-meta-tags-requiredxml" id="markdown-toc-required-meta-tags-meta-tags-requiredxml">Required meta tags <small class="text-muted">meta-tags-required.xml</small></a></li>
+      <li><a href="#default-meta-tags-defaultxml" id="markdown-toc-default-meta-tags-defaultxml">Default <small class="text-muted">meta-tags-default.xml</small></a></li>
+      <li><a href="#twitter-cards-meta-tags-twitterxml" id="markdown-toc-twitter-cards-meta-tags-twitterxml">Twitter Cards <small class="text-muted">meta-tags-twitter.xml</small></a></li>
+      <li><a href="#facebook-open-graph-meta-tags-facebookxml" id="markdown-toc-facebook-open-graph-meta-tags-facebookxml">Facebook Open Graph <small class="text-muted">meta-tags-facebook.xml</small></a></li>
     </ul>
   </li>
-  <li><a href="#remove-bloggers-default-css-small-classtext-mutedblogger-css-hackxmlsmall" id="markdown-toc-remove-bloggers-default-css-small-classtext-mutedblogger-css-hackxmlsmall">Remove Blogger’s default CSS <small class="text-muted">blogger-css-hack.xml</small></a></li>
-  <li><a href="#blogger-grid-system-small-classtext-mutedblogger-css-hackxmlsmall" id="markdown-toc-blogger-grid-system-small-classtext-mutedblogger-css-hackxmlsmall">Blogger grid system <small class="text-muted">blogger-css-hack.xml</small></a>    <ul>
+  <li><a href="#remove-bloggers-default-css-blogger-css-hackxml" id="markdown-toc-remove-bloggers-default-css-blogger-css-hackxml">Remove Blogger’s default CSS <small class="text-muted">blogger-css-hack.xml</small></a></li>
+  <li><a href="#blogger-grid-system-blogger-css-hackxml" id="markdown-toc-blogger-grid-system-blogger-css-hackxml">Blogger grid system <small class="text-muted">blogger-css-hack.xml</small></a>    <ul>
       <li><a href="#usage" id="markdown-toc-usage">Usage</a></li>
       <li><a href="#note" id="markdown-toc-note">Note</a></li>
     </ul>
   </li>
 </ul>
 
-<h2 id="custom-all-head-content-small-classtext-mutedcustom-all-head-contentxmlsmall">Custom all-head-content <small class="text-muted">custom-all-head-content.xml</small></h2>
+<h2 id="custom-all-head-content-custom-all-head-contentxml">Custom all-head-content <small class="text-muted">custom-all-head-content.xml</small></h2>
 
 <p>Bawaan Blogger menggunakan <code class="highlighter-rouge">&lt;b:include data='blog' name='all-head-content'/&gt;</code> untuk favicon, <em>feeds</em>, dan lain-lain.
 Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komentar dan label.</p>
@@ -768,7 +768,7 @@ Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komenta
   <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'data:blog.homepageUrl'</span> <span class="na">rel=</span><span class="s">'openid.delegate'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
-<h2 id="title-small-classtext-mutedtitlexmlsmall">Title <small class="text-muted">title.xml</small></h2>
+<h2 id="title-titlexml">Title <small class="text-muted">title.xml</small></h2>
 
 <p>Pada bawaan Blogger tag judul biasanya hanya menggunakan <code class="highlighter-rouge">&lt;title&gt;&lt;data:blog.pageTitle/&gt;&lt;/title&gt;</code>, dengan penyesuaian ini Anda dapat menulis judul sesuai dengan yang Anda inginkan.</p>
 
@@ -807,19 +807,17 @@ Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komenta
 
 <p><strong>Catatan:</strong> beberapa tag menggunakan variabel konfigurasi pada <code class="highlighter-rouge">config.json</code>.</p>
 
-<h3 id="required-meta-tags-small-classtext-mutedmeta-tags-requiredxmlsmall">Required meta tags <small class="text-muted">meta-tags-required.xml</small></h3>
+<h3 id="required-meta-tags-meta-tags-requiredxml">Required meta tags <small class="text-muted">meta-tags-required.xml</small></h3>
 
 <ul>
-  <li>Set charset dengan <code class="highlighter-rouge">utf-8</code></li>
-  <li>Paksa Internet Explorer agar menggunakan mode render terbaru (<a href="https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do">baca lebih lanjut</a>)</li>
-  <li>Dan, gunakan tag meta responsif <code class="highlighter-rouge">viewport</code>.</li>
+  <li>Set charset dengan <code class="highlighter-rouge">utf-8</code>.</li>
+  <li>Gunakan tag meta responsif <code class="highlighter-rouge">viewport</code>.</li>
 </ul>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">'utf-8'</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'IE=Edge'</span> <span class="na">http-equiv=</span><span class="s">'X-UA-Compatible'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span></code></pre></figure>
 
-<h3 id="default-small-classtext-mutedmeta-tags-defaultxmlsmall">Default <small class="text-muted">meta-tags-default.xml</small></h3>
+<h3 id="default-meta-tags-defaultxml">Default <small class="text-muted">meta-tags-default.xml</small></h3>
 
 <p>Tag meta dan link untuk mesin pencari.</p>
 
@@ -885,7 +883,7 @@ Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komenta
   <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'{{ blog.social.image }}'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
-<h3 id="twitter-cards-small-classtext-mutedmeta-tags-twitterxmlsmall">Twitter Cards <small class="text-muted">meta-tags-twitter.xml</small></h3>
+<h3 id="twitter-cards-meta-tags-twitterxml">Twitter Cards <small class="text-muted">meta-tags-twitter.xml</small></h3>
 
 <p>Tag meta untuk jejaring sosial Twitter. Berguna ketika seseorang membagikan Blog atau postingan Anda ke jejaring sosial <a href="https://twitter.com">Twitter</a>.</p>
 
@@ -966,7 +964,7 @@ Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komenta
   <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.social.image }}'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
-<h3 id="facebook-open-graph-small-classtext-mutedmeta-tags-facebookxmlsmall">Facebook Open Graph <small class="text-muted">meta-tags-facebook.xml</small></h3>
+<h3 id="facebook-open-graph-meta-tags-facebookxml">Facebook Open Graph <small class="text-muted">meta-tags-facebook.xml</small></h3>
 
 <p>Tag meta untuk jejaring sosial Facebook. Berguna ketika seseorang membagikan Blog atau postingan Anda ke jejaring sosial <a href="https://facebook.com">Facebook</a>.</p>
 
@@ -1046,7 +1044,7 @@ Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komenta
   <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.social.image }}'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
-<h2 id="remove-bloggers-default-css-small-classtext-mutedblogger-css-hackxmlsmall">Remove Blogger’s default CSS <small class="text-muted">blogger-css-hack.xml</small></h2>
+<h2 id="remove-bloggers-default-css-blogger-css-hackxml">Remove Blogger’s default CSS <small class="text-muted">blogger-css-hack.xml</small></h2>
 
 <p>Blogger memiliki CSS bawaan, yaitu <code class="highlighter-rouge">*-css_bundle_v2.css</code> yang mereka gunakan untuk widget, gadget, dan juga elemen umum seperti <code class="highlighter-rouge">html</code>, <code class="highlighter-rouge">body</code>, <code class="highlighter-rouge">h*</code>, <code class="highlighter-rouge">p</code>, dan lain-lain. Oleh karena mereka menggunakannya untuk elemen umum tadi, dan juga terdapat nama kelas yang sama dengan CSS Bootsblogger maupun Bootstrap, maka bundel CSS tersebut harus dibuang agar CSS Bootstrap dan Bootsblogger berfungsi sebagaimana mestinya.</p>
 
@@ -1059,7 +1057,7 @@ Penyesuaian ini hanya untuk validasi dan penambahan <em>feeds</em> untuk komenta
 
 <p>Kode di atas akan mengapit bundel CSS Blogger dengan komentar HTML, sehingga CSS tersebut akan dikenal oleh <em>browser</em> hanya sebagai sebuah komentar HTML, bukan eksternal CSS.</p>
 
-<h2 id="blogger-grid-system-small-classtext-mutedblogger-css-hackxmlsmall">Blogger grid system <small class="text-muted">blogger-css-hack.xml</small></h2>
+<h2 id="blogger-grid-system-blogger-css-hackxml">Blogger grid system <small class="text-muted">blogger-css-hack.xml</small></h2>
 
 <p>Pada tulisan di atas ini, kita sudah membahas tentang membuang CSS bawaan Blogger. Selanjutnya kita akan membahas sistem grid untuk tata letak widget pada halaman Blogger [ <a href="javascript:;" data-toggle="modal" data-target=".image-blogger-layout">lihat gambar</a> ]. CSS sistem grid ini harus diletakan di dalam kode yang di atas tadi, seperti berikut:</p>
 
@@ -1208,7 +1206,7 @@ width: 50%;
   </div>
 </footer>
 
-<script src="/assets/js/vendor/jquery.min.js"></script>
+<script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
 <script src="/assets/js/vendor/tether.min.js"></script>
 

@@ -1,6 +1,6 @@
 /*!
  * Bootsblogger v1.0.0-alpha.1 (https://bootsblogger.github.io)
- * Copyright 2016 Igoy Nawamreh (@igoynawamreh)
+ * Copyright 2016-2017 Igoy Nawamreh (@igoynawamreh)
  * Licensed under MIT (https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE)
  */
 
@@ -819,7 +819,7 @@ function labelsLists(json) {
       ul: 'Add class to ul',
       li: 'Add class to li',
       a: 'Add class to a',
-      badge: 'tag tag-default tag-pill'
+      badge: 'badge badge-default badge-pill'
     }
   }
   */
@@ -858,7 +858,7 @@ function labelsCustom(json) {
     classes: {
       base: 'Base class',
       item: 'Item class',
-      badge: 'tag tag-default tag-pill'
+      badge: 'badge badge-default badge-pill'
     }
   }
   */
