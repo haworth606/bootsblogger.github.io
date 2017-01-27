@@ -101,9 +101,6 @@
           <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link " href="/examples/">Examples</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
         </li>
         <li class="nav-item">
@@ -405,48 +402,6 @@
             
           </li>
         
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/widget-title/">
-              Widget title
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/widget-columns/">
-              Widget columns
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/widget-grid/">
-              Widget grid
-            </a>
-
-            
-          </li>
-        
       </ul>
     </div><!-- /.bd-toc-item -->
   
@@ -486,22 +441,8 @@
           
 
           <li class="">
-            <a href="/utilities/backgrounds/">
-              Backgrounds
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/utilities/width/">
-              Width
+            <a href="/utilities/sizing/">
+              Sizing
             </a>
 
             
@@ -516,6 +457,20 @@
           <li class="">
             <a href="/utilities/figures/">
               Figures
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
+            <a href="/utilities/widget/">
+              Widget
             </a>
 
             
@@ -748,22 +703,22 @@
       <li><a href="#header-and-footer-image-overlays" id="markdown-toc-header-and-footer-image-overlays">Header and footer: image overlays</a></li>
     </ul>
   </li>
-  <li><a href="#cover-image" id="markdown-toc-cover-image">Cover image</a>    <ul>
-      <li><a href="#cover-image-image-only" id="markdown-toc-cover-image-image-only">Cover image: image only</a></li>
-      <li><a href="#cover-image-top-image" id="markdown-toc-cover-image-top-image">Cover image: top image</a></li>
-      <li><a href="#cover-image-bottom-image" id="markdown-toc-cover-image-bottom-image">Cover image: bottom image</a></li>
-      <li><a href="#cover-image-left-image" id="markdown-toc-cover-image-left-image">Cover image: left image</a></li>
-      <li><a href="#cover-image-right-image" id="markdown-toc-cover-image-right-image">Cover image: right image</a></li>
-      <li><a href="#cover-image-image-overlays" id="markdown-toc-cover-image-image-overlays">Cover image: image overlays</a></li>
+  <li><a href="#cover" id="markdown-toc-cover">Cover</a>    <ul>
+      <li><a href="#cover-image-only" id="markdown-toc-cover-image-only">Cover: image only</a></li>
+      <li><a href="#cover-top-image" id="markdown-toc-cover-top-image">Cover: top image</a></li>
+      <li><a href="#cover-bottom-image" id="markdown-toc-cover-bottom-image">Cover: bottom image</a></li>
+      <li><a href="#cover-left-image" id="markdown-toc-cover-left-image">Cover: left image</a></li>
+      <li><a href="#cover-right-image" id="markdown-toc-cover-right-image">Cover: right image</a></li>
+      <li><a href="#cover-image-overlays" id="markdown-toc-cover-image-overlays">Cover: image overlays</a></li>
     </ul>
   </li>
-  <li><a href="#padding-image" id="markdown-toc-padding-image">Padding image</a>    <ul>
-      <li><a href="#padding-image-image-only" id="markdown-toc-padding-image-image-only">Padding image: image only</a></li>
-      <li><a href="#padding-image-top-image" id="markdown-toc-padding-image-top-image">Padding image: top image</a></li>
-      <li><a href="#padding-image-bottom-image" id="markdown-toc-padding-image-bottom-image">Padding image: bottom image</a></li>
-      <li><a href="#padding-image-left-image" id="markdown-toc-padding-image-left-image">Padding image: left image</a></li>
-      <li><a href="#padding-image-right-image" id="markdown-toc-padding-image-right-image">Padding image: right image</a></li>
-      <li><a href="#padding-image-image-overlays" id="markdown-toc-padding-image-image-overlays">Padding image: image overlays</a></li>
+  <li><a href="#gutters" id="markdown-toc-gutters">Gutters</a>    <ul>
+      <li><a href="#gutter-image-only" id="markdown-toc-gutter-image-only">Gutter: image only</a></li>
+      <li><a href="#gutter-top-image" id="markdown-toc-gutter-top-image">Gutter: top image</a></li>
+      <li><a href="#gutter-bottom-image" id="markdown-toc-gutter-bottom-image">Gutter: bottom image</a></li>
+      <li><a href="#gutter-left-image" id="markdown-toc-gutter-left-image">Gutter: left image</a></li>
+      <li><a href="#gutter-right-image" id="markdown-toc-gutter-right-image">Gutter: right image</a></li>
+      <li><a href="#gutter-image-overlays" id="markdown-toc-gutter-image-overlays">Gutter: image overlays</a></li>
     </ul>
   </li>
   <li><a href="#groups" id="markdown-toc-groups">Groups</a>    <ul>
@@ -1701,11 +1656,11 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h2 id="cover-image">Cover image</h2>
+<h2 id="cover">Cover</h2>
 
 <p>Tambahkan <code class="highlighter-rouge">.post-img-cover</code> ke <code class="highlighter-rouge">.post-img-{only, top, bottom, left, right, overlay}</code> untuk menampilkan gambar dengan <code class="highlighter-rouge">background-image</code> dan <code class="highlighter-rouge">background-size: cover;</code>.</p>
 
-<h3 id="cover-image-image-only">Cover image: image only</h3>
+<h3 id="cover-image-only">Cover: image only</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -1726,7 +1681,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="cover-image-top-image">Cover image: top image</h3>
+<h3 id="cover-top-image">Cover: top image</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -1764,7 +1719,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="cover-image-bottom-image">Cover image: bottom image</h3>
+<h3 id="cover-bottom-image">Cover: bottom image</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -1802,7 +1757,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="cover-image-left-image">Cover image: left image</h3>
+<h3 id="cover-left-image">Cover: left image</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -1844,7 +1799,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="cover-image-right-image">Cover image: right image</h3>
+<h3 id="cover-right-image">Cover: right image</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -1886,7 +1841,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="cover-image-image-overlays">Cover image: image overlays</h3>
+<h3 id="cover-image-overlays">Cover: image overlays</h3>
 
 <div class="bd-example">
   <div class="post post-inverse">
@@ -1928,15 +1883,15 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h2 id="padding-image">Padding image</h2>
+<h2 id="gutters">Gutters</h2>
 
-<p>Tambahkan <code class="highlighter-rouge">.post-img-padding</code> ke <code class="highlighter-rouge">.post-img-{only, top, bottom, left, right, overlay}</code>.</p>
+<p>Tambahkan <code class="highlighter-rouge">.post-img-gutter</code> ke <code class="highlighter-rouge">.post-img-{only, top, bottom, left, right, overlay}</code>.</p>
 
-<h3 id="padding-image-image-only">Padding image: image only</h3>
+<h3 id="gutter-image-only">Gutter: image only</h3>
 
 <div class="bd-example">
   <div class="post">
-    <div class="post-img-only post-img-padding">
+    <div class="post-img-only post-img-gutter">
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
     </div>
   </div>
@@ -1946,17 +1901,17 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:loop</span> <span class="na">values=</span><span class="s">'data:posts'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">'post'</span> <span class="na">expr:id=</span><span class="s">'"post-" + data:post.id'</span> <span class="na">itemscope=</span><span class="s">'itemscope'</span> <span class="na">itemtype=</span><span class="s">'http://schema.org/BlogPosting'</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Image --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-only post-img-padding'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-only post-img-gutter'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span>
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-only --&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="padding-image-top-image">Padding image: top image</h3>
+<h3 id="gutter-top-image">Gutter: top image</h3>
 
 <div class="bd-example">
   <div class="post">
-    <div class="post-img-top post-img-padding">
+    <div class="post-img-top post-img-gutter">
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
     </div>
     <div class="post-content">
@@ -1971,7 +1926,7 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:loop</span> <span class="na">values=</span><span class="s">'data:posts'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">'post'</span> <span class="na">expr:id=</span><span class="s">'"post-" + data:post.id'</span> <span class="na">itemscope=</span><span class="s">'itemscope'</span> <span class="na">itemtype=</span><span class="s">'http://schema.org/BlogPosting'</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Image --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-top post-img-padding'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-top post-img-gutter'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span>
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-top --&gt;</span>
     <span class="c">&lt;!-- Content --&gt;</span>
@@ -1989,7 +1944,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="padding-image-bottom-image">Padding image: bottom image</h3>
+<h3 id="gutter-bottom-image">Gutter: bottom image</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -1998,7 +1953,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
       <p><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
-    <div class="post-img-bottom post-img-padding">
+    <div class="post-img-bottom post-img-gutter">
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
     </div>
   </div>
@@ -2020,18 +1975,18 @@
       <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-content --&gt;</span>
     <span class="c">&lt;!-- Image --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-bottom post-img-padding'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-bottom post-img-gutter'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span>
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-bottom --&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="padding-image-left-image">Padding image: left image</h3>
+<h3 id="gutter-left-image">Gutter: left image</h3>
 
 <div class="bd-example">
   <div class="post">
     <div class="post-horizontal">
-      <div class="post-img-left post-img-padding">
+      <div class="post-img-left post-img-gutter">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content">
@@ -2048,7 +2003,7 @@
   <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">'post'</span> <span class="na">expr:id=</span><span class="s">'"post-" + data:post.id'</span> <span class="na">itemscope=</span><span class="s">'itemscope'</span> <span class="na">itemtype=</span><span class="s">'http://schema.org/BlogPosting'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-horizontal'</span><span class="nt">&gt;</span>
       <span class="c">&lt;!-- Image --&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-left post-img-padding'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-left post-img-gutter'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-left --&gt;</span>
       <span class="c">&lt;!-- Content --&gt;</span>
@@ -2067,7 +2022,7 @@
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="padding-image-right-image">Padding image: right image</h3>
+<h3 id="gutter-right-image">Gutter: right image</h3>
 
 <div class="bd-example">
   <div class="post">
@@ -2077,7 +2032,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
         <p><a class="btn btn-primary" href="#">Read more</a></p>
       </div>
-      <div class="post-img-right post-img-padding">
+      <div class="post-img-right post-img-gutter">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
     </div>
@@ -2101,19 +2056,19 @@
         <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">'btn btn-primary'</span> <span class="na">expr:href=</span><span class="s">'data:post.url'</span> <span class="na">itemprop=</span><span class="s">'url'</span> <span class="na">role=</span><span class="s">'button'</span><span class="nt">&gt;</span>Read more <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sr-only'</span><span class="nt">&gt;</span>read more <span class="nt">&lt;data:post</span><span class="err">.</span><span class="na">id</span><span class="nt">/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
       <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-content --&gt;</span>
       <span class="c">&lt;!-- Image --&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-right post-img-padding'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-right post-img-gutter'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-right --&gt;</span>
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-horizontal --&gt;</span>
   <span class="nt">&lt;/article&gt;</span><span class="c">&lt;!-- /.post --&gt;</span>
 <span class="nt">&lt;/b:loop&gt;</span></code></pre></figure>
 
-<h3 id="padding-image-image-overlays">Padding image: image overlays</h3>
+<h3 id="gutter-image-overlays">Gutter: image overlays</h3>
 
 <div class="bd-example">
   <div class="post post-inverse">
     <div class="post-overlay">
-      <div class="post-img-overlay post-img-padding">
+      <div class="post-img-overlay post-img-gutter">
         <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content">
@@ -2130,7 +2085,7 @@
   <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">'post post-inverse'</span> <span class="na">expr:id=</span><span class="s">'"post-" + data:post.id'</span> <span class="na">itemscope=</span><span class="s">'itemscope'</span> <span class="na">itemtype=</span><span class="s">'http://schema.org/BlogPosting'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-overlay'</span><span class="nt">&gt;</span>
       <span class="c">&lt;!-- Image --&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-overlay post-img-padding'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-img-overlay post-img-gutter'</span> <span class="na">itemprop=</span><span class="s">'thumbnail'</span><span class="nt">&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.post-img-overlay --&gt;</span>
       <span class="c">&lt;!-- Content --&gt;</span>
@@ -3601,7 +3556,7 @@
 <div class="bd-example">
   <div class="post">
     <div class="post-horizontal">
-      <div class="post-img-left post-img-padding post-orange">
+      <div class="post-img-left post-img-gutter post-orange">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content">
@@ -3616,7 +3571,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding post-orange"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter post-orange"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content"</span><span class="nt">&gt;</span>
@@ -3628,7 +3583,7 @@
 <div class="bd-example">
   <div class="post">
     <div class="post-horizontal">
-      <div class="post-img-left post-img-padding">
+      <div class="post-img-left post-img-gutter">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content post-inverse post-orange">
@@ -3643,7 +3598,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse post-orange"</span><span class="nt">&gt;</span>
@@ -3655,7 +3610,7 @@
 <div class="bd-example">
   <div class="post">
     <div class="post-horizontal">
-      <div class="post-img-left post-img-padding post-gray">
+      <div class="post-img-left post-img-gutter post-gray">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content post-inverse post-orange">
@@ -3670,7 +3625,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding post-gray"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter post-gray"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse post-orange"</span><span class="nt">&gt;</span>
@@ -3682,7 +3637,7 @@
 <div class="bd-example">
   <div class="post post-inverse post-red">
     <div class="post-horizontal">
-      <div class="post-img-left post-img-padding post-gray">
+      <div class="post-img-left post-img-gutter post-gray">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content post-orange">
@@ -3697,7 +3652,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-red"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-padding post-gray"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter post-gray"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-orange"</span><span class="nt">&gt;</span>
@@ -3718,7 +3673,6 @@
       <li><a href="https://twitter.com/">Twitter</a></li>
       <li><a href="https://plus.google.com/">Google+</a></li>
       <li><a href="https://facebook.com/">Facebook</a></li>
-      <li><a href="/examples/">Examples</a></li>
       <li><a href="/about/history/">About</a></li>
       <li><a href="/about/donation/">Donation</a></li>
     </ul>

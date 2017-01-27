@@ -17,13 +17,6 @@
 
     
         {
-            "title" : "Backgrounds",
-            "url"   : "/utilities/backgrounds/"
-        } ,
-    
-
-    
-        {
             "title" : "Best practices",
             "url"   : "/getting-started/best-practices/"
         } ,
@@ -89,13 +82,6 @@
         {
             "title" : "Download",
             "url"   : "/getting-started/download/"
-        } ,
-    
-
-    
-        {
-            "title" : "Examples",
-            "url"   : "/examples/"
         } ,
     
 
@@ -199,8 +185,22 @@
 
     
         {
+            "title" : "Sizing",
+            "url"   : "/utilities/sizing/"
+        } ,
+    
+
+    
+        {
             "title" : "Team",
             "url"   : "/about/team/"
+        } ,
+    
+
+    
+        {
+            "title" : "Widget",
+            "url"   : "/utilities/widget/"
         } ,
     
 
@@ -220,36 +220,8 @@
 
     
         {
-            "title" : "Widget columns",
-            "url"   : "/components/widget-columns/"
-        } ,
-    
-
-    
-        {
-            "title" : "Widget grid",
-            "url"   : "/components/widget-grid/"
-        } ,
-    
-
-    
-        {
             "title" : "Widget panel",
             "url"   : "/components/widget-panel/"
-        } ,
-    
-
-    
-        {
-            "title" : "Widget title",
-            "url"   : "/components/widget-title/"
-        } ,
-    
-
-    
-        {
-            "title" : "Width",
-            "url"   : "/utilities/width/"
         } 
     
 
