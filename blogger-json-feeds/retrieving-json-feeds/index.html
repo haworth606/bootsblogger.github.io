@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang kekinian.">
+<meta name="description" content="Blogger + Bootstrap + ♥">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -93,15 +93,12 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bd-main-nav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-item nav-link " href="/">Bootsblogger</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="">Templates</a>
@@ -111,6 +108,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
         </li>
       </ul>
     </div>
@@ -123,7 +126,7 @@
         
 <h1>Blogger JSON feeds</h1>
 <p class="lead">
-  Mengambil data JSON dari Blogger Data API dan mengubahnya menjadi markup HTML menggunakan plugin yang tersedia.
+  Mengambil data JSON dari Blogger Data API, dan mengubahnya menjadi markup HTML menggunakan JavaScript.
 </p>
 
 
@@ -674,7 +677,7 @@
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Retrieving JSON feeds</h1>
-          <p>Blogger mempunyai data posting, halaman statis, dan komentar dalam bentuk JSON yang disediakan oleh Blogger Data API. Di bawah ini adalah cara mengambil data JSON feeds dari Blogger Data API.</p>
+          <p>Blogger mempunyai data—posting, halaman statis, dan komentar dalam bentuk JSON, yang disediakan oleh Blogger Data API. Di bawah ini adalah cara mengambil data JSON feeds dari Blogger Data API.</p>
 
 <h2 id="contents">Contents</h2>
 
@@ -726,19 +729,19 @@
     </tr>
     <tr>
       <td><code>{x}</code></td>
-      <td>Ganti dengan nomor untuk mengambil data JSON mulai dari urutan ke-<code>{x}</code>. <code>{x}</code> &gt;= <code>1</code> dan tidak boleh lebih besar dari jumlah data yang ada.</td>
+      <td>Ganti dengan nomor, yang digunakan untuk mengambil data JSON mulai dari urutan ke-<code>x</code>. <code>x</code> &gt;= <code>1</code> dan tidak boleh lebih besar dari jumlah data yang ada.</td>
     </tr>
     <tr>
       <td><code>{n}</code></td>
-      <td>Ganti dengan nomor untuk membatasi jumlah data JSON yang diambil sebanyak <code>{n}</code>.</td>
+      <td>Ganti dengan nomor, yang digunakan untuk membatasi jumlah data JSON yang diambil, sebanyak <code>n</code>.</td>
     </tr>
     <tr>
       <td><code>alt=json-in-script</code></td>
-      <td>Untuk menandakan bahwa data yang diambil berupa JSON.</td>
+      <td>Data yang diambil berupa JSON.</td>
     </tr>
     <tr>
       <td><code>{function}</code></td>
-      <td>Ganti dengan nama fungsi (JavaScript) untuk mengubah data JSON menjadi markup HTML.</td>
+      <td>Ganti dengan nama-fungsi JavaScript, yang digunakan untuk mengubah data JSON menjadi markup HTML.</td>
     </tr>
   </tbody>
 </table>
@@ -774,7 +777,7 @@
       </div>
     </div>
 
-    <footer class="bd-footer text-muted">
+    <footer class="bd-footer text-muted mt-0">
   <div class="container">
     <ul class="bd-footer-links">
       <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
@@ -784,9 +787,8 @@
       <li><a href="/about/history/">About</a></li>
       <li><a href="/about/donation/">Donation</a></li>
     </ul>
-    <p>Dibuat dengan penuh cinta oleh <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Dikelola oleh <a href="https://github.com/orgs/bootsblogger/people">tim utama</a> dengan bantuan para <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">kontributor</a>.</p>
-    <p>Saat ini v1.0.0-alpha.1. Lisensi kode <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, dokumentasi <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-    <p>Halaman dokumentasi ini dibuat menggunakan berkas-berkas dokumentasi Bootstrap, dengan sedikit modifikasi.</p>
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Maintained by the <a href="https://github.com/orgs/bootsblogger/people">core team</a> with the help of <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">our contributors</a>.</p>
+    <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
   </div>
 </footer>
 

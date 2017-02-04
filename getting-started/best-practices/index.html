@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang kekinian.">
+<meta name="description" content="Blogger + Bootstrap + ♥">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -93,15 +93,12 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bd-main-nav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-item nav-link " href="/">Bootsblogger</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="">Templates</a>
@@ -111,6 +108,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
         </li>
       </ul>
     </div>
@@ -680,67 +683,104 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#membangun-template-langsung-di-template-editor-blogger" id="markdown-toc-membangun-template-langsung-di-template-editor-blogger">Membangun template langsung di template editor Blogger</a>    <ul>
+  <li><a href="#working-with-blogger-template-editor" id="markdown-toc-working-with-blogger-template-editor">Working with Blogger template editor</a>    <ul>
       <li><a href="#code-folding" id="markdown-toc-code-folding">Code folding</a></li>
       <li><a href="#code-indentation" id="markdown-toc-code-indentation">Code indentation</a></li>
     </ul>
   </li>
-  <li><a href="#membangun-template-di-dalam-kode-sumber-bootsblogger" id="markdown-toc-membangun-template-di-dalam-kode-sumber-bootsblogger">Membangun template di dalam kode sumber Bootsblogger</a>    <ul>
-      <li><a href="#struktur-direktori" id="markdown-toc-struktur-direktori">Struktur direktori</a></li>
+  <li><a href="#working-with-template-source-files" id="markdown-toc-working-with-template-source-files">Working with template source files</a>    <ul>
+      <li><a href="#directory-structure" id="markdown-toc-directory-structure">Directory structure</a></li>
       <li><a href="#include" id="markdown-toc-include">Include</a></li>
     </ul>
   </li>
   <li><a href="#code-guide" id="markdown-toc-code-guide">Code guide</a></li>
 </ul>
 
-<h2 id="membangun-template-langsung-di-template-editor-blogger">Membangun template langsung di template editor Blogger</h2>
+<h2 id="working-with-blogger-template-editor">Working with Blogger template editor</h2>
 
-<p>Pasang template dasar Bootsblogger di blog Anda (<code class="highlighter-rouge">dist/template.xml</code>). Di bawah ini ada beberapa tips yang akan memudahkan Anda.</p>
+<p>Pasang Bootsblogger starter template di blog Anda (<code class="highlighter-rouge">dist/template.xml</code>). Di bawah ini, ada beberapa tips yang akan memudahkan Anda.</p>
 
 <h3 id="code-folding">Code folding</h3>
 
-<p>Gunakan fitur code folding yang ada pada template editor Blogger agar kode template tidak terlihat berantakan dan membingungkan, juga akan memudahkan untuk menemukan bagian kode tertentu, <a href="/assets/img/blogger-code-folding.png">lihat gambar</a>.</p>
+<p>Gunakan fitur code folding yang ada pada template editor Blogger, agar kode template tidak terlihat berantakan dan membingungkan, juga akan memudahkan untuk menemukan bagian kode tertentu, <a href="/assets/img/blogger-code-folding.png">lihat gambar</a>.</p>
 
 <h3 id="code-indentation">Code indentation</h3>
 
-<p>Selalu perhatikan indentasi kode agar kode lebih mudah dibaca dan dipahami. Atur indentasi menggunakan dua spasi.</p>
+<p>Selalu perhatikan indentasi kode, agar kode lebih mudah dibaca dan dipahami. Atur indentasi menggunakan dua spasi.</p>
 
-<h2 id="membangun-template-di-dalam-kode-sumber-bootsblogger">Membangun template di dalam kode sumber Bootsblogger</h2>
+<h2 id="working-with-template-source-files">Working with template source files</h2>
 
-<p>Untuk membangun template di dalam kode sumber Anda harus memahami dasar-dasar <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">Bake</a></strong>, karena Bootsblogger menggunakan Bake untuk mengurai template menjadi beberapa bagian, sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur-fitur Bake lainnya.</p>
+<p>Untuk dapat membangun template di dalam kode sumber, Anda harus memahami dasar-dasar <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong>, karena Bootsblogger menggunakan grunt-bake untuk mempermudah proses pembuatan dan pengeditan template.</p>
 
-<h3 id="struktur-direktori">Struktur direktori</h3>
+<h3 id="directory-structure">Directory structure</h3>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
 └── template-src/
-    ├── includes/ # semua konten template disimpan di dalam `includes/`.
-    │   ├── assets # CSS dan JavaScript Bootsblogger dan Bootstrap, dan assets Anda disimpan di sini.
-    │   ├── blog-posts # widget blog posts.
-    │   ├── foot-content # konten untuk footer disimpan di sini.
-    │   └── head-content # konten yang ada di dalam `&lt;head&gt;` disimpan di sini.
-    ├── config.json # konfigurasi template.
-    ├── style.css # main CSS.
-    └── template-src.xml # berkas utama yang akan dikompilasi ke dalam `dist/`.</code></pre></figure>
+    ├── includes/
+    │   ├── assets
+    │   ├── blog-posts
+    │   ├── foot-content
+    │   └── head-content
+    ├── config.json
+    ├── style.css
+    └── template-src.xml</code></pre></figure>
 
-<p><strong>Catatan:</strong> Anda dapat membuat direktori dan/atau berkas baru sesuai dengan kebutuhan Anda, disarankan disimpan di dalam <code class="highlighter-rouge">includes/</code>.</p>
+<table>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">includes</code></td>
+      <td>Wadah untuk konten template.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">includes/assets</code></td>
+      <td>Aset template disimpan di sini.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">includes/blog-posts</code></td>
+      <td>Bagian-bagian widget blog posting disimpan di sini.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">includes/foot-content</code></td>
+      <td>Konten footer disimpan di sini.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">includes/head-content</code></td>
+      <td>Konten yang ada di dalam <code class="highlighter-rouge">&lt;head&gt;</code> disimpan di sini.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">config.json</code></td>
+      <td>Berkas konfigurasi template.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">style.css</code></td>
+      <td>Main CSS.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">template-src.xml</code></td>
+      <td>Berkas utama template yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Catatan:</strong> Anda dapat membuat direktori dan/atau berkas baru sesuai dengan kebutuhan Anda, disarankan disimpan di dalam <code class="highlighter-rouge">/includes</code>.</p>
 
 <h3 id="include">Include</h3>
 
-<p>Memuat konten atau berkas-berkas yang ada di dalam <code class="highlighter-rouge">includes/</code>:</p>
+<p>Memuat konten atau berkas-berkas yang ada di dalam <code class="highlighter-rouge">/includes</code>:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/path/file)--&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/path/to/file)--&gt;</span></code></pre></figure>
 
-<p>Untuk penggunaan Bake lebih lanjut, silakan baca dokumentasinya di <a href="https://github.com/MathiasPaumgarten/grunt-bake">halaman projek Bake</a>.</p>
+<p>Untuk penggunaan grunt-bake lebih lanjut, silakan baca dokumentasinya di <a href="https://github.com/MathiasPaumgarten/grunt-bake">repo grunt-bake</a>.</p>
 
 <h2 id="code-guide">Code guide</h2>
 
-<p>Untuk penulisan kode HTML dan CSS gunakan pedoman pengkodean <a href="http://codeguide.co">Code Guide by @mdo</a>.</p>
+<p>Untuk penulisan kode HTML dan CSS, gunakan pedoman pengkodean <a href="http://codeguide.co">Code Guide by @mdo</a>.</p>
 
         </div>
       </div>
     </div>
 
-    <footer class="bd-footer text-muted">
+    <footer class="bd-footer text-muted mt-0">
   <div class="container">
     <ul class="bd-footer-links">
       <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
@@ -750,9 +790,8 @@
       <li><a href="/about/history/">About</a></li>
       <li><a href="/about/donation/">Donation</a></li>
     </ul>
-    <p>Dibuat dengan penuh cinta oleh <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Dikelola oleh <a href="https://github.com/orgs/bootsblogger/people">tim utama</a> dengan bantuan para <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">kontributor</a>.</p>
-    <p>Saat ini v1.0.0-alpha.1. Lisensi kode <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, dokumentasi <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-    <p>Halaman dokumentasi ini dibuat menggunakan berkas-berkas dokumentasi Bootstrap, dengan sedikit modifikasi.</p>
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Maintained by the <a href="https://github.com/orgs/bootsblogger/people">core team</a> with the help of <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">our contributors</a>.</p>
+    <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
   </div>
 </footer>
 

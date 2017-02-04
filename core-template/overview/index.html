@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang kekinian.">
+<meta name="description" content="Blogger + Bootstrap + ♥">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -93,15 +93,12 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bd-main-nav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-item nav-link " href="/">Bootsblogger</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="">Templates</a>
@@ -111,6 +108,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
         </li>
       </ul>
     </div>
@@ -688,7 +691,7 @@
 
 <h2 id="page-types">Page types</h2>
 
-<p>Blogger mempunyai 7 tipe halaman, yaitu:</p>
+<p>Template Bootsblogger mempunyai 8 tipe halaman yang diciptakan dengan menggunakan <a href="#conditional-tags">tag kondisional di bawah</a>, yaitu:</p>
 
 <ol>
   <li>Homepage (halaman beranda).</li>
@@ -698,14 +701,19 @@
   <li>Search results page (halaman hasil pencarian).</li>
   <li>Archive page (halaman arsip posting).</li>
   <li>Error page (halaman galat).</li>
+  <li>Default (<code class="highlighter-rouge">https://example.blogspot.com/search</code>).</li>
 </ol>
 
 <h2 id="conditional-tags">Conditional tags</h2>
 
-<p>Berikut adalah tag kondisional <strong>luar biasa</strong> untuk ke tujuh tipe halaman di atas, Anda akan banyak menemukan bentuk kondisional seperti ini pada template dasar Bootsblogger.</p>
+<p>Tag kondisional <strong>luar biasa</strong> untuk menciptakan 8 tipe halaman di atas.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Item/single page --&gt;</span>
-<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;item&amp;quot;'</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Homepage --&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.url == data:blog.homepageUrl'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman beranda.<span class="nt">&lt;/p&gt;</span>
+
+<span class="c">&lt;!-- Item/single page --&gt;</span>
+<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;item&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman posting.<span class="nt">&lt;/p&gt;</span>
 
 <span class="c">&lt;!-- Static page --&gt;</span>
@@ -728,9 +736,9 @@
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;error_page&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman galat.<span class="nt">&lt;/p&gt;</span>
 
-<span class="c">&lt;!-- Homepage --&gt;</span>
+<span class="c">&lt;!-- Default (https://example.blogspot.com/search) --&gt;</span>
 <span class="nt">&lt;b:else/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman beranda.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman dengan URL `https://example.blogspot.com/search`.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
 
@@ -738,7 +746,7 @@
       </div>
     </div>
 
-    <footer class="bd-footer text-muted">
+    <footer class="bd-footer text-muted mt-0">
   <div class="container">
     <ul class="bd-footer-links">
       <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
@@ -748,9 +756,8 @@
       <li><a href="/about/history/">About</a></li>
       <li><a href="/about/donation/">Donation</a></li>
     </ul>
-    <p>Dibuat dengan penuh cinta oleh <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Dikelola oleh <a href="https://github.com/orgs/bootsblogger/people">tim utama</a> dengan bantuan para <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">kontributor</a>.</p>
-    <p>Saat ini v1.0.0-alpha.1. Lisensi kode <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, dokumentasi <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-    <p>Halaman dokumentasi ini dibuat menggunakan berkas-berkas dokumentasi Bootstrap, dengan sedikit modifikasi.</p>
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Maintained by the <a href="https://github.com/orgs/bootsblogger/people">core team</a> with the help of <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">our contributors</a>.</p>
+    <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
   </div>
 </footer>
 

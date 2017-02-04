@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts - cards">
-  <meta name="twitter:description" content="Menampilkan data JSON posting dan halaman statis menggunakan komponen Bootstrap cards.">
+  <meta name="twitter:description" content="Menampilkan data JSON—posting dan halaman statis menggunakan komponen Bootstrap cards.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,12 +24,12 @@
 
   <meta property="og:url" content="/blogger-json-feeds/posts-card/">
   <meta property="og:title" content="Posts - cards">
-  <meta property="og:description" content="Menampilkan data JSON posting dan halaman statis menggunakan komponen Bootstrap cards.">
+  <meta property="og:description" content="Menampilkan data JSON—posting dan halaman statis menggunakan komponen Bootstrap cards.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Bootsblogger adalah sebuah template dasar, dengan fitur-fitur yang luar biasa, untuk menciptakan template Blogger yang kekinian.">
+<meta name="description" content="Blogger + Bootstrap + ♥">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -93,15 +93,12 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bd-main-nav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-item nav-link " href="/">Bootsblogger</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Demo</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="">Templates</a>
@@ -111,6 +108,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
         </li>
       </ul>
     </div>
@@ -123,7 +126,7 @@
         
 <h1>Blogger JSON feeds</h1>
 <p class="lead">
-  Mengambil data JSON dari Blogger Data API dan mengubahnya menjadi markup HTML menggunakan plugin yang tersedia.
+  Mengambil data JSON dari Blogger Data API, dan mengubahnya menjadi markup HTML menggunakan JavaScript.
 </p>
 
 
@@ -674,73 +677,75 @@
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Posts - cards</h1>
-          <p>Menampilkan data JSON posting dan halaman statis menggunakan komponen <a href="https://v4-alpha.getbootstrap.com/components/card/">Bootstrap cards</a>.</p>
+          <p>Menampilkan data JSON—posting dan halaman statis menggunakan komponen <a href="https://v4-alpha.getbootstrap.com/components/card/">Bootstrap cards</a>.</p>
 
 <h2 id="config">Config</h2>
+
+<p>Nama fungsi: <code class="highlighter-rouge">postsCard</code>.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
 <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
   <span class="na">containerID</span><span class="p">:</span> <span class="s1">'id'</span><span class="p">,</span>
 
   <span class="na">content</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">numchars</span><span class="p">:</span> <span class="s1">'full'</span><span class="o">/</span><span class="nx">number</span><span class="o">/</span><span class="mi">0</span> <span class="nx">to</span> <span class="nx">disable</span><span class="p">,</span>
+    <span class="na">numchars</span><span class="p">:</span> <span class="s1">'full'</span><span class="o">|</span><span class="nx">number</span><span class="o">|</span><span class="mi">0</span> <span class="nx">to</span> <span class="nx">disable</span><span class="p">,</span>
     <span class="na">title</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">tag</span><span class="p">:</span> <span class="s1">'h1/h2/h3/h4/h5/h6'</span>
+      <span class="na">tag</span><span class="p">:</span> <span class="s1">'h1|h2|h3|h4|h5|h6'</span>
     <span class="p">},</span>
     <span class="na">more</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
+      <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
       <span class="na">text</span><span class="p">:</span> <span class="s1">'Read more'</span><span class="p">,</span>
       <span class="na">style</span><span class="p">:</span> <span class="s1">'btn btn-primary'</span>
     <span class="p">}</span>
   <span class="p">},</span>
   <span class="na">author</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
-    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header/footer'</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
     <span class="na">before</span><span class="p">:</span> <span class="s1">'Posted by '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">none</span><span class="p">:</span> <span class="s1">'Anonymous'</span><span class="p">,</span>
     <span class="na">avatar</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
+      <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
       <span class="na">size</span><span class="p">:</span> <span class="s1">'24'</span>
     <span class="p">}</span>
   <span class="p">},</span>
   <span class="na">date</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
-    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header/footer'</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
     <span class="na">before</span><span class="p">:</span> <span class="s1">'Posted on '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">monthNames</span><span class="p">:</span> <span class="p">[</span><span class="s1">'January'</span><span class="p">,</span> <span class="s1">'February'</span><span class="p">,</span> <span class="s1">'March'</span><span class="p">,</span> <span class="s1">'April'</span><span class="p">,</span> <span class="s1">'May'</span><span class="p">,</span> <span class="s1">'June'</span><span class="p">,</span> <span class="s1">'July'</span><span class="p">,</span> <span class="s1">'August'</span><span class="p">,</span> <span class="s1">'September'</span><span class="p">,</span> <span class="s1">'October'</span><span class="p">,</span> <span class="s1">'November'</span><span class="p">,</span> <span class="s1">'December'</span><span class="p">]</span>
   <span class="p">},</span>
   <span class="na">numComments</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
-    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header/footer'</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
     <span class="na">before</span><span class="p">:</span> <span class="s1">'Comment total: '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span>
   <span class="p">},</span>
   <span class="na">labels</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
-    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header/footer'</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
     <span class="na">before</span><span class="p">:</span> <span class="s1">'Labels: '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">none</span><span class="p">:</span> <span class="s1">'Unlabelled'</span>
   <span class="p">},</span>
   <span class="na">thumbnail</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
-    <span class="na">placement</span><span class="p">:</span> <span class="s1">'top/bottom'</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'top|bottom'</span><span class="p">,</span>
     <span class="na">size</span><span class="p">:</span> <span class="s1">'512'</span><span class="p">,</span>
-    <span class="na">none</span><span class="p">:</span> <span class="s1">'https://placehold.it/512/eee/777?text=NO+IMAGE+AVAILABLE'</span>
+    <span class="na">none</span><span class="p">:</span> <span class="s1">'https:||placehold.it|512|eee|777?text=NO+IMAGE+AVAILABLE'</span>
   <span class="p">},</span>
   <span class="na">group</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span>
   <span class="p">},</span>
   <span class="na">deck</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span>
   <span class="p">},</span>
   <span class="na">columns</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span>
   <span class="p">},</span>
   <span class="na">grid</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
     <span class="na">column</span><span class="p">:</span> <span class="s1">'col-*-*'</span>
   <span class="p">},</span>
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
@@ -751,13 +756,9 @@
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
-<h2 id="function-name">Function name</h2>
-
-<p>Nama fungsi <code class="highlighter-rouge">postsCard</code>.</p>
+<p><strong>Catatan:</strong> <code class="highlighter-rouge">group</code>, <code class="highlighter-rouge">deck</code>, <code class="highlighter-rouge">columns</code> dan <code class="highlighter-rouge">grid</code> pilih salah satu yang bernilai <code class="highlighter-rouge">true</code> atau semua <code class="highlighter-rouge">false</code>.</p>
 
 <h2 id="example">Example</h2>
-
-<p><code class="highlighter-rouge">group</code>, <code class="highlighter-rouge">deck</code>, <code class="highlighter-rouge">columns</code> dan <code class="highlighter-rouge">grid</code> pilih salah satu yang bernilai <code class="highlighter-rouge">true</code> atau semua <code class="highlighter-rouge">false</code>.</p>
 
 <div class="bd-example" data-example-id="">
 <div class="" id="example-result-container">
@@ -919,7 +920,7 @@ var config = {
       </div>
     </div>
 
-    <footer class="bd-footer text-muted">
+    <footer class="bd-footer text-muted mt-0">
   <div class="container">
     <ul class="bd-footer-links">
       <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
@@ -929,9 +930,8 @@ var config = {
       <li><a href="/about/history/">About</a></li>
       <li><a href="/about/donation/">Donation</a></li>
     </ul>
-    <p>Dibuat dengan penuh cinta oleh <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Dikelola oleh <a href="https://github.com/orgs/bootsblogger/people">tim utama</a> dengan bantuan para <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">kontributor</a>.</p>
-    <p>Saat ini v1.0.0-alpha.1. Lisensi kode <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, dokumentasi <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-    <p>Halaman dokumentasi ini dibuat menggunakan berkas-berkas dokumentasi Bootstrap, dengan sedikit modifikasi.</p>
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a>. Maintained by the <a href="https://github.com/orgs/bootsblogger/people">core team</a> with the help of <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">our contributors</a>.</p>
+    <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
   </div>
 </footer>
 
