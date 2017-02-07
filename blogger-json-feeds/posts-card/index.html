@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts - cards">
-  <meta name="twitter:description" content="Menampilkan data JSON—posting dan halaman statis menggunakan komponen Bootstrap cards.">
+  <meta name="twitter:description" content="Menampilkan data JSON posting dan halaman statis menggunakan komponen Bootstrap cards.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,7 +24,7 @@
 
   <meta property="og:url" content="/blogger-json-feeds/posts-card/">
   <meta property="og:title" content="Posts - cards">
-  <meta property="og:description" content="Menampilkan data JSON—posting dan halaman statis menggunakan komponen Bootstrap cards.">
+  <meta property="og:description" content="Menampilkan data JSON posting dan halaman statis menggunakan komponen Bootstrap cards.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
@@ -677,7 +677,7 @@
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Posts - cards</h1>
-          <p>Menampilkan data JSON—posting dan halaman statis menggunakan komponen <a href="https://v4-alpha.getbootstrap.com/components/card/">Bootstrap cards</a>.</p>
+          <p>Menampilkan data JSON posting dan halaman statis menggunakan komponen <a href="https://v4-alpha.getbootstrap.com/components/card/">Bootstrap cards</a>.</p>
 
 <h2 id="config">Config</h2>
 
@@ -733,7 +733,7 @@
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
     <span class="na">placement</span><span class="p">:</span> <span class="s1">'top|bottom'</span><span class="p">,</span>
     <span class="na">size</span><span class="p">:</span> <span class="s1">'512'</span><span class="p">,</span>
-    <span class="na">none</span><span class="p">:</span> <span class="s1">'https:||placehold.it|512|eee|777?text=NO+IMAGE+AVAILABLE'</span>
+    <span class="na">none</span><span class="p">:</span> <span class="s1">'https://placehold.it/512/eee/777?text=NO+IMAGE+AVAILABLE'</span>
   <span class="p">},</span>
   <span class="na">group</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span>
@@ -791,11 +791,11 @@ var config = {
     }
   },
   date: {
-    active: false,
-    placement: '',
+    active: true,
+    placement: 'footer',
     before: '',
     after: '',
-    monthNames: []
+    monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   },
   numComments: {
     active: false,
@@ -868,11 +868,11 @@ var config = {
     <span class="p">}</span>
   <span class="p">},</span>
   <span class="na">date</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">active</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="na">placement</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">placement</span><span class="p">:</span> <span class="s1">'footer'</span><span class="p">,</span>
     <span class="na">before</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-    <span class="na">monthNames</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="na">monthNames</span><span class="p">:</span> <span class="p">[</span><span class="s1">'January'</span><span class="p">,</span> <span class="s1">'February'</span><span class="p">,</span> <span class="s1">'March'</span><span class="p">,</span> <span class="s1">'April'</span><span class="p">,</span> <span class="s1">'May'</span><span class="p">,</span> <span class="s1">'June'</span><span class="p">,</span> <span class="s1">'July'</span><span class="p">,</span> <span class="s1">'August'</span><span class="p">,</span> <span class="s1">'September'</span><span class="p">,</span> <span class="s1">'October'</span><span class="p">,</span> <span class="s1">'November'</span><span class="p">,</span> <span class="s1">'December'</span><span class="p">]</span>
   <span class="p">},</span>
   <span class="na">numComments</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>

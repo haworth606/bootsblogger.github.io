@@ -687,7 +687,7 @@
   <li><a href="https://nodejs.org/download">Unduh dan pasang Node</a>, yang digunakan untuk manajemen dependensi.</li>
   <li>Pasang <em>Grunt command line tools</em>, <code class="highlighter-rouge">grunt-cli</code>, dengan menjalankan perintah <code class="highlighter-rouge">npm install -g grunt-cli</code> pada <em>command line</em>.</li>
   <li>Dari <em>command line</em>, pindah ke direktori <code class="highlighter-rouge">/bootsblogger</code>, dan jalankan perintah <code class="highlighter-rouge">npm install</code>, untuk instalasi dependensi yang sudah terdaftar di dalam berkas <code class="highlighter-rouge">package.json</code>.</li>
-  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Pasang Ruby</a>, kemudian pasang <a href="https://bundler.io/">Bundler</a> dengan perintah <code class="highlighter-rouge">gem install bundler</code>, dan terakhir jalankan perintah <code class="highlighter-rouge">bundle install</code>, perintah ini akan memasang semua dependensi Ruby, seperti Jekyll dan <em>plugins</em>.
+  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Pasang Ruby</a>, kemudian pasang <a href="https://bundler.io/">Bundler</a> dengan perintah <code class="highlighter-rouge">gem install bundler</code>, dan terakhir jalankan perintah <code class="highlighter-rouge">bundle install</code>. Ini akan memasang semua dependensi Ruby, seperti Jekyll dan <em>plugins</em>.
     <ul>
       <li><strong>Pengguna Windows:</strong> Baca <a href="http://jekyll-windows.juthilo.com/">panduan tidak resmi</a> agar Jekyll berjalan lancar tanpa masalah.</li>
     </ul>
@@ -720,7 +720,7 @@
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt docs</code></td>
-      <td>Membangun dan menguji CSS, JavaScript, dan aset lainnya yang digunakan dalam menjalankan dokumentasi secara lokal, dengan <code class="highlighter-rouge">jekyll serve</code>.</td>
+      <td>Membangun dan menguji CSS, JavaScript, dan aset lainnya yang digunakan dalam menjalankan dokumentasi secara lokal via <code class="highlighter-rouge">jekyll serve</code>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt watch</code></td>
@@ -734,7 +734,7 @@
 <p>Menjalankan dokumentasi secara lokal membutuhkan Jekyll. Berikut adalah cara menjalankannya:</p>
 
 <ol>
-  <li>Kembali ke <a href="#tooling-setup">tooling setup</a> di atas untuk instalasi Jekyll dan dependensi Ruby lainnya, dengan <code class="highlighter-rouge">bundle install</code>.</li>
+  <li>Kembali ke <a href="#tooling-setup">tooling setup</a> di atas untuk instalasi Jekyll dan dependensi Ruby lainnya dengan <code class="highlighter-rouge">bundle install</code>.</li>
   <li>Dari direktori <code class="highlighter-rouge">/bootsblogger</code>, jalankan perintah <code class="highlighter-rouge">bundle exec jekyll serve</code>.</li>
   <li>Buka <a href="http://localhost:9001">http://localhost:9001</a> di <em>browser</em> Anda, selesai.</li>
 </ol>
