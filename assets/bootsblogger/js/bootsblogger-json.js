@@ -1,6 +1,6 @@
 /*!
  * Bootsblogger v1.0.0-alpha.1 (https://bootsblogger.github.io)
- * Copyright 2016-2017 Igoy Nawamreh (@igoynawamreh)
+ * Copyright 2017 Igoy Nawamreh
  * Licensed under MIT (https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE)
  */
 
@@ -124,84 +124,6 @@ function postsDefault(json) {
     //      Edit URL: postEditURL
     //         Title: postTitle
     //       Content: postContent
-
-    /* Config
-    var config = {
-      containerID: 'id',
-
-      clickable: {
-        active: true/false
-      },
-      content: {
-        numchars: 'full'/number/0 to disable,
-        title: {
-          tag: 'h1/h2/h3/h4/h5/h6',
-          style: 'post-title-link'
-        },
-        more: {
-          active: true/false,
-          text: 'Read more',
-          style: 'btn btn-primary'
-        }
-      },
-      author: {
-        active: true/false,
-        placement: 'meta/header/footer',
-        before: 'Posted by ',
-        after: '',
-        none: 'Anonymous',
-        avatar: {
-          active: true/false,
-          size: '24'
-        }
-      },
-      date: {
-        active: true/false,
-        placement: 'meta/header/footer',
-        before: 'Posted on ',
-        after: '',
-        monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-      },
-      numComments: {
-        active: true/false,
-        placement: 'meta/header/footer',
-        before: 'Comment total: ',
-        after: ''
-      },
-      labels: {
-        active: true/false,
-        placement: 'meta/header/footer',
-        before: 'Labels: ',
-        after: '',
-        none: 'Unlabelled'
-      },
-      thumbnail: {
-        active: true/false,
-        placement: 'image-only/top/right/bottom/left/overlay',
-        size: '512',
-        none: 'https://placehold.it/512/eee/777?text=NO+IMAGE+AVAILABLE',
-        cover: {
-          active: true/false,
-          minheight: '150'
-        }
-      },
-      group: {
-        active: true/false
-      },
-      columns: {
-        active: true/false
-      },
-      grid: {
-        active: true/false,
-        column: 'col-*-*'
-      },
-      classes: {
-        post: 'Add class to .post',
-        image: 'Add class to .post-img-*',
-        content: 'Add class to .post-content'
-      }
-    }
-    */
 
 
     // Post header
@@ -374,7 +296,7 @@ function postsDefault(json) {
 
     // Left image
     if (config.thumbnail.active === true && config.thumbnail.placement === 'left') {
-      html += '<div class="post-horizontal">'
+      html += '<div class="' + config.classes.horizontalThumbnail + '">'
       if (config.thumbnail.cover.active === true) {
         html += '<div class="post-img-left post-img-cover ' + config.classes.image + '" style="min-height: ' + config.thumbnail.cover.minheight + 'px; background-image: url(' + postThumbnailURL + ');"></div>'
       } else {
@@ -388,7 +310,7 @@ function postsDefault(json) {
 
     // Right image
     if (config.thumbnail.active === true && config.thumbnail.placement === 'right') {
-      html += '<div class="post-horizontal">'
+      html += '<div class="' + config.classes.horizontalThumbnail + '">'
       html += content
       if (config.thumbnail.cover.active === true) {
         html += '<div class="post-img-right post-img-cover ' + config.classes.image + '" style="min-height: ' + config.thumbnail.cover.minheight + 'px; background-image: url(' + postThumbnailURL + ');"></div>'
@@ -477,7 +399,6 @@ function postsCard(json) {
 
   // Card decks' start
   if (config.deck.active === true) {
-    html += '<div class="card-deck-wrapper">'
     html += '<div class="card-deck">'
   }
 
@@ -569,79 +490,6 @@ function postsCard(json) {
     //      Edit URL: postEditURL
     //         Title: postTitle
     //       Content: postContent
-
-    /* Config
-    var config = {
-      containerID: 'id',
-
-      content: {
-        numchars: 'full'/number/0 to disable,
-        title: {
-          tag: 'h1/h2/h3/h4/h5/h6'
-        },
-        more: {
-          active: true/false,
-          text: 'Read more',
-          style: 'btn btn-primary'
-        }
-      },
-      author: {
-        active: true/false,
-        placement: 'header/footer',
-        before: 'Posted by ',
-        after: '',
-        none: 'Anonymous',
-        avatar: {
-          active: true/false,
-          size: '24'
-        }
-      },
-      date: {
-        active: true/false,
-        placement: 'header/footer',
-        before: 'Posted on ',
-        after: '',
-        monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-      },
-      numComments: {
-        active: true/false,
-        placement: 'header/footer',
-        before: 'Comment total: ',
-        after: ''
-      },
-      labels: {
-        active: true/false,
-        placement: 'header/footer',
-        before: 'Labels: ',
-        after: '',
-        none: 'Unlabelled'
-      },
-      thumbnail: {
-        active: true/false,
-        placement: 'top/bottom',
-        size: '512',
-        none: 'https://placehold.it/512/eee/777?text=NO+IMAGE+AVAILABLE'
-      },
-      group: {
-        active: true/false
-      },
-      deck: {
-        active: true/false
-      },
-      columns: {
-        active: true/false
-      },
-      grid: {
-        active: true/false,
-        column: 'col-*-*'
-      },
-      classes: {
-        card: 'Add class to .card',
-        image: 'Add class to .card-img-*',
-        content: 'Add class to .card-block'
-      }
-    }
-    */
 
 
     // Card header
@@ -785,7 +633,6 @@ function postsCard(json) {
   // Card decks' end
   if (config.deck.active === true) {
     html += '</div>'
-    html += '</div>'
   }
 
   // Card groups' end
@@ -810,19 +657,6 @@ function labelsLists(json) {
   }
   var category = feed.category
   var scriptTag = 'script'
-
-  /* Config
-  var config = {
-    postsPerPage: 10,
-    badge: true/false,
-    classes: {
-      ul: 'Add class to ul',
-      li: 'Add class to li',
-      a: 'Add class to a',
-      badge: 'badge badge-default badge-pill'
-    }
-  }
-  */
 
   document.write('<ul class="' + config.classes.ul + '">')
   if (config.badge === true) {
@@ -851,18 +685,6 @@ function labelsCustom(json) {
   var category = feed.category
   var scriptTag = 'script'
 
-  /* Config
-  var config = {
-    postsPerPage: 10,
-    badge: true/false,
-    classes: {
-      base: 'Base class',
-      item: 'Item class',
-      badge: 'badge badge-default badge-pill'
-    }
-  }
-  */
-
   document.write('<div class="' + config.classes.base + '">')
   if (config.badge === true) {
     for (var i = 0, ien = category.length; i < ien; ++i) {
@@ -889,17 +711,6 @@ function labelsSelect(json) {
   }
   var category = feed.category
   var scriptTag = 'script'
-
-  /* Config
-  var config = {
-    postsPerPage: 10,
-    badge: true/false,
-    text: '-- Select category --',
-    classes: {
-      select: 'custom-select'
-    }
-  }
-  */
 
   document.write('<select class="' + config.classes.select + '" onchange="if (this.value) window.location.href=this.value">')
   document.write('<option value="" selected>' + config.text + '</option>')

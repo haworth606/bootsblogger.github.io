@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Blogger + Bootstrap + ♥">
+<meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -679,19 +679,19 @@
           <h1 class="bd-title" id="content">Contents</h1>
           <p>Bootsblogger tersedia dalam dua pilihan, yaitu terkompilasi atau kode sumber.</p>
 
-<h2 id="bootsblogger-starter-template">Bootsblogger starter template</h2>
+<h2 id="precompiled-bootsblogger">Precompiled Bootsblogger</h2>
 
-<p>Hanya berisi Bootsblogger starter template.</p>
+<p>Hanya berisi template terkompilasi.</p>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
 └── dist/
     └── template.xml</code></pre></figure>
 
-<p>Pilihan ini tersedia untuk Anda yang ingin membangun template dengan hanya menggunakan template editor Blogger, di dalam berkas ini sudah terdapat CSS dan JavaScript Bootstrap dan Bootsblogger, dan juga <a href="https://fontawesome.io">Font Awesome</a>. Jika Anda mengambil pilihan ini, Anda tidak akan dapat mengubah CSS dan JavaScript Bootstrap maupun Bootsblogger, karena CSS dan JavaScript tersebut hasil kompilasi dan kompresi dari kode sumber. Walaupun demikian, Anda tetap dapat mengubahsuaikan komponen Bootstrap maupun Bootsblogger dengan cara membuat <em>custom styles</em> pada bagian main CSS.</p>
+<p>Pilihan ini tersedia untuk Anda yang ingin membangun template dengan hanya menggunakan template editor Blogger, di dalam berkas ini sudah terdapat CSS dan JavaScript Bootstrap dan Bootsblogger, dan juga <a href="https://fontawesome.io">Font Awesome</a>. Jika Anda mengambil pilihan ini, Anda tidak akan dapat mengubah CSS dan JavaScript Bootstrap maupun Bootsblogger, karena CSS dan JavaScript tersebut hasil kompilasi dan kompresi dari kode sumber. Walaupun demikian, Anda tetap dapat mengubahsuaikan komponen Bootstrap maupun Bootsblogger dengan cara membuat <em>custom styles</em> pada bagian <em>main CSS</em>.</p>
 
 <h2 id="bootsblogger-source-code">Bootsblogger source code</h2>
 
-<p>Kode sumber Bootsblogger berisi CSS, JavaScript, dan template yang terkompilasi, beserta kode sumber Sass, JavaScript, template, dan berkas-berkas dokumentasi. Untuk lebih jelas lihat struktur di bawah ini:</p>
+<p>CSS, JavaScript, dan template terkompilasi, beserta kode sumber Sass, JavaScript, template, dan berkas dokumentasi. Untuk lebih jelas lihat struktur di bawah ini:</p>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
 ├── dist/
@@ -714,7 +714,7 @@
 
 <p>Berkas <code class="highlighter-rouge">scss/_custom.scss</code> digunakan untuk <a href="/getting-started/options/">mengubahsuaikan variabel Sass</a> Bootstrap dan Bootsblogger.</p>
 
-<p>Berkas <code class="highlighter-rouge">template-src/template-src.xml</code> adalah berkas utama template, yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>, ini menggunakan <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong>, untuk mengurai template menjadi beberapa bagian, sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur-fitur grunt-bake lainnya, seperti dengan adanya berkas konfigurasi template (<code class="highlighter-rouge">config.json</code>).</p>
+<p>Di dalam direktori <code class="highlighter-rouge">template-src/</code> adalah kode sumber untuk template, yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>, ini menggunakan <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong>, untuk mengurai template menjadi beberapa bagian, sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur grunt-bake lainnya.</p>
 
         </div>
       </div>

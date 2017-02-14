@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Blogger + Bootstrap + ♥">
+<meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -698,7 +698,7 @@
 
 <h2 id="working-with-blogger-template-editor">Working with Blogger template editor</h2>
 
-<p>Pasang Bootsblogger starter template di blog Anda (<code class="highlighter-rouge">dist/template.xml</code>). Di bawah ini, ada beberapa tips yang akan memudahkan Anda.</p>
+<p>Pasang <em>Bootsblogger starter template</em> di blog Anda (<code class="highlighter-rouge">dist/template.xml</code>). Di bawah ini ada beberapa tips yang akan memudahkan Anda.</p>
 
 <h3 id="code-folding">Code folding</h3>
 
@@ -710,7 +710,7 @@
 
 <h2 id="working-with-template-source-files">Working with template source files</h2>
 
-<p>Untuk dapat membangun template di dalam kode sumber, Anda harus memahami dasar-dasar <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong>, karena Bootsblogger menggunakan grunt-bake untuk mempermudah proses pembuatan dan pengeditan template.</p>
+<p>Untuk dapat membangun template di dalam kode sumber, Anda harus memahami dasar-dasar <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong>, Bootsblogger menggunakannya untuk mempermudah proses pembuatan dan pengeditan template.</p>
 
 <h3 id="directory-structure">Directory structure</h3>
 
@@ -729,23 +729,23 @@
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">includes</code></td>
-      <td>Wadah untuk konten template.</td>
+      <td>Wadah untuk berkas template terpisah.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">includes/assets</code></td>
-      <td>Aset template disimpan di sini.</td>
+      <td>Aset template.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">includes/blog-posts</code></td>
-      <td>Bagian-bagian widget blog posting disimpan di sini.</td>
+      <td>Bagian-bagian widget blog posting.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">includes/foot-content</code></td>
-      <td>Konten footer disimpan di sini.</td>
+      <td>Bagian-bagian <em>footer</em>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">includes/head-content</code></td>
-      <td>Konten yang ada di dalam <code class="highlighter-rouge">&lt;head&gt;</code> disimpan di sini.</td>
+      <td>Bagian-bagian yang ada di dalam <code class="highlighter-rouge">&lt;head&gt;</code>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">config.json</code></td>
@@ -753,7 +753,7 @@
     </tr>
     <tr>
       <td><code class="highlighter-rouge">style.css</code></td>
-      <td>Main CSS.</td>
+      <td><em>Main CSS</em>.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">template-src.xml</code></td>
@@ -766,15 +766,23 @@
 
 <h3 id="include">Include</h3>
 
-<p>Memuat konten atau berkas-berkas yang ada di dalam <code class="highlighter-rouge">/includes</code>:</p>
+<p>Menyertakan berkas template terpisah:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/path/to/file)--&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /path/to/file)--&gt;</span></code></pre></figure>
 
-<p>Untuk penggunaan grunt-bake lebih lanjut, silakan baca dokumentasinya di <a href="https://github.com/MathiasPaumgarten/grunt-bake">repo grunt-bake</a>.</p>
+<p>Contoh menyertakan berkas <code class="highlighter-rouge">/includes/blog-posts.xml</code>:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/blog-posts.xml)--&gt;</span></code></pre></figure>
+
+<p>Contoh menyertakan berkas <code class="highlighter-rouge">style.css</code>:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake style.css)--&gt;</span></code></pre></figure>
+
+<p>Pelajari lebih lanjut tentang penggunaan grunt-bake dengan membaca <a href="https://github.com/MathiasPaumgarten/grunt-bake">dokumentasinya</a>.</p>
 
 <h2 id="code-guide">Code guide</h2>
 
-<p>Untuk penulisan kode HTML dan CSS, gunakan pedoman pengkodean <a href="http://codeguide.co">Code Guide by @mdo</a>.</p>
+<p>Semua HTML dan CSS harus sesuai dengan panduan kode (<a href="http://codeguide.co">Code Guide by @mdo</a>).</p>
 
         </div>
       </div>

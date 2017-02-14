@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Blog posts">
-  <meta name="twitter:description" content="Widget blog posts dirancang untuk memudahkan dalam mengelola data posting, seperti untuk menampilkan tanggal, penulis, tentang penulis, jumlah komentar, dan masih banyak lagi. Dan juga dirancang untuk membuat tampilan posting yang unik/berbeda-beda di setiap tipe halaman.">
+  <meta name="twitter:description" content="Widget blog posting dirancang untuk memudahkan dalam mengelola data posting, seperti untuk menampilkan tanggal, penulis, tentang penulis, jumlah komentar, dan lainnya. Dan juga dirancang untuk dapat membuat tampilan posting yang unik/berbeda-beda di setiap tipe halaman.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,12 +24,12 @@
 
   <meta property="og:url" content="/core-template/blog-posts/">
   <meta property="og:title" content="Blog posts">
-  <meta property="og:description" content="Widget blog posts dirancang untuk memudahkan dalam mengelola data posting, seperti untuk menampilkan tanggal, penulis, tentang penulis, jumlah komentar, dan masih banyak lagi. Dan juga dirancang untuk membuat tampilan posting yang unik/berbeda-beda di setiap tipe halaman.">
+  <meta property="og:description" content="Widget blog posting dirancang untuk memudahkan dalam mengelola data posting, seperti untuk menampilkan tanggal, penulis, tentang penulis, jumlah komentar, dan lainnya. Dan juga dirancang untuk dapat membuat tampilan posting yang unik/berbeda-beda di setiap tipe halaman.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Blogger + Bootstrap + ♥">
+<meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -677,7 +677,7 @@
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Blog posts</h1>
-          <p>Widget <em>blog posts</em> dirancang untuk memudahkan dalam mengelola data posting, seperti untuk menampilkan tanggal, penulis, tentang penulis, jumlah komentar, dan masih banyak lagi. Dan juga dirancang untuk membuat tampilan posting yang unik/berbeda-beda di setiap tipe halaman.</p>
+          <p>Widget blog posting dirancang untuk memudahkan dalam mengelola data posting, seperti untuk menampilkan tanggal, penulis, tentang penulis, jumlah komentar, dan lainnya. Dan juga dirancang untuk dapat membuat tampilan posting yang unik/berbeda-beda di setiap tipe halaman.</p>
 
 <h2 id="contents">Contents</h2>
 
@@ -707,8 +707,8 @@
 
 <ul>
   <li>Selalu tempatkan kode posting di dalam <code class="highlighter-rouge">b:loop</code>.</li>
-  <li>Selalu gunakan tag kondisional, seperti <code class="highlighter-rouge">b:if cond='data:post.title'</code> dan lainya.</li>
-  <li>Selalu gunakan <a href="#includes">includes</a> yang tersedia.</li>
+  <li>Selalu gunakan tag kondisional, seperti <code class="highlighter-rouge">b:if cond='data:post.title'</code> dan lainnya.</li>
+  <li>Selalu gunakan <a href="#includes"><em>includes</em> (<code class="highlighter-rouge">b:include</code>)</a> yang tersedia.</li>
   <li>Gunakan <a href="https://schema.org">Schema</a>.</li>
 </ul>
 
@@ -729,7 +729,7 @@
 
 <h2 id="data-tags">Data tags</h2>
 
-<p>Di bawah ini adalah tag data Blogger yang sering digunakan. Untuk tag data lainnya Anda dapat menggunakan <a href="#includes">includes</a>.</p>
+<p>Di bawah ini adalah tag data Blogger yang sering digunakan. Untuk tag data lainnya Anda dapat menggunakan <a href="#includes"><em>includes</em> (<code class="highlighter-rouge">b:include</code>)</a>.</p>
 
 <table>
   <thead>
@@ -764,7 +764,7 @@
 
 <h2 id="unique-posts">Unique posts</h2>
 
-<p>Tampilan posting yang unik/berbeda-beda di setiap tipe halaman. Untuk membuatnya sangat mudah, cukup tempatkan kode posting yang berbeda pada masing-masing bagian berikut:</p>
+<p>Tampilan posting yang unik/berbeda-beda di setiap tipe halaman. Untuk membuat tampilan posting berbeda-beda di setiap tipe halaman, cukup tempatkan kode posting yang berbeda pada masing-masing bagian berikut:</p>
 
 <h4 id="homepage">Homepage</h4>
 
@@ -774,7 +774,7 @@
 
 <h4 id="itemsingle-page">Item/single page</h4>
 
-<p>Tampilan posting untuk halaman posting (item).</p>
+<p>Tampilan posting untuk halaman posting (<em>item</em>).</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post-item'</span> <span class="na">var=</span><span class="s">'post'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
@@ -810,13 +810,21 @@
 
 <h2 id="includes">Includes</h2>
 
-<p><a href="https://support.google.com/blogger/answer/46995?hl=en&amp;ref_topic=6321969">Includes</a> sangat berguna ketika kita ingin menggunakan kode yang sama, tanpa harus menulis ulang kode tersebut, cukup panggil bagian yang sudah didefinisikan menggunakan <code class="highlighter-rouge">b:includable</code> dengan:</p>
+<p><a href="https://support.google.com/blogger/answer/46995?hl=en&amp;ref_topic=6321969"><em>Includes</em> (<code class="highlighter-rouge">b:include</code>)</a> sangat berguna untuk membuat bagian-bagian terpisah di dalam widget, yang dapat digunakan di bagian-bagian terpisah lainnya. Contoh, ketika Anda banyak menggunakan potongan kode yang sama, Anda tidak perlu menulis ulang kode tersebut, cukup menyertakan bagian terpisah yang sudah didefinisikan.</p>
+
+<p>Mendefinisikan bagian terpisah:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'includable-id'</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<p>Menyertakan bagian terpisah yang sudah didefinisikan:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'includable-id'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<p><em>Includes</em> di bawah ini adalah untuk memudahkan dalam menampilkan data dan informasi posting, seperti penulis, tanggal, jumlah komentar, label, dan lainnya. Nama <em>includes</em> selalu dimulai dengan <code class="highlighter-rouge">include-*</code>.</p>
+<p>Bagian terpisah di dalam widget blog posting ini adalah untuk memudahkan dalam menampilkan data dan informasi posting, seperti tanggal, penulis, tentang penulis, jumlah komentar, dan lainnya. Pendefinisian bagian terpisah di dalam widget blog posting selalu dimulai dengan <code class="highlighter-rouge">include-*</code>.</p>
 
-<p>Untuk <strong>#1</strong> sampai dengan <strong>#12</strong> harus menggunakan tag kondisional, karena ini berhubungan dengan opsi posting, <a href="javascript:;" data-toggle="modal" data-target=".image-post-options">lihat gambar</a>. Untuk mengetahui bagian opsinya, samakan nomor pada tabel di bawah dengan nomor pada gambar.</p>
+<p>Untuk menyertakan bagian terpisah <strong>#1</strong> sampai <strong>#12</strong> harus menggunakan tag kondisional, karena ini berhubungan dengan opsi posting, <a href="javascript:;" data-toggle="modal" data-target=".image-post-options">lihat gambar</a>. Untuk mengetahui bagian opsinya, samakan nomor pada tabel di bawah dengan nomor pada gambar.</p>
 
 <table class="table table-bordered table-responsive table-includes">
   <tbody>
@@ -829,11 +837,11 @@
       <td>None</td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>None</td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Gunakan kode di bawah ini --&gt;</span>
@@ -857,7 +865,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
@@ -867,7 +875,7 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -884,7 +892,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
@@ -894,7 +902,7 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -911,7 +919,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
@@ -921,7 +929,7 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -938,7 +946,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.showBacklinks'</span><span class="nt">&gt;</span>
@@ -948,7 +956,7 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>Ini adalah pengganti <em>backlinks</em>.</td>
     </tr>
   </tbody>
@@ -965,7 +973,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
@@ -975,7 +983,7 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -992,7 +1000,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showReactions'</span><span class="nt">&gt;</span>
@@ -1002,7 +1010,7 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -1019,7 +1027,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.editUrl'</span><span class="nt">&gt;</span>
@@ -1029,7 +1037,7 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -1046,7 +1054,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.emailPostUrl'</span><span class="nt">&gt;</span>
@@ -1056,7 +1064,7 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -1073,7 +1081,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.sharePostUrl'</span><span class="nt">&gt;</span>
@@ -1083,7 +1091,7 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -1100,7 +1108,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showLocation'</span><span class="nt">&gt;</span>
@@ -1110,7 +1118,7 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -1118,7 +1126,7 @@
   <tbody>
     <tr class="bg-faded">
       <th class="text-nowrap text-right" scope="row">#12</th>
-      <td><strong>Tentang penulis</strong> <br />Untuk menambahkan kolom tentang penulis.</td>
+      <td><strong>Tentang penulis</strong> <br />Untuk menampilkan kolom tentang penulis.</td>
     </tr>
     <tr class="bg-faded">
       <th class="text-nowrap text-right" scope="row">Includable</th>
@@ -1127,7 +1135,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.authorAboutMe'</span><span class="nt">&gt;</span>
@@ -1137,7 +1145,7 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>None</td>
     </tr>
   </tbody>
@@ -1154,7 +1162,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-thumbnail'</span><span class="nt">/&gt;</span></code></pre></figure>
@@ -1162,8 +1170,8 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
-      <td>Akan mengambil gambar pertama. Jika gambar tidak tersedia, akan menampilkan gambar keterangan bahwa gambar tidak tersedia, lihat di bagian <em>includable</em>.</td>
+      <th class="text-nowrap text-right" scope="row">Note</th>
+      <td>Akan mengambil gambar pertama. Jika gambar tidak tersedia, akan menampilkan gambar keterangan bahwa gambar tidak tersedia.</td>
     </tr>
   </tbody>
 
@@ -1179,7 +1187,7 @@
 </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;b:include</span> <span class="na">name=</span><span class="s">'include-summary'</span><span class="nt">/&gt;&lt;/p&gt;</span></code></pre></figure>
@@ -1187,15 +1195,15 @@
       </td>
     </tr>
     <tr class="bg-faded">
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
-      <td>Alternatif untuk membuat ringkasan posting menggunakan JavaScript. Kode ini tetap menampilkan posting sesuai aslinya, hanya saja dipotong menggunakan JavaScript. Panjang ringkasan posting dapat berbeda-beda di setiap tipe halaman, atur dengan cara mengubah nilai variabel <code>summary</code>, lihat di bagian <em>includable</em>.</td>
+      <th class="text-nowrap text-right" scope="row">Note</th>
+      <td>Alternatif untuk membuat ringkasan posting menggunakan JavaScript. Posting tetap dimuat sesuai aslinya, hanya saja dipotong menggunakan JavaScript. Panjang ringkasan posting dapat berbeda-beda di setiap tipe halaman, atur dengan cara mengubah nilai variabel <code>summary</code>.</td>
     </tr>
   </tbody>
 
   <tbody>
     <tr>
       <th class="text-nowrap text-right" scope="row">#15</th>
-      <td><strong>Breadcrumb</strong> <br />Untuk menambahkan breadcrumb.</td>
+      <td><strong>Breadcrumb</strong> <br />Untuk menambahkan <em>breadcrumb</em>.</td>
     </tr>
     <tr>
       <th class="text-nowrap text-right" scope="row">Includable</th>
@@ -1204,7 +1212,7 @@
 </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Penggunaan</th>
+      <th class="text-nowrap text-right" scope="row">Usage</th>
       <td>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-breadcrumb'</span><span class="nt">/&gt;</span></code></pre></figure>
@@ -1212,10 +1220,10 @@
       </td>
     </tr>
     <tr>
-      <th class="text-nowrap text-right" scope="row">Catatan</th>
+      <th class="text-nowrap text-right" scope="row">Note</th>
       <td>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Gunakan di dalam includable main --&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Gunakan di dalam bagian `main` --&gt;</span>
 <span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main'</span> <span class="na">var=</span><span class="s">'top'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
       </td>
@@ -1225,12 +1233,12 @@
 
 <h3 id="conditional-example">Conditional example</h3>
 
-<p>Perhatikan ketika menggunakan <em>includes</em> yang berhubungan dengan <a href="javascript:;" data-toggle="modal" data-target=".image-post-options">opsi posting</a>.</p>
+<p>Perhatikan ketika menyertakan bagian terpisah yang berhubungan dengan <a href="javascript:;" data-toggle="modal" data-target=".image-post-options">opsi posting</a>.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- ========== Contoh 1 ========== --&gt;</span>
 
 <span class="c">&lt;!-- Salah --&gt;</span>
-<span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan tetap ada ketika opsi penulis tidak dicentang --&gt;</span>
+<span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan tetap ada ketika opsi penulis tidak dicentang. --&gt;</span>
   <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;</span>
       <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
@@ -1240,7 +1248,7 @@
 
 <span class="c">&lt;!-- Benar --&gt;</span>
 <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan menghilang ketika opsi penulis tidak dicentang --&gt;</span>
+  <span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan menghilang ketika opsi penulis tidak dicentang. --&gt;</span>
     <span class="nt">&lt;li&gt;</span>
       <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
@@ -1274,7 +1282,7 @@
 <span class="c">&lt;!-- ========== Contoh 3 ========== --&gt;</span>
 
 <span class="c">&lt;!-- Salah --&gt;</span>
-<span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan tetap ada ketika opsi penulis dan tanggal tidak dicentang --&gt;</span>
+<span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan tetap ada ketika opsi penulis dan tanggal tidak dicentang. --&gt;</span>
   <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;</span>
       <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
@@ -1290,7 +1298,7 @@
 
 <span class="c">&lt;!-- Benar (gunakan operator logika `or`) --&gt;</span>
 <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor or data:top.showTimestamp'</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan menghilang ketika opsi penulis dan tanggal tidak dicentang --&gt;</span>
+  <span class="nt">&lt;ul&gt;</span><span class="c">&lt;!-- `ul` akan menghilang ketika opsi penulis dan tanggal tidak dicentang. --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;li&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>

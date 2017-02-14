@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Blogger + Bootstrap + ♥">
+<meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -679,18 +679,13 @@
           <h1 class="bd-title" id="content">Sizing</h1>
           <p>Kelas-kelas untuk mengatur lebar suatu element, dengan dukungan responsif.</p>
 
-<h2 id="options">Options</h2>
+<h2 id="notation">Notation</h2>
 
-<p><code class="highlighter-rouge">.w{none, -sm, -md, -lg, -xl}-{25, 50, 75, 100}</code></p>
+<p>Format kelasnya adalah <code class="highlighter-rouge">.w-{width}</code> untuk <code class="highlighter-rouge">xs</code> dan <code class="highlighter-rouge">.w-{breakpoint}-{width}</code> untuk <code class="highlighter-rouge">sm</code>, <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, dan <code class="highlighter-rouge">xl</code>.</p>
+
+<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">width</span><span class="p">}</span></code>:</p>
 
 <ul>
-  <li>none: akan bekerja pada <em>extra small devices</em> (&lt;576px).</li>
-  <li>sm: akan bekerja pada <em>small devices</em> (≥576px).</li>
-  <li>md: akan bekerja pada <em>medium devices</em> (≥768px).</li>
-  <li>lg: akan bekerja pada <em>large devices</em> (≥992px).</li>
-  <li>
-    <p>xl: akan bekerja pada <em>extra large devices</em> (≥1200px).</p>
-  </li>
   <li>25 = <code class="highlighter-rouge">width: 25%;</code></li>
   <li>50 = <code class="highlighter-rouge">width: 50%;</code></li>
   <li>75 = <code class="highlighter-rouge">width: 75%;</code></li>
@@ -704,7 +699,7 @@
 <p>Ubah ukuran layar <em>browser</em> Anda untuk melihat perubahannya.</p>
 
 <div class="bd-example bg-inverse">
-  <div class="bg-faded text-gray p-1 mb-1 w-25 w-sm-50 w-md-75 w-lg-100">
+  <div class="bg-faded text-gray p-3 w-25 w-sm-50 w-md-75 w-lg-100">
     <div class="hidden-md-down hidden-xl-up"><code>.w-lg-100 (100%)</code></div>
     <div class="hidden-sm-down hidden-lg-up"><code>.w-md-75 (75%)</code></div>
     <div class="hidden-xs-down hidden-md-up"><code>.w-sm-50 (50%)</code></div>

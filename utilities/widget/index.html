@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Blogger + Bootstrap + ♥">
+<meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -693,14 +693,13 @@
   <li><a href="#grid" id="markdown-toc-grid">Grid</a>    <ul>
       <li><a href="#grid-options" id="markdown-toc-grid-options">Grid options</a></li>
       <li><a href="#examples-1" id="markdown-toc-examples-1">Examples</a></li>
-      <li><a href="#notes" id="markdown-toc-notes">Notes</a></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="title-hidden">Title: hidden</h2>
 
-<p>Untuk menyembunyikan judul widget, gunakan <code class="highlighter-rouge">.wg-title-hidden</code>.</p>
+<p>Untuk menyembunyikan judul widget gunakan <code class="highlighter-rouge">.wg-title-hidden</code>.</p>
 
 <div class="bd-example">
   <div class="wg-panel wg-panel-orange wg-title-hidden">
@@ -754,7 +753,7 @@
 
 <h2 id="title-font-size">Title: font size</h2>
 
-<p>Kelas-kelas untuk mengubah ukuran judul widget. Anda dapat menggunakan <code class="highlighter-rouge">.wg-title-h1</code> - <code class="highlighter-rouge">.wg-title-h6</code>.</p>
+<p>Untuk mengubah ukuran judul widget gunakan <code class="highlighter-rouge">.wg-title-{h1, h2, h3, h4, h5, h6}</code>.</p>
 
 <div class="bd-example">
   <div class="wg-panel wg-panel-orange wg-title-h1">
@@ -817,16 +816,14 @@
 
 <h2 id="columns">Columns</h2>
 
-<p>Tampilan kolom widget seperti <a href="http://masonry.desandro.com/">Masonry</a>, dengan hanya menggunakan CSS.</p>
-
 <p>Gunakan <code class="highlighter-rouge">.wg-columns</code>.</p>
 
-<p>Hanya bekerja pada perangkat kecil ke atas.</p>
+<p>Hanya bekerja pada perangkat kecil (<code class="highlighter-rouge">sm</code>) ke atas.</p>
 
 <ul>
-  <li>Pada perangkat sedang ke atas (≥768px) akan tampil tiga kolom.</li>
-  <li>Pada perangkat kecil ke atas (≥576px) akan tampil dua kolom.</li>
-  <li>Pada perangkat sangat kecil (&lt;576px) hanya tampil satu kolom.</li>
+  <li>Pada perangkat sedang (<code class="highlighter-rouge">md</code>) ke atas (≥768px) akan tampil tiga kolom.</li>
+  <li>Pada perangkat kecil (<code class="highlighter-rouge">sm</code>) ke atas (≥576px) akan tampil dua kolom.</li>
+  <li>Pada perangkat sangat kecil (<code class="highlighter-rouge">xs</code>) ke bawah (&lt;576px) hanya tampil satu kolom.</li>
 </ul>
 
 <h3 id="examples">Examples</h3>
@@ -1042,6 +1039,8 @@
   </tbody>
 </table>
 
+<p>Grid widget menggunakan <code class="highlighter-rouge">calc()</code> untuk mengkalkulasi lebar dan jarak widget. Menggunakan <code class="highlighter-rouge">calc()</code> adalah untuk menghindari penggunaan <code class="highlighter-rouge">padding</code> pada <code class="highlighter-rouge">.widget</code>, agar tidak terjadi konflik dengan CSS widget lainnya.</p>
+
 <h3 id="examples-1">Examples</h3>
 
 <div class="bd-example">
@@ -1122,9 +1121,6 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-teal wg-sm-6'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
-<h3 id="notes">Notes</h3>
-
-<p>Grid widget menggunakan <code class="highlighter-rouge">calc()</code> untuk mengkalkulasi lebar dan jarak widget, lihat dukungan <em>browser</em> untuk <a href="http://caniuse.com/#feat=calc">calc()</a>. Menggunakan <code class="highlighter-rouge">calc()</code> adalah untuk menghindari penggunaan <code class="highlighter-rouge">padding</code> pada <code class="highlighter-rouge">.widget</code>, agar tidak terjadi konflik dengan CSS widget lainnya, seperti <a href="/components/widget-panel/">widget panel</a> dan <a href="/components/widget-box/">widget box</a> juga menerapkan CSS pada <code class="highlighter-rouge">.widget</code>.</p>
 
         </div>
       </div>

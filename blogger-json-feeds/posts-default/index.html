@@ -29,7 +29,7 @@
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
 <!-- Meta -->
-<meta name="description" content="Blogger + Bootstrap + ♥">
+<meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
 
@@ -124,9 +124,9 @@
     <div class="bd-pageheader">
       <div class="container">
         
-<h1>Blogger JSON feeds</h1>
+<h1>JSON feeds</h1>
 <p class="lead">
-  Mengambil data JSON dari Blogger Data API, dan mengubahnya menjadi markup HTML menggunakan JavaScript.
+  Mengambil data JSON feeds dari Blogger Data API, dan mengubahnya menjadi markup HTML menggunakan JavaScript.
 </p>
 
 
@@ -756,12 +756,13 @@
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">post</span><span class="p">:</span> <span class="s1">'Add class to .post'</span><span class="p">,</span>
     <span class="na">image</span><span class="p">:</span> <span class="s1">'Add class to .post-img-*'</span><span class="p">,</span>
-    <span class="na">content</span><span class="p">:</span> <span class="s1">'Add class to .post-content'</span>
+    <span class="na">content</span><span class="p">:</span> <span class="s1">'Add class to .post-content'</span><span class="p">,</span>
+    <span class="na">horizontalThumbnail</span><span class="p">:</span> <span class="s1">'post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3'</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
-<p><strong>Catatan:</strong> <code class="highlighter-rouge">group</code>, <code class="highlighter-rouge">columns</code>, dan <code class="highlighter-rouge">grid</code> pilih salah satu yang bernilai <code class="highlighter-rouge">true</code>, atau semua <code class="highlighter-rouge">false</code>.</p>
+<p><strong>Catatan:</strong> <code class="highlighter-rouge">group</code>, <code class="highlighter-rouge">columns</code>, dan <code class="highlighter-rouge">grid</code> pilih salah satu yang bernilai <code class="highlighter-rouge">true</code> atau semua <code class="highlighter-rouge">false</code>.</p>
 
 <h2 id="example">Example</h2>
 
@@ -842,7 +843,8 @@ var config = {
   classes: {
     post: '',
     image: '',
-    content: ''
+    content: '',
+    horizontalThumbnail: ''
   }
 }
 </script>
@@ -924,7 +926,8 @@ var config = {
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">post</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">image</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
-    <span class="na">content</span><span class="p">:</span> <span class="s1">''</span>
+    <span class="na">content</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">horizontalThumbnail</span><span class="p">:</span> <span class="s1">''</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span>
