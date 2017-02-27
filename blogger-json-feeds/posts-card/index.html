@@ -458,6 +458,20 @@
           
 
           <li class="">
+            <a href="/utilities/spacing/">
+              Spacing
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
             <a href="/utilities/figures/">
               Figures
             </a>
@@ -690,7 +704,11 @@
   <span class="na">content</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">numchars</span><span class="p">:</span> <span class="s1">'full'</span><span class="o">|</span><span class="nx">number</span><span class="o">|</span><span class="mi">0</span> <span class="nx">to</span> <span class="nx">disable</span><span class="p">,</span>
     <span class="na">title</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">tag</span><span class="p">:</span> <span class="s1">'h1|h2|h3|h4|h5|h6'</span>
+      <span class="na">tag</span><span class="p">:</span> <span class="s1">'h1|h2|h3|h4|h5|h6'</span><span class="p">,</span>
+      <span class="na">link</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
+        <span class="na">style</span><span class="p">:</span> <span class="s1">''</span>
+      <span class="p">}</span>
     <span class="p">},</span>
     <span class="na">more</span><span class="p">:</span> <span class="p">{</span>
       <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
@@ -701,7 +719,7 @@
   <span class="na">author</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
     <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
-    <span class="na">before</span><span class="p">:</span> <span class="s1">'Posted by '</span><span class="p">,</span>
+    <span class="na">before</span><span class="p">:</span> <span class="s1">'&lt;i class="fa fa-user" aria-hidden="true"&gt;&lt;/i&gt; Posted by '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">none</span><span class="p">:</span> <span class="s1">'Anonymous'</span><span class="p">,</span>
     <span class="na">avatar</span><span class="p">:</span> <span class="p">{</span>
@@ -712,20 +730,20 @@
   <span class="na">date</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
     <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
-    <span class="na">before</span><span class="p">:</span> <span class="s1">'Posted on '</span><span class="p">,</span>
+    <span class="na">before</span><span class="p">:</span> <span class="s1">'&lt;i class="fa fa-clock-o" aria-hidden="true"&gt;&lt;/i&gt; Posted on '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">monthNames</span><span class="p">:</span> <span class="p">[</span><span class="s1">'January'</span><span class="p">,</span> <span class="s1">'February'</span><span class="p">,</span> <span class="s1">'March'</span><span class="p">,</span> <span class="s1">'April'</span><span class="p">,</span> <span class="s1">'May'</span><span class="p">,</span> <span class="s1">'June'</span><span class="p">,</span> <span class="s1">'July'</span><span class="p">,</span> <span class="s1">'August'</span><span class="p">,</span> <span class="s1">'September'</span><span class="p">,</span> <span class="s1">'October'</span><span class="p">,</span> <span class="s1">'November'</span><span class="p">,</span> <span class="s1">'December'</span><span class="p">]</span>
   <span class="p">},</span>
   <span class="na">numComments</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
     <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
-    <span class="na">before</span><span class="p">:</span> <span class="s1">'Comment total: '</span><span class="p">,</span>
+    <span class="na">before</span><span class="p">:</span> <span class="s1">'&lt;i class="fa fa-comments" aria-hidden="true"&gt;&lt;/i&gt; '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span>
   <span class="p">},</span>
   <span class="na">labels</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
     <span class="na">placement</span><span class="p">:</span> <span class="s1">'header|footer'</span><span class="p">,</span>
-    <span class="na">before</span><span class="p">:</span> <span class="s1">'Labels: '</span><span class="p">,</span>
+    <span class="na">before</span><span class="p">:</span> <span class="s1">'&lt;i class="fa fa-tags" aria-hidden="true"&gt;&lt;/i&gt; Labels: '</span><span class="p">,</span>
     <span class="na">after</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
     <span class="na">none</span><span class="p">:</span> <span class="s1">'Unlabelled'</span>
   <span class="p">},</span>
@@ -746,12 +764,14 @@
   <span class="p">},</span>
   <span class="na">grid</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">,</span>
-    <span class="na">column</span><span class="p">:</span> <span class="s1">'col-*-*'</span>
+    <span class="na">column</span><span class="p">:</span> <span class="s1">'col'</span>
   <span class="p">},</span>
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">card</span><span class="p">:</span> <span class="s1">'Add class to .card'</span><span class="p">,</span>
-    <span class="na">image</span><span class="p">:</span> <span class="s1">'Add class to .card-img-*'</span><span class="p">,</span>
-    <span class="na">content</span><span class="p">:</span> <span class="s1">'Add class to .card-block'</span>
+    <span class="na">card</span><span class="p">:</span> <span class="s1">'Add class to `.card`'</span><span class="p">,</span>
+    <span class="na">image</span><span class="p">:</span> <span class="s1">'Add class to `.card-img-*`'</span><span class="p">,</span>
+    <span class="na">content</span><span class="p">:</span> <span class="s1">'Add class to `.card-block`'</span><span class="p">,</span>
+    <span class="na">header</span><span class="p">:</span> <span class="s1">'Add class to `.card-header`'</span><span class="p">,</span>
+    <span class="na">footer</span><span class="p">:</span> <span class="s1">'Add class to `.card-footer`'</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
@@ -771,7 +791,11 @@ var config = {
   content: {
     numchars: 100,
     title: {
-      tag: 'h3'
+      tag: 'h3',
+      link: {
+        active: false,
+        style: ''
+      }
     },
     more: {
       active: true,
@@ -830,9 +854,11 @@ var config = {
     column: ''
   },
   classes: {
-    card: '',
+    card: 'mb-3',
     image: 'img-fluid',
-    content: ''
+    content: '',
+    header: '',
+    footer: 'text-center text-muted'
   }
 }
 </script>
@@ -848,7 +874,11 @@ var config = {
   <span class="na">content</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">numchars</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
     <span class="na">title</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">tag</span><span class="p">:</span> <span class="s1">'h3'</span>
+      <span class="na">tag</span><span class="p">:</span> <span class="s1">'h3'</span><span class="p">,</span>
+      <span class="na">link</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">active</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="na">style</span><span class="p">:</span> <span class="s1">''</span>
+      <span class="p">}</span>
     <span class="p">},</span>
     <span class="na">more</span><span class="p">:</span> <span class="p">{</span>
       <span class="na">active</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -907,9 +937,11 @@ var config = {
     <span class="na">column</span><span class="p">:</span> <span class="s1">''</span>
   <span class="p">},</span>
   <span class="na">classes</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">card</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">card</span><span class="p">:</span> <span class="s1">'mb-3'</span><span class="p">,</span>
     <span class="na">image</span><span class="p">:</span> <span class="s1">'img-fluid'</span><span class="p">,</span>
-    <span class="na">content</span><span class="p">:</span> <span class="s1">''</span>
+    <span class="na">content</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">header</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="na">footer</span><span class="p">:</span> <span class="s1">'text-center text-muted'</span>
   <span class="p">}</span>
 <span class="p">}</span>
 <span class="nt">&lt;/script&gt;</span>

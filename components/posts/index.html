@@ -458,6 +458,20 @@
           
 
           <li class="">
+            <a href="/utilities/spacing/">
+              Spacing
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
             <a href="/utilities/figures/">
               Figures
             </a>
@@ -873,18 +887,23 @@
             <span class="c">&lt;!-- Author --&gt;</span>
             <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+                <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
                 <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
               <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;/b:if&gt;</span>
             <span class="c">&lt;!-- Timestamp --&gt;</span>
             <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+                <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
                 <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
               <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;/b:if&gt;</span>
             <span class="c">&lt;!-- Num comments --&gt;</span>
             <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
               <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
                 <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
               <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;/b:if&gt;</span>
@@ -1252,7 +1271,7 @@
       </h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1266,18 +1285,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1298,6 +1322,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>
@@ -1318,7 +1344,7 @@
     <div class="post-img-only">
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1332,18 +1358,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1357,6 +1388,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>
@@ -1382,7 +1415,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
       <p><a class="btn btn-primary" href="#">Read more</a></p>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1396,18 +1429,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1433,6 +1471,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>
@@ -1458,7 +1498,7 @@
     <div class="post-img-bottom">
       <a href="#"><img data-src="holder.js/100px350/?auto=yes&amp;text=Image" alt="Image" /></a>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1472,18 +1512,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1509,6 +1554,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>
@@ -1536,7 +1583,7 @@
         <p><a class="btn btn-primary" href="#">Read more</a></p>
       </div>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1550,18 +1597,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1589,6 +1641,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>
@@ -1616,7 +1670,7 @@
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1630,18 +1684,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1669,6 +1728,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>
@@ -1696,7 +1757,7 @@
         <p><a class="btn btn-primary" href="#">Read more</a></p>
       </div>
     </div>
-    <div class="post-footer"><i class="fa fa-tags"></i> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
   </div>
 </div>
 <!-- /.bd-example -->
@@ -1710,18 +1771,23 @@
           <span class="c">&lt;!-- Author --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showAuthor'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-user'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">authorLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-author'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Timestamp --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showTimestamp'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-clock-o'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+              <span class="nt">&lt;span&gt;&lt;data:top</span><span class="err">.</span><span class="na">timestampLabel</span><span class="nt">/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-timestamp'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
           <span class="c">&lt;!-- Num comments --&gt;</span>
           <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-comments'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
               <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-num-comments'</span><span class="nt">/&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/b:if&gt;</span>
@@ -1749,6 +1815,8 @@
     <span class="c">&lt;!-- Footer --&gt;</span>
     <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:top.showPostLabels'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">'post-footer'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">class=</span><span class="s">'fa fa-tags'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- Icon --&gt;</span>
+        <span class="nt">&lt;span&gt;&lt;data:postLabelsLabel/&gt;&lt;/span&gt;</span><span class="c">&lt;!-- Label --&gt;</span>
         <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'include-labels'</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/footer&gt;</span><span class="c">&lt;!-- /.post-footer --&gt;</span>
     <span class="nt">&lt;/b:if&gt;</span>

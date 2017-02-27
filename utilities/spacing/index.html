@@ -6,7 +6,7 @@
 
 <title>
   
-    Widget basic &middot; Bootsblogger
+    Spacing &middot; Bootsblogger
   
 </title>
 
@@ -15,16 +15,16 @@
 <meta name="twitter:creator" content="@">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Widget basic">
-  <meta name="twitter:description" content="Tampilan widget sederhana dengan judul yang beragam warna.">
+  <meta name="twitter:title" content="Spacing">
+  <meta name="twitter:description" content="Kelas tambahan untuk Bootstrap spacing utilities.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
 <!-- Facebook -->
 
-  <meta property="og:url" content="/components/widget-basic/">
-  <meta property="og:title" content="Widget basic">
-  <meta property="og:description" content="Tampilan widget sederhana dengan judul yang beragam warna.">
+  <meta property="og:url" content="/utilities/spacing/">
+  <meta property="og:title" content="Spacing">
+  <meta property="og:description" content="Kelas tambahan untuk Bootstrap spacing utilities.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
@@ -124,9 +124,9 @@
     <div class="bd-pageheader">
       <div class="container">
         
-  <h1>Components</h1>
+  <h1>Utilities</h1>
   <p class="lead">
-    Selain komponen dari Bootstrap, Bootsblogger juga memiliki komponen yang dispesifikasikan untuk Blogger, seperti posting, widget, dan lainnya.
+    Kelas-kelas utilitas untuk membantu mengurangi deklarasi yang sering digunakan.
   </p>
 
 
@@ -326,7 +326,7 @@
 
     
 
-    <div class="bd-toc-item active">
+    <div class="bd-toc-item ">
       
         <a class="bd-toc-link" href="/components/posts/">
       
@@ -369,7 +369,7 @@
 
           
 
-          <li class="active bd-sidenav-active">
+          <li class="">
             <a href="/components/widget-basic/">
               Widget basic
             </a>
@@ -414,7 +414,7 @@
 
     
 
-    <div class="bd-toc-item ">
+    <div class="bd-toc-item active">
       
         <a class="bd-toc-link" href="/utilities/colors/">
       
@@ -457,7 +457,7 @@
 
           
 
-          <li class="">
+          <li class="active bd-sidenav-active">
             <a href="/utilities/spacing/">
               Spacing
             </a>
@@ -485,7 +485,7 @@
 
           
 
-          <li class="active bd-sidenav-active">
+          <li class="">
             <a href="/utilities/widget/">
               Widget
             </a>
@@ -690,215 +690,80 @@
 
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
-          <h1 class="bd-title" id="content">Widget basic</h1>
-          <p>Tampilan widget sederhana dengan judul yang beragam warna.</p>
+          <h1 class="bd-title" id="content">Spacing</h1>
+          <p>Kelas tambahan untuk <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">Bootstrap spacing utilities</a>.</p>
 
-<h2 id="contents">Contents</h2>
+<h2 id="negative-margin">Negative margin</h2>
 
-<ul id="markdown-toc">
-  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
-  <li><a href="#collapsible-widget" id="markdown-toc-collapsible-widget">Collapsible widget</a>    <ul>
-      <li><a href="#basic-example" id="markdown-toc-basic-example">Basic example</a></li>
-      <li><a href="#accordion-example" id="markdown-toc-accordion-example">Accordion example</a></li>
-      <li><a href="#optional-classes" id="markdown-toc-optional-classes">Optional classes</a></li>
-    </ul>
-  </li>
-</ul>
+<p>Format kelasnya tidak jauh berbeda dengan <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">Bootstrap spacing utilities</a>, hanya menambahkan <code class="highlighter-rouge">n</code> di antara <code class="highlighter-rouge"><span class="p">{</span><span class="err">property</span><span class="p">}</span><span class="w"> </span><span class="err">(m)</span></code> dan <code class="highlighter-rouge"><span class="p">{</span><span class="err">sides</span><span class="p">}</span></code>, format kelasnya adalah <code class="highlighter-rouge">.mn{sides}-{size}</code> untuk <code class="highlighter-rouge">xs</code> dan <code class="highlighter-rouge">.mn{sides}-{breakpoint}-{size}</code> untuk <code class="highlighter-rouge">sm</code>, <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, dan <code class="highlighter-rouge">xl</code>.</p>
 
-<h2 id="examples">Examples</h2>
+<p><strong>Catatan:</strong> kelas utilitas <em>margin</em> negatif tidak memiliki <code class="highlighter-rouge">.*-0</code>.</p>
 
-<p>Gunakan <code class="highlighter-rouge">.wg-basic</code>, diikuti dengan <code class="highlighter-rouge">.wg-basic-{color}</code>.</p>
+<h3 id="example">Example</h3>
 
-<div class="bd-example">
-  <div class="wg-basic wg-basic-faded">
-    <div class="widget">
-      <h2>Faded</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-blue">
-    <div class="widget">
-      <h2>Blue</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-green">
-    <div class="widget">
-      <h2>Green</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-teal">
-    <div class="widget">
-      <h2>Teal</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-red">
-    <div class="widget">
-      <h2>Red</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-orange">
-    <div class="widget">
-      <h2>Orange</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-purple">
-    <div class="widget">
-      <h2>Purple</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-yellow">
-    <div class="widget">
-      <h2>Yellow</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-pink">
-    <div class="widget">
-      <h2>Pink</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-gray">
-    <div class="widget">
-      <h2>Gray</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-brown">
-    <div class="widget">
-      <h2>Brown</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-black">
-    <div class="widget">
-      <h2>Black</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-  <div class="wg-basic wg-basic-white">
-    <div class="widget">
-      <h2>White</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mnt-3 bg-red" style="height: 100px;"></div>
 </div>
-<!-- /.bd-example -->
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-faded'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-blue'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-green'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-teal'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-red'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-orange'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-purple'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-yellow'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-pink'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-gray'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-brown'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-black'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-white'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
-
-<h2 id="collapsible-widget">Collapsible widget</h2>
-
-<p>Membutuhkan <a href="https://v4-alpha.getbootstrap.com/components/collapse/">Bootstrap collapse</a>.</p>
-
-<h3 id="basic-example">Basic example</h3>
-
-<p>Gunakan <code class="highlighter-rouge">.wg-collapse</code>.</p>
-
-<div class="bd-example">
-  <div class="wg-basic wg-basic-purple wg-collapse">
-    <div class="widget" id="wg-basic-1">
-      <h2>Widget title</h2>
-      <div class="widget-content">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget" id="wg-basic-2">
-      <h2>Widget title</h2>
-      <div class="widget-content">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget" id="wg-basic-3">
-      <h2>Widget title</h2>
-      <div class="widget-content">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
 </div>
-<!-- /.bd-example -->
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mnt-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-purple wg-collapse'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
-
-<h3 id="accordion-example">Accordion example</h3>
-
-<p>Gunakan <code class="highlighter-rouge">.wg-accordion</code>.</p>
-
-<div class="bd-example">
-  <div class="wg-basic wg-basic-orange wg-accordion" id="wg-basic-accordion-1">
-    <div class="widget" id="wg-basic-4">
-      <h2>Widget title</h2>
-      <div class="widget-content">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget" id="wg-basic-5">
-      <h2>Widget title</h2>
-      <div class="widget-content">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget" id="wg-basic-6">
-      <h2>Widget title</h2>
-      <div class="widget-content">
-        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mnr-3 bg-red" style="height: 100px;"></div>
 </div>
-<!-- /.bd-example -->
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mnr-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-orange wg-accordion'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mnb-3 bg-red" style="height: 100px;"></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mnb-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h3 id="optional-classes">Optional classes</h3>
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mnl-3 bg-red" style="height: 100px;"></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mnl-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>Tambahkan <code class="highlighter-rouge">.open-all</code> atau <code class="highlighter-rouge">.open-first</code> ke <code class="highlighter-rouge">.wg-collapse</code> atau <code class="highlighter-rouge">.wg-accordion</code> untuk membuat konten widget terlihat saat pertama kali. <code class="highlighter-rouge">.open-all</code> hanya bekerja untuk <code class="highlighter-rouge">.wg-collapse</code>.</p>
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mnx-3 bg-red" style="height: 100px;"></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mnx-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mny-3 bg-red" style="height: 100px;"></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mny-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<div class="p-3 bg-blue">
+  <div class="mn-3 bg-red" style="height: 100px;"></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 bg-blue"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mn-3 bg-red"</span> <span class="na">style=</span><span class="s">"height: 100px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
 
         </div>
       </div>

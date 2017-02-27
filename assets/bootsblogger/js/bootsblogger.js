@@ -131,21 +131,21 @@
 
     // HTML converter
 
-    $('#js-comment-btn-convert').on('click', function () {
-      var original = $('#js-comment-textarea-convert').val()
+    $('.js-comment-convert-btn').on('click', function () {
+      var original = $('.js-comment-convert-textarea').val()
       var converted = original
       converted = converted.replace(/</g, '&lt;')
       converted = converted.replace(/>/g, '&gt;')
 
-      $('#js-comment-textarea-convert').val(converted).focus().select().prop('readonly', true)
+      $('.js-comment-convert-textarea').val(converted).focus().select().prop('readonly', true)
       $(this).hide()
-      $('#js-comment-btn-convert-clear').show()
+      $('.js-comment-convert-btn-clear').show()
     })
 
-    $('#js-comment-btn-convert-clear').on('click', function () {
-      $('#js-comment-textarea-convert').val('').focus().select().prop('readonly', false)
+    $('.js-comment-convert-btn-clear').on('click', function () {
+      $('.js-comment-convert-textarea').val('').focus().select().prop('readonly', false)
       $(this).hide()
-      $('#js-comment-btn-convert').show()
+      $('.js-comment-convert-btn').show()
     })
 
 
@@ -167,6 +167,9 @@
     // Add/remove `.show` for `add comment` and `cancel reply` wrapper
 
     $('.js-comment-action').on('click', function () {
+      $('.js-comment-action').removeClass('active')
+      $(this).addClass('active')
+
       $('.comment-form-container-original').each(function () {
         if ($(this).find('.comment-form').length) {
           $('body').find('.comment-add-wrapper').removeClass('show')
@@ -192,7 +195,7 @@
       $('.comment-form').removeClass('comment-form-loading')
     })
 
-    $('.js-comment-action').on('click', function () {
+    $('.js-comment-action').click(function () {
       $('.comment-form').addClass('comment-form-loading')
 
       $('#comment-editor').on('load', function () {
@@ -234,7 +237,7 @@
 //
 // Original <http://www.dte.web.id/2013/01/membuat-fitur-komentar-berbalas.html>
 
-if (document.getElementById('comments') !== null) {
+if (document.getElementById('comment-editor') !== null) {
   var commentEditorIframeOriginal = document.getElementById('comment-editor').src.split('#')
   function reply(id) {
     var form = document.getElementById('comment-form')

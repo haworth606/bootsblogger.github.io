@@ -458,6 +458,20 @@
           
 
           <li class="">
+            <a href="/utilities/spacing/">
+              Spacing
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
             <a href="/utilities/figures/">
               Figures
             </a>
@@ -719,44 +733,39 @@
     ├── includes/
     │   ├── assets
     │   ├── blog-posts
-    │   ├── foot-content
-    │   └── head-content
+    │   └── head
     ├── config.json
     ├── style.css
-    └── template-src.xml</code></pre></figure>
+    └── index.xml</code></pre></figure>
 
 <table>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">includes</code></td>
+      <td><code class="highlighter-rouge">/includes</code></td>
       <td>Wadah untuk berkas template terpisah.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">includes/assets</code></td>
+      <td><code class="highlighter-rouge">/includes/assets</code></td>
       <td>Aset template.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">includes/blog-posts</code></td>
+      <td><code class="highlighter-rouge">/includes/blog-posts</code></td>
       <td>Bagian-bagian widget blog posting.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">includes/foot-content</code></td>
-      <td>Bagian-bagian <em>footer</em>.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">includes/head-content</code></td>
+      <td><code class="highlighter-rouge">/includes/head</code></td>
       <td>Bagian-bagian yang ada di dalam <code class="highlighter-rouge">&lt;head&gt;</code>.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">config.json</code></td>
+      <td><code class="highlighter-rouge">/config.json</code></td>
       <td>Berkas konfigurasi template.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">style.css</code></td>
+      <td><code class="highlighter-rouge">/style.css</code></td>
       <td><em>Main CSS</em>.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">template-src.xml</code></td>
+      <td><code class="highlighter-rouge">/index.xml</code></td>
       <td>Berkas utama template yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>.</td>
     </tr>
   </tbody>
@@ -768,15 +777,19 @@
 
 <p>Menyertakan berkas template terpisah:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /path/to/file)--&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Relative to the file --&gt;</span>
+<span class="c">&lt;!--(bake path/to/file)--&gt;</span>
 
-<p>Contoh menyertakan berkas <code class="highlighter-rouge">/includes/blog-posts.xml</code>:</p>
+<span class="c">&lt;!-- Relative to the `basePath` (`template-src` directory) --&gt;</span>
+<span class="c">&lt;!--(bake /path/to/file)--&gt;</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/blog-posts.xml)--&gt;</span></code></pre></figure>
+<p>Contoh menyertakan berkas <code class="highlighter-rouge">/includes/blog-posts/blog-posts.xml</code>:</p>
 
-<p>Contoh menyertakan berkas <code class="highlighter-rouge">style.css</code>:</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/blog-posts/blog-posts.xml)--&gt;</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake style.css)--&gt;</span></code></pre></figure>
+<p>Contoh menyertakan berkas <code class="highlighter-rouge">/style.css</code>:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /style.css)--&gt;</span></code></pre></figure>
 
 <p>Pelajari lebih lanjut tentang penggunaan grunt-bake dengan membaca <a href="https://github.com/MathiasPaumgarten/grunt-bake">dokumentasinya</a>.</p>
 

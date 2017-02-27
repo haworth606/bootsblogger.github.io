@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Sizing">
-  <meta name="twitter:description" content="Kelas-kelas untuk mengatur lebar suatu element, dengan dukungan responsif.">
+  <meta name="twitter:description" content="Kelas tambahan untuk Bootstrap sizing utilities.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,7 +24,7 @@
 
   <meta property="og:url" content="/utilities/sizing/">
   <meta property="og:title" content="Sizing">
-  <meta property="og:description" content="Kelas-kelas untuk mengatur lebar suatu element, dengan dukungan responsif.">
+  <meta property="og:description" content="Kelas tambahan untuk Bootstrap sizing utilities.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
@@ -458,6 +458,20 @@
           
 
           <li class="">
+            <a href="/utilities/spacing/">
+              Spacing
+            </a>
+
+            
+          </li>
+        
+          
+          
+          
+
+          
+
+          <li class="">
             <a href="/utilities/figures/">
               Figures
             </a>
@@ -677,24 +691,13 @@
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Sizing</h1>
-          <p>Kelas-kelas untuk mengatur lebar suatu element, dengan dukungan responsif.</p>
+          <p>Kelas tambahan untuk <a href="https://v4-alpha.getbootstrap.com/utilities/sizing/">Bootstrap sizing utilities</a>.</p>
 
-<h2 id="notation">Notation</h2>
+<h2 id="responsive-width">Responsive width</h2>
 
-<p>Format kelasnya adalah <code class="highlighter-rouge">.w-{width}</code> untuk <code class="highlighter-rouge">xs</code> dan <code class="highlighter-rouge">.w-{breakpoint}-{width}</code> untuk <code class="highlighter-rouge">sm</code>, <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, dan <code class="highlighter-rouge">xl</code>.</p>
+<p>Format kelasnya tidak jauh berbeda dengan <a href="https://v4-alpha.getbootstrap.com/utilities/sizing/">Bootstrap sizing utilities</a>, hanya menambahkan <code class="highlighter-rouge"><span class="p">{</span><span class="err">breakpoint</span><span class="p">}</span></code>, format kelasnya adalah <code class="highlighter-rouge">.w-{breakpoint}-{25, 50, 75, 100}</code>.</p>
 
-<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">width</span><span class="p">}</span></code>:</p>
-
-<ul>
-  <li>25 = <code class="highlighter-rouge">width: 25%;</code></li>
-  <li>50 = <code class="highlighter-rouge">width: 50%;</code></li>
-  <li>75 = <code class="highlighter-rouge">width: 75%;</code></li>
-  <li>100 = <code class="highlighter-rouge">width: 100%;</code></li>
-</ul>
-
-<p><strong>Catatan:</strong> <code class="highlighter-rouge">.w-25</code>, <code class="highlighter-rouge">.w-50</code>, <code class="highlighter-rouge">.w-75</code>, dan <code class="highlighter-rouge">.w-100</code> adalah <a href="https://v4-alpha.getbootstrap.com/utilities/sizing/">kelas utilitas dari Bootstrap</a>.</p>
-
-<h2 id="example">Example</h2>
+<h3 id="example">Example</h3>
 
 <p>Ubah ukuran layar <em>browser</em> Anda untuk melihat perubahannya.</p>
 
