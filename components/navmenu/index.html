@@ -698,8 +698,8 @@
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#basic-example" id="markdown-toc-basic-example">Basic example</a></li>
-  <li><a href="#supported-content" id="markdown-toc-supported-content">Supported content</a></li>
   <li><a href="#color-schemes" id="markdown-toc-color-schemes">Color schemes</a></li>
+  <li><a href="#supported-content" id="markdown-toc-supported-content">Supported content</a></li>
   <li><a href="#dropdowns" id="markdown-toc-dropdowns">Dropdowns</a></li>
   <li><a href="#placement" id="markdown-toc-placement">Placement</a></li>
 </ul>
@@ -709,7 +709,7 @@
 <p>Bungkus semua konten dengan <code class="highlighter-rouge">.navmenu</code>, dan tambahkan <a href="#color-schemes">skema warna</a>.</p>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
+<nav class="navmenu navmenu-light bg-grey-100">
   <a class="navmenu-brand" href="#">Bootsblogger</a>
   <div class="navmenu-nav">
     <a class="nav-item nav-link" href="#">Nav item</a>
@@ -722,7 +722,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-grey-100"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
@@ -735,10 +735,92 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
+<h2 id="color-schemes">Color schemes</h2>
+
+<p>Ubah warna navmenu dengan mengeset <code class="highlighter-rouge">background-color</code>, Anda dapat menggunakan <a href="/utilities/colors/">kelas utilitas warna</a> atau menggunakan <em>custom styles</em>.</p>
+
+<p>Gunakan <code class="highlighter-rouge">.navmenu-light</code> atau <code class="highlighter-rouge">.navmenu-inverse</code> untuk menyesuaikan warna teks dengan warna latar belakang. <code class="highlighter-rouge">.navmenu-light</code> untuk latar belakang yang terang, <code class="highlighter-rouge">.navmenu-inverse</code> untuk latar belakang yang gelap.</p>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-orange-50">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-orange-50"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light" style="background-color: #e1f5fe;">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light"</span> <span class="na">style=</span><span class="s">"background-color: #e1f5fe;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-inverse bg-blue-500">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-inverse bg-blue-500"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-inverse" style="background-color: #009688;">
+  <a class="navmenu-brand" href="#">Bootsblogger</a>
+  <div class="navmenu-nav">
+    <a class="nav-item nav-link" href="#">Nav item</a>
+    <a class="nav-item nav-link" href="#">Nav item again</a>
+    <a class="nav-item nav-link" href="#">Another nav item</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-inverse"</span> <span class="na">style=</span><span class="s">"background-color: #009688;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
 <h2 id="supported-content">Supported content</h2>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
+<nav class="navmenu navmenu-light bg-grey-100">
   <!-- Brand -->
   <a class="navmenu-brand" href="#">Bootsblogger</a>
 
@@ -763,11 +845,11 @@
 
   <!-- Text -->
   <div class="navmenu-text">
-    <p class="text-green">Bootsblogger is awesome.</p>
+    <p class="text-green-500">Bootsblogger is awesome.</p>
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-grey-100"</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Brand --&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
 
@@ -792,96 +874,14 @@
 
   <span class="c">&lt;!-- Text --&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-green"</span><span class="nt">&gt;</span>Bootsblogger is awesome.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<h2 id="color-schemes">Color schemes</h2>
-
-<p>Ubah warna navmenu dengan mengeset <code class="highlighter-rouge">background-color</code>, Anda dapat menggunakan <a href="/utilities/colors/#background-colors">kelas utilitas warna</a> atau menggunakan <em>custom styles</em>.</p>
-
-<p>Gunakan <code class="highlighter-rouge">.navmenu-light</code> atau <code class="highlighter-rouge">.navmenu-inverse</code> untuk menyesuaikan warna teks dengan warna latar belakang yang terang atau gelap.</p>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
-  <a class="navmenu-brand" href="#">Bootsblogger</a>
-  <div class="navmenu-nav">
-    <a class="nav-item nav-link" href="#">Nav item</a>
-    <a class="nav-item nav-link" href="#">Nav item again</a>
-    <a class="nav-item nav-link" href="#">Another nav item</a>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light" style="background-color: #e3f2fd;">
-  <a class="navmenu-brand" href="#">Bootsblogger</a>
-  <div class="navmenu-nav">
-    <a class="nav-item nav-link" href="#">Nav item</a>
-    <a class="nav-item nav-link" href="#">Nav item again</a>
-    <a class="nav-item nav-link" href="#">Another nav item</a>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light"</span> <span class="na">style=</span><span class="s">"background-color: #e3f2fd;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-inverse bg-blue">
-  <a class="navmenu-brand" href="#">Bootsblogger</a>
-  <div class="navmenu-nav">
-    <a class="nav-item nav-link" href="#">Nav item</a>
-    <a class="nav-item nav-link" href="#">Nav item again</a>
-    <a class="nav-item nav-link" href="#">Another nav item</a>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-inverse bg-blue"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-inverse" style="background-color: #ef6c00;">
-  <a class="navmenu-brand" href="#">Bootsblogger</a>
-  <div class="navmenu-nav">
-    <a class="nav-item nav-link" href="#">Nav item</a>
-    <a class="nav-item nav-link" href="#">Nav item again</a>
-    <a class="nav-item nav-link" href="#">Another nav item</a>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-inverse"</span> <span class="na">style=</span><span class="s">"background-color: #ef6c00;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-green-500"</span><span class="nt">&gt;</span>Bootsblogger is awesome.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
 <h2 id="dropdowns">Dropdowns</h2>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
+<nav class="navmenu navmenu-light bg-grey-100">
   <a class="navmenu-brand" href="#">Bootsblogger</a>
   <ul class="navmenu-nav">
     <li class="nav-item"><a class="nav-link" href="#">Nav item</a></li>
@@ -909,7 +909,7 @@
   </ul>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-grey-100"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bootsblogger<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -940,7 +940,7 @@
 <h2 id="placement">Placement</h2>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-fixed-left navmenu-inverse bg-orange">
+<nav class="navmenu navmenu-fixed-left navmenu-inverse bg-purple-500">
   <a class="navmenu-brand" href="#">Fixed left</a>
   <div class="navmenu-nav">
     <a class="nav-item nav-link" href="#">Nav item</a>
@@ -949,7 +949,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-fixed-left navmenu-inverse bg-orange"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-fixed-left navmenu-inverse bg-purple-500"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Fixed left<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
@@ -959,7 +959,7 @@
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-fixed-right navmenu-inverse bg-orange">
+<nav class="navmenu navmenu-fixed-right navmenu-inverse bg-teal-500">
   <a class="navmenu-brand" href="#">Fixed right</a>
   <div class="navmenu-nav">
     <a class="nav-item nav-link" href="#">Nav item</a>
@@ -968,7 +968,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-fixed-right navmenu-inverse bg-orange"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-fixed-right navmenu-inverse bg-teal-500"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navmenu-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Fixed right<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-nav"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>

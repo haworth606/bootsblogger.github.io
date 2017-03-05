@@ -697,9 +697,13 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#title-hidden" id="markdown-toc-title-hidden">Title: hidden</a></li>
-  <li><a href="#title-alignment" id="markdown-toc-title-alignment">Title: alignment</a></li>
-  <li><a href="#title-font-size" id="markdown-toc-title-font-size">Title: font size</a></li>
+  <li><a href="#title" id="markdown-toc-title">Title</a>    <ul>
+      <li><a href="#hidden" id="markdown-toc-hidden">Hidden</a></li>
+      <li><a href="#alignment" id="markdown-toc-alignment">Alignment</a></li>
+      <li><a href="#font-size" id="markdown-toc-font-size">Font size</a></li>
+      <li><a href="#color" id="markdown-toc-color">Color</a></li>
+    </ul>
+  </li>
   <li><a href="#columns" id="markdown-toc-columns">Columns</a>    <ul>
       <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
     </ul>
@@ -711,12 +715,16 @@
   </li>
 </ul>
 
-<h2 id="title-hidden">Title: hidden</h2>
+<h2 id="title">Title</h2>
+
+<p>Kelas utilitas untuk judul widget.</p>
+
+<h3 id="hidden">Hidden</h3>
 
 <p>Untuk menyembunyikan judul widget gunakan <code class="highlighter-rouge">.wg-title-hidden</code>.</p>
 
 <div class="bd-example">
-  <div class="wg-panel wg-panel-orange wg-title-hidden">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-hidden">
     <div class="widget">
       <h2>Hidden</h2>
       <div class="widget-content">
@@ -727,14 +735,14 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-hidden'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-hidden'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
-<h2 id="title-alignment">Title: alignment</h2>
+<h3 id="alignment">Alignment</h3>
 
 <p>Terdapat tiga kelas untuk perataan judul widget, yaitu rata kiri <code class="highlighter-rouge">.wg-title-left</code>, rata tengah <code class="highlighter-rouge">.wg-title-center</code>, dan rata kanan <code class="highlighter-rouge">.wg-title-right</code>.</p>
 
 <div class="bd-example">
-  <div class="wg-panel wg-panel-orange wg-title-left">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-left">
     <div class="widget">
       <h2>Left</h2>
       <div class="widget-content">
@@ -742,7 +750,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-center">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-center">
     <div class="widget">
       <h2>Center</h2>
       <div class="widget-content">
@@ -750,7 +758,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-right">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-right">
     <div class="widget">
       <h2>Right</h2>
       <div class="widget-content">
@@ -761,16 +769,16 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-left'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-center'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-right'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-left'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-center'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-right'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
-<h2 id="title-font-size">Title: font size</h2>
+<h3 id="font-size">Font size</h3>
 
 <p>Untuk mengubah ukuran judul widget gunakan <code class="highlighter-rouge">.wg-title-{h1, h2, h3, h4, h5, h6}</code>.</p>
 
 <div class="bd-example">
-  <div class="wg-panel wg-panel-orange wg-title-h1">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-h1">
     <div class="widget">
       <h2>H1. Widget title</h2>
       <div class="widget-content">
@@ -778,7 +786,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-h2">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-h2">
     <div class="widget">
       <h2>H2. Widget title</h2>
       <div class="widget-content">
@@ -786,7 +794,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-h3">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-h3">
     <div class="widget">
       <h2>H3. Widget title</h2>
       <div class="widget-content">
@@ -794,7 +802,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-h4">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-h4">
     <div class="widget">
       <h2>H4. Widget title</h2>
       <div class="widget-content">
@@ -802,7 +810,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-h5">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-h5">
     <div class="widget">
       <h2>H5. Widget title</h2>
       <div class="widget-content">
@@ -810,7 +818,7 @@
       </div>
     </div><!-- /.widget -->
   </div>
-  <div class="wg-panel wg-panel-orange wg-title-h6">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-title-h6">
     <div class="widget">
       <h2>H6. Widget title</h2>
       <div class="widget-content">
@@ -821,12 +829,226 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-h1'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-h2'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-h3'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-h4'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-h5'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-h6'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-h1'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-h2'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-h3'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-h4'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-h5'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-title-h6'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+
+<h3 id="color">Color</h3>
+
+<div class="bd-example bg-inverse">
+  <div class="wg-title-red mb-3">
+    <div class="widget">
+      <h2>Red</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-pink mb-3">
+    <div class="widget">
+      <h2>Pink</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-purple mb-3">
+    <div class="widget">
+      <h2>Purple</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-deep-purple mb-3">
+    <div class="widget">
+      <h2>Deep Purple</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-indigo mb-3">
+    <div class="widget">
+      <h2>Indigo</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-blue mb-3">
+    <div class="widget">
+      <h2>Blue</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-light-blue mb-3">
+    <div class="widget">
+      <h2>Light Blue</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-basic wg-title-cyan">
+    <div class="widget">
+      <h2>Cyan</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-teal mb-3">
+    <div class="widget">
+      <h2>Teal</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-green mb-3">
+    <div class="widget">
+      <h2>Green</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-light-green mb-3">
+    <div class="widget">
+      <h2>Light Green</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-lime mb-3">
+    <div class="widget">
+      <h2>Lime</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-yellow mb-3">
+    <div class="widget">
+      <h2>Yellow</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-amber mb-3">
+    <div class="widget">
+      <h2>Amber</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-orange mb-3">
+    <div class="widget">
+      <h2>Orange</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-deep-orange mb-3">
+    <div class="widget">
+      <h2>Deep Orange</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-brown mb-3">
+    <div class="widget">
+      <h2>Brown</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-grey mb-3">
+    <div class="widget">
+      <h2>Grey</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-light-grey mb-3">
+    <div class="widget">
+      <h2>Light Grey</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-deep-grey mb-3">
+    <div class="widget">
+      <h2>Deep Grey</h2>
+      <div class="widget-content">
+        <p class="text-grey-800">&lt;p class="text-grey-800"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-blue-grey mb-3">
+    <div class="widget">
+      <h2>Blue Grey</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-black mb-3">
+    <div class="widget">
+      <h2>Black</h2>
+      <div class="widget-content">
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+  <div class="wg-title-white mb-3">
+    <div class="widget">
+      <h2>White</h2>
+      <div class="widget-content">
+        <p class="text-white">&lt;p class="text-white"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-red'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-pink'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-purple'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-deep-purple'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-indigo'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-blue'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-light-blue'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-cyan'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-teal'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-green'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-light-green'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-lime'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-yellow'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-amber'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-orange'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-deep-orange'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-brown'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-grey'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-light-grey'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-deep-grey'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-blue-grey'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-black'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-title-white'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
 <h2 id="columns">Columns</h2>
 
@@ -845,148 +1067,52 @@
 <p>Urutan widget dimulai dari atas ke bawah dan dari kiri ke kanan.</p>
 
 <div class="bd-example">
-  <div class="wg-columns wg-panel wg-panel-teal">
+  <div class="wg-columns wg-box wg-box-amber wg-title-black">
     <div class="widget">
       <h2>Widget title 1</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title 2</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title 3</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title 4</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title 5</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title 6</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
   </div>
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-teal wg-columns'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
-
-<div class="bd-example">
-  <div class="wg-columns wg-box wg-box-faded">
-    <div class="widget">
-      <h2>Widget title 1</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 2</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 3</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 4</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 5</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 6</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-</div>
-<!-- /.bd-example -->
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-box wg-box-faded wg-columns'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
-
-<div class="bd-example">
-  <div class="wg-columns wg-basic wg-basic-blue">
-    <div class="widget">
-      <h2>Widget title 1</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 2</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 3</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 4</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 5</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-    <div class="widget">
-      <h2>Widget title 6</h2>
-      <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-    </div><!-- /.widget -->
-  </div>
-</div>
-<!-- /.bd-example -->
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-blue wg-columns'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-box wg-box-amber wg-title-black wg-columns'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
 <h2 id="grid">Grid</h2>
 
@@ -1058,7 +1184,7 @@
 <h3 id="examples-1">Examples</h3>
 
 <div class="bd-example">
-  <div class="wg-panel wg-panel-orange wg-sm-6 wg-md-4 wg-lg-3 wg-grid-example">
+  <div class="wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-md-4 wg-lg-3 wg-grid-example">
     <div class="widget">
       <h2>Widget title</h2>
       <div class="widget-content">
@@ -1087,36 +1213,36 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-sm-6 wg-md-4 wg-lg-3'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-md-4 wg-lg-3'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
 <div class="bd-example">
-  <div class="wg-box wg-box-faded wg-sm-6 wg-md-4 wg-grid-example">
+  <div class="wg-box wg-box-amber wg-title-black wg-sm-6 wg-md-4 wg-grid-example">
     <div class="widget">
       <h2>Widget title</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
     <div class="widget">
       <h2>Widget title</h2>
       <div class="widget-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p class="text-black">&lt;p class="text-black"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</p>
       </div>
     </div><!-- /.widget -->
   </div>
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-box wg-box-faded wg-sm-6 wg-md-4'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-box wg-box-amber wg-title-black wg-sm-6 wg-md-4'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
 <div class="bd-example">
-  <div class="wg-basic wg-basic-teal wg-sm-6 wg-grid-example">
+  <div class="wg-basic wg-title-teal wg-sm-6 wg-grid-example">
     <div class="widget">
       <h2>Widget title</h2>
       <div class="widget-content">
@@ -1133,7 +1259,7 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-basic-teal wg-sm-6'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg-basic wg-title-teal wg-sm-6'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
 
         </div>

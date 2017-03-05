@@ -1138,16 +1138,16 @@ width: 50%;
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'blogger-container'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'blogger-row'</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Main --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'blogger-col-8 main'</span> <span class="na">role=</span><span class="s">'main'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'main'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'main blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">''</span> <span class="na">id=</span><span class="s">'main-section'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+    <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
 
     <span class="c">&lt;!-- Sidebar --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'blogger-col-4 sidebar'</span> <span class="na">role=</span><span class="s">'complementary'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;&lt;/section&gt;</span>
-    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.blogger-row --&gt;</span>
-<span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.blogger-container --&gt;</span></code></pre></figure>
+    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'sidebar blogger-col-4'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">''</span> <span class="na">id=</span><span class="s">'sidebar-section'</span><span class="nt">&gt;&lt;/section&gt;</span>
+    <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <p>Hasilnya akan seperti pada <a href="javascript:;" data-toggle="modal" data-target=".image-blogger-layout">gambar ini</a>.</p>
 
@@ -1158,14 +1158,14 @@ width: 50%;
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'container blogger-container'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'row blogger-row'</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Main --&gt;</span>
-    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'blog-main col-md-9 blogger-col-8'</span> <span class="na">id=</span><span class="s">'blog-main'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'main-section'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-    <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.blog-main --&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'main col-md-9 blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">''</span> <span class="na">id=</span><span class="s">'main-section'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+    <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
 
     <span class="c">&lt;!-- Sidebar --&gt;</span>
-    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'blog-sidebar col-md-3 blogger-col-4'</span> <span class="na">id=</span><span class="s">'blog-sidebar'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;b:section</span> <span class="na">id=</span><span class="s">'sidebar-section'</span><span class="nt">&gt;&lt;/section&gt;</span>
-    <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.blog-sidebar --&gt;</span>
+    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'sidebar col-md-3 blogger-col-4'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">''</span> <span class="na">id=</span><span class="s">'sidebar-section'</span><span class="nt">&gt;&lt;/section&gt;</span>
+    <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
   <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.row --&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.container --&gt;</span></code></pre></figure>
 

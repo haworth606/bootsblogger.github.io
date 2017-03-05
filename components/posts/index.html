@@ -756,8 +756,12 @@
       <li><a href="#group-image-overlays" id="markdown-toc-group-image-overlays">Group: image overlays</a></li>
     </ul>
   </li>
-  <li><a href="#background-variants" id="markdown-toc-background-variants">Background variants</a></li>
-  <li><a href="#outline-variants" id="markdown-toc-outline-variants">Outline variants</a></li>
+  <li><a href="#post-styles" id="markdown-toc-post-styles">Post styles</a>    <ul>
+      <li><a href="#inverted-text" id="markdown-toc-inverted-text">Inverted text</a></li>
+      <li><a href="#background-variants" id="markdown-toc-background-variants">Background variants</a></li>
+      <li><a href="#outline-variants" id="markdown-toc-outline-variants">Outline variants</a></li>
+    </ul>
+  </li>
   <li><a href="#columns" id="markdown-toc-columns">Columns</a></li>
   <li><a href="#using-bootstrap-grid-system" id="markdown-toc-using-bootstrap-grid-system">Using Bootstrap grid system</a></li>
   <li><a href="#content-block" id="markdown-toc-content-block">Content block</a>    <ul>
@@ -1209,7 +1213,7 @@
 
 <h3 id="image-overlays">Image overlays</h3>
 
-<p>Gunakan <code class="highlighter-rouge">.post-img-overlay</code>, dan bungkus thumbnail dan konten dengan <code class="highlighter-rouge">.post-overlay</code>. Membutuhkan penggunaan <code class="highlighter-rouge">.post-inverse</code> untuk mengubah warna teks menjadi berwarna putih.</p>
+<p>Gunakan <code class="highlighter-rouge">.post-img-overlay</code>, dan bungkus thumbnail dan konten dengan <code class="highlighter-rouge">.post-overlay</code>. Membutuhkan penggunaan <a href="#inverted-text"><code class="highlighter-rouge">.post-inverse</code></a> untuk mengubah warna teks menjadi berwarna putih.</p>
 
 <div class="bd-example">
   <div class="post post-inverse">
@@ -2619,16 +2623,55 @@
   <span class="nt">&lt;/b:loop&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="background-variants">Background variants</h2>
+<h2 id="post-styles">Post styles</h2>
 
-<p>Ubah warna posting dengan mengeset <code class="highlighter-rouge">background-color</code> dan <code class="highlighter-rouge">border-color</code>, Anda dapat menggunakan kelas-kelas yang tersedia atau menggunakan <em>custom styles</em>. Latar belakang yang berwarna gelap membutuhkan penggunaan <code class="highlighter-rouge">.post-inverse</code> untuk mengubah warna teks menjadi berwarna putih.</p>
+<p>Komponen posting meliputi berbagai pilihan untuk mengubah <em>backgrounds</em>, <em>borders</em>, dan <em>color</em>.</p>
 
-<p>Format kelasnya adalah <code class="highlighter-rouge">.post-{color}</code>.</p>
+<h3 id="inverted-text">Inverted text</h3>
+
+<p>Gunakan <code class="highlighter-rouge">.post-inverse</code> untuk mengubah warna teks menjadi berwarna putih. Kemudian, tentukan warna <code class="highlighter-rouge">background-color</code> dan <code class="highlighter-rouge">border-color</code> dengan warna yang gelap.</p>
+
+<p>Anda juga dapat menggunakan <code class="highlighter-rouge">.post-inverse</code> dengan kelas utilitas warna, lihat <a href="#background-variants">background variants</a>.</p>
+
+<div class="bd-example">            
+  <div class="post post-inverse" style="background-color: #333; border-color: #333;">
+    <div class="post-header">
+      <ul class="post-header-list">
+        <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
+        <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
+        <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
+      </ul>
+    </div>
+    <div class="post-content">
+      <h2 class="post-title">
+        <a class="post-title-link" href="#">Post title</a>
+      </h2>
+      <div class="post-meta">
+        <ul class="post-meta-list">
+          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
+          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
+          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
+        </ul>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+    </div>
+    <div class="post-footer"><i class="fa fa-tags"></i> <span>Labels:</span> <a href="#">Label1</a>, <a href="#">Label2</a></div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse"</span> <span class="na">style=</span><span class="s">"background-color: #333; border-color: #333;"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="background-variants">Background variants</h3>
+
+<p>Ubah warna posting dengan mengeset <code class="highlighter-rouge">background-color</code> dan <code class="highlighter-rouge">border-color</code>, Anda dapat menggunakan <a href="/utilities/colors/">kelas utilitas warna</a> atau menggunakan <em>custom styles</em>. <strong>Latar belakang yang berwarna gelap membutuhkan penggunaan <code class="highlighter-rouge">.post-inverse</code></strong>.</p>
+
+<p>Berikut adalah beberapa contoh dengan menggunakan kelas utilitas warna:</p>
 
 <div class="bd-example">
-  <div class="post post-faded">
+  <div class="post post-inverse bg-blue-500 border-blue-600">
     <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Faded</a></h2>
+      <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
       <div class="post-meta">
         <ul class="post-meta-list">
           <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
@@ -2639,9 +2682,9 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div><!-- /.post-content -->
   </div><!-- /.post -->
-  <div class="post post-inverse post-blue">
+  <div class="post post-inverse bg-teal-500 border-teal-600">
     <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Blue</a></h2>
+      <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
       <div class="post-meta">
         <ul class="post-meta-list">
           <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
@@ -2652,139 +2695,9 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div><!-- /.post-content -->
   </div><!-- /.post -->
-  <div class="post post-inverse post-green">
+  <div class="post bg-grey-100 border-grey-200">
     <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Green</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-teal">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Teal</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-red">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Red</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-orange">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Orange</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-purple">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Purple</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-yellow">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Yellow</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-pink">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Pink</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-gray">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Gray</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-brown">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Brown</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse post-black">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Black</a></h2>
-      <div class="post-meta">
-        <ul class="post-meta-list">
-          <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
-          <li><i class="fa fa-clock-o"></i> <span>at</span> <time datetime="2017-01-01T00:00:00+00:00">Jan 01, 2017</time></li>
-          <li><i class="fa fa-comments"></i> <a href="#">5 Comments</a></li>
-        </ul>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-inverse" style="background-color: #607d8b; border-color: #263238;">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Custom</a></h2>
+      <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
       <div class="post-meta">
         <ul class="post-meta-list">
           <li><i class="fa fa-user"></i> <span>by</span> <a href="#">Bootsblogger</a></li>
@@ -2798,119 +2711,41 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-faded"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-blue"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-green"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-teal"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-red"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-orange"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-purple"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-yellow"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-pink"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-gray"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-brown"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-black"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse"</span> <span class="na">style=</span><span class="s">"background-color: #607d8b; border-color: #263238;"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse bg-blue-500 border-blue-600"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse bg-teal-500 border-teal-600"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post bg-grey-100 border-grey-200"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="outline-variants">Outline variants</h2>
+<h3 id="outline-variants">Outline variants</h3>
 
-<p>Posting berwarna, tetapi bukan pada latar belakang, hanya mengubah <code class="highlighter-rouge">border-color</code>. Ubah <code class="highlighter-rouge">.post-{color}</code> menjadi <code class="highlighter-rouge">.post-outline-{color}</code>.</p>
+<p>Posting berwarna, tetapi bukan pada latar belakang, hanya mengeset <code class="highlighter-rouge">border-color</code>.</p>
+
+<p>Untuk mengubah latar belakang menjadi transparan, tambahkan <code class="highlighter-rouge">background-color: transparent;</code>.</p>
 
 <div class="bd-example">
-  <div class="post post-outline-faded">
+  <div class="post border-orange-500">
     <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Faded</a></h2>
+      <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div><!-- /.post-content -->
   </div><!-- /.post -->
-  <div class="post post-outline-blue">
+  <div class="post border-red-500">
     <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Blue</a></h2>
+      <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div><!-- /.post-content -->
   </div><!-- /.post -->
-  <div class="post post-outline-green">
+  <div class="post" style="border-color: #333;">
     <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Green</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-teal">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Teal</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-red">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Red</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-orange">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Orange</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-purple">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Purple</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-yellow">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Yellow</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-pink">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Pink</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-gray">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Gray</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-brown">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Brown</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post post-outline-black">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Black</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div><!-- /.post-content -->
-  </div><!-- /.post -->
-  <div class="post" style="background-color: transparent; border-color: #263238;">
-    <div class="post-content">
-      <h2 class="post-title"><a class="post-title-link" href="#">Custom</a></h2>
+      <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
     </div><!-- /.post-content -->
   </div><!-- /.post -->
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-faded"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-blue"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-green"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-teal"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-red"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-orange"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-purple"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-yellow"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-pink"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-gray"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-brown"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-outline-black"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span> <span class="na">style=</span><span class="s">"background-color: transparent; border-color: #263238;"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post border-orange-500"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post border-red-500"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span> <span class="na">style=</span><span class="s">"background-color: transparent; border-color: #333;"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="columns">Columns</h2>
 
@@ -3640,7 +3475,7 @@
 <div class="bd-example">
   <div class="post">
     <div class="post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3">
-      <div class="post-img-left post-img-gutter post-orange">
+      <div class="post-img-left post-img-gutter bg-orange-500">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
       <div class="post-content">
@@ -3655,7 +3490,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter post-orange"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter bg-orange-500"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content"</span><span class="nt">&gt;</span>
@@ -3670,7 +3505,7 @@
       <div class="post-img-left post-img-gutter">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
-      <div class="post-content post-inverse post-orange">
+      <div class="post-content post-inverse bg-orange-500">
         <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
         <p><a class="btn btn-primary" href="#">Read more</a></p>
@@ -3685,7 +3520,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse post-orange"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse bg-orange-500"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -3694,10 +3529,10 @@
 <div class="bd-example">
   <div class="post">
     <div class="post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3">
-      <div class="post-img-left post-img-gutter post-gray">
+      <div class="post-img-left post-img-gutter bg-grey-500">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
-      <div class="post-content post-inverse post-orange">
+      <div class="post-content post-inverse bg-orange-500">
         <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
         <p><a class="btn btn-primary" href="#">Read more</a></p>
@@ -3709,22 +3544,22 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter post-gray"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter bg-grey-500"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse post-orange"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-inverse bg-orange-500"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <div class="bd-example">
-  <div class="post post-inverse post-red">
+  <div class="post post-inverse bg-red-500">
     <div class="post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3">
-      <div class="post-img-left post-img-gutter post-gray">
+      <div class="post-img-left post-img-gutter bg-grey-500">
         <a href="#"><img data-src="holder.js/100px180/?auto=yes&amp;text=Image" alt="Image" /></a>
       </div>
-      <div class="post-content post-orange">
+      <div class="post-content bg-orange-500">
         <h2 class="post-title"><a class="post-title-link" href="#">Post title</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
         <p><a class="btn btn-primary" href="#">Read more</a></p>
@@ -3734,12 +3569,12 @@
 </div>
 <!-- /.bd-example -->
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse post-red"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post post-inverse bg-red-500"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-horizontal-sm thumbnail-sm-5 thumbnail-md-4 thumbnail-lg-3 thumbnail-xl-3"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter post-gray"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-img-left post-img-gutter bg-grey-500"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content post-orange"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-content bg-orange-500"</span><span class="nt">&gt;</span>
       ...
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
