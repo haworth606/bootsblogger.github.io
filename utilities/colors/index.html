@@ -697,7 +697,10 @@
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#notation" id="markdown-toc-notation">Notation</a></li>
+  <li><a href="#notation" id="markdown-toc-notation">Notation</a>    <ul>
+      <li><a href="#hover-and-focus-states" id="markdown-toc-hover-and-focus-states">Hover and focus states</a></li>
+    </ul>
+  </li>
   <li><a href="#colors" id="markdown-toc-colors">Colors</a></li>
   <li><a href="#example-text-colors" id="markdown-toc-example-text-colors">Example text colors</a></li>
   <li><a href="#example-background-colors" id="markdown-toc-example-background-colors">Example background colors</a></li>
@@ -761,6 +764,18 @@
   <li><code class="highlighter-rouge">text-red-500</code></li>
   <li><code class="highlighter-rouge">bg-deep-orange-500</code></li>
   <li><code class="highlighter-rouge">border-green-500</code></li>
+</ul>
+
+<h3 id="hover-and-focus-states">Hover and focus states</h3>
+
+<p>Ubah <code class="highlighter-rouge">.{prop}-{color}-{level}</code> menjadi <code class="highlighter-rouge">.{prop}-hover-{color}-{level}</code> untuk memberikan <code class="highlighter-rouge">hover</code> dan <code class="highlighter-rouge">focus</code> <em>states</em>.</p>
+
+<p>Example:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">text-hover-red-500</code></li>
+  <li><code class="highlighter-rouge">bg-hover-deep-orange-500</code></li>
+  <li><code class="highlighter-rouge">border-hover-green-500</code></li>
 </ul>
 
 <h2 id="colors">Colors</h2>
@@ -1707,7 +1722,7 @@
 <div class="row bg-grey-200 p-3 mb-3">
   <div class="col-sm-6">
     <ul class="list-unstyled mb-sm-0">
-      <li class="bg-grey-100 p-2"><code>.{prop}-black</code></li>
+      <li class="bg-grey-100 text-grey-700 p-2"><code>.{prop}-black</code> and <code>.{prop}-hover-black</code></li>
       <li class="bg-black text-white p-3">
         <span class="d-block font-weight-bold mb-5">Black</span>
         <span>None</span>
@@ -1717,7 +1732,7 @@
   </div>
   <div class="col-sm-6">
     <ul class="list-unstyled mb-0">
-      <li class="bg-grey-100 p-2"><code>.{prop}-white</code></li>
+      <li class="bg-grey-100 text-grey-700 p-2"><code>.{prop}-white</code> and <code>.{prop}-hover-white</code></li>
       <li class="bg-white text-black p-3">
         <span class="d-block font-weight-bold mb-5">White</span>
         <span>None</span>
@@ -1741,13 +1756,15 @@
 <p>Links.</p>
 
 <div class="bd-example" data-example-id="">
-<a class="text-red-500" href="#">Red link</a>
-<a class="text-pink-500" href="#">Pink link</a>
-<a class="text-purple-500" href="#">Purple link</a>
+<a class="text-red-500 text-hover-red-800" href="#">Red link</a>
+<a class="text-pink-500 text-hover-pink-800" href="#">Pink link</a>
+<a class="text-purple-500 text-hover-purple-800" href="#">Purple link</a>
+<a class="text-grey-500 text-hover-blue-500" href="#">Mix and match</a>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-red-500"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Red link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-pink-500"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pink link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-purple-500"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Purple link<span class="nt">&lt;/a&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-red-500 text-hover-red-800"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Red link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-pink-500 text-hover-pink-800"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pink link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-purple-500 text-hover-purple-800"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Purple link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-grey-500 text-hover-blue-500"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Mix and match<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
 <h2 id="example-background-colors">Example background colors</h2>
 
@@ -1763,13 +1780,15 @@
 <p>Links.</p>
 
 <div class="bd-example" data-example-id="">
-<a class="bg-red-500 text-white d-block p-3 mb-3" href="#">Red link</a>
-<a class="bg-pink-500 text-white d-block p-3 mb-3" href="#">Pink link</a>
-<a class="bg-purple-500 text-white d-block p-3 mb-3" href="#">Purple link</a>
+<a class="bg-red-500 bg-hover-red-800 text-white d-block p-3 mb-3" href="#">Red link</a>
+<a class="bg-pink-500 bg-hover-pink-800 text-white d-block p-3 mb-3" href="#">Pink link</a>
+<a class="bg-purple-500 bg-hover-purple-800 text-white d-block p-3 mb-3" href="#">Purple link</a>
+<a class="bg-orange-500 bg-hover-purple-500 text-white text-hover-orange-500 d-block p-3 mb-3" href="#">Mix and match</a>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-red-500 text-white d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Red link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-pink-500 text-white d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pink link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-purple-500 text-white d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Purple link<span class="nt">&lt;/a&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-red-500 bg-hover-red-800 text-white d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Red link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-pink-500 bg-hover-pink-800 text-white d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Pink link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-purple-500 bg-hover-purple-800 text-white d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Purple link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"bg-orange-500 bg-hover-purple-500 text-white text-hover-orange-500 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Mix and match<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
 <h2 id="example-border-colors">Example border colors</h2>
 
@@ -1785,13 +1804,15 @@
 <p>Links.</p>
 
 <div class="bd-example" data-example-id="">
-<a class="border-red-100 text-grey-700 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Red link</a>
-<a class="border-pink-100 text-grey-700 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Pink link</a>
-<a class="border-purple-100 text-grey-700 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Purple link</a>
+<a class="border-red-100 border-hover-red-500 text-grey-700 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Red link</a>
+<a class="border-pink-100 border-hover-pink-500 text-grey-700 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Pink link</a>
+<a class="border-purple-100 border-hover-purple-500 text-grey-700 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Purple link</a>
+<a class="border-orange-500 border-hover-purple-500 text-grey-700 text-hover-purple-500 d-block p-3 mb-3" href="#" style="border: 2px solid transparent;">Mix and match</a>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-red-100 text-grey-700 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Red link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-pink-100 text-grey-700 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Pink link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-purple-100 text-grey-700 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Purple link<span class="nt">&lt;/a&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-red-100 border-hover-red-500 text-grey-700 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Red link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-pink-100 border-hover-pink-500 text-grey-700 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Pink link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-purple-100 border-hover-purple-500 text-grey-700 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Purple link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"border-orange-500 border-hover-purple-500 text-grey-700 text-hover-purple-500 d-block p-3 mb-3"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"border: 2px solid transparent;"</span><span class="nt">&gt;</span>Mix and match<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
 
         </div>
