@@ -699,6 +699,7 @@
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#notation" id="markdown-toc-notation">Notation</a>    <ul>
       <li><a href="#hover-and-focus-states" id="markdown-toc-hover-and-focus-states">Hover and focus states</a></li>
+      <li><a href="#active-and-disabled-states" id="markdown-toc-active-and-disabled-states">Active and disabled states</a></li>
     </ul>
   </li>
   <li><a href="#colors" id="markdown-toc-colors">Colors</a></li>
@@ -768,15 +769,31 @@
 
 <h3 id="hover-and-focus-states">Hover and focus states</h3>
 
-<p>Ubah <code class="highlighter-rouge">.{prop}-{color}-{level}</code> menjadi <code class="highlighter-rouge">.{prop}-hover-{color}-{level}</code> untuk memberikan <code class="highlighter-rouge">hover</code> dan <code class="highlighter-rouge">focus</code> <em>states</em>.</p>
+<p>Ubah <code class="highlighter-rouge">.{prop}-{color}-{level}</code> menjadi <code class="highlighter-rouge">.{prop}-hover-{color}-{level}</code> untuk menambahkan <code class="highlighter-rouge">hover</code> dan <code class="highlighter-rouge">focus</code> <em>states</em>.</p>
 
 <p>Example:</p>
 
-<ul>
-  <li><code class="highlighter-rouge">text-hover-red-500</code></li>
-  <li><code class="highlighter-rouge">bg-hover-deep-orange-500</code></li>
-  <li><code class="highlighter-rouge">border-hover-green-500</code></li>
-</ul>
+<div class="bd-example" data-example-id="">
+<a href="#" class="text-hover-red-500">Link</a>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-hover-red-500"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<h3 id="active-and-disabled-states">Active and disabled states</h3>
+
+<p>Ubah <code class="highlighter-rouge">.{prop}-{color}-{level}</code> menjadi <code class="highlighter-rouge">.{prop}-active-{color}-{level}</code> dan <code class="highlighter-rouge">.{prop}-disabled-{color}-{level}</code> untuk membuat <em>active</em> dan <em>disabled</em> <em>states</em>.</p>
+
+<p><em>Active</em> dan <em>disabled</em> <em>states</em> hanya bekerja jika terdapat <code class="highlighter-rouge">.active</code> dan <code class="highlighter-rouge">.disabled</code> (atau atribut <code class="highlighter-rouge">disabled</code>).</p>
+
+<p>Example:</p>
+
+<div class="bd-example" data-example-id="">
+<a href="#" class="btn btn-primary text-active-white bg-active-red-500 border-active-red-700 active" role="button" aria-pressed="true">Primary link</a>
+<button type="button" class="btn btn-primary text-disabled-red-200 bg-disabled-red-50 border-disabled-red-100" disabled="">Primary button</button>
+<a href="#" class="btn btn-primary text-disabled-red-200 bg-disabled-red-50 border-disabled-red-100 disabled" role="button" aria-disabled="true">Primary link</a>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary text-active-white bg-active-red-500 border-active-red-700 active"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary text-disabled-red-200 bg-disabled-red-50 border-disabled-red-100"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary text-disabled-red-200 bg-disabled-red-50 border-disabled-red-100 disabled"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
 <h2 id="colors">Colors</h2>
 
@@ -1722,7 +1739,7 @@
 <div class="row bg-grey-200 p-3 mb-3">
   <div class="col-sm-6">
     <ul class="list-unstyled mb-sm-0">
-      <li class="bg-grey-100 text-grey-700 p-2"><code>.{prop}-black</code> and <code>.{prop}-hover-black</code></li>
+      <li class="bg-grey-100 text-grey-700 p-2"><code>.{prop}-black</code> and <code>.{prop}-{hover, active, disabled}-black</code></li>
       <li class="bg-black text-white p-3">
         <span class="d-block font-weight-bold mb-5">Black</span>
         <span>None</span>
@@ -1732,7 +1749,7 @@
   </div>
   <div class="col-sm-6">
     <ul class="list-unstyled mb-0">
-      <li class="bg-grey-100 text-grey-700 p-2"><code>.{prop}-white</code> and <code>.{prop}-hover-white</code></li>
+      <li class="bg-grey-100 text-grey-700 p-2"><code>.{prop}-white</code> and <code>.{prop}-{hover, active, disabled}-white</code></li>
       <li class="bg-white text-black p-3">
         <span class="d-block font-weight-bold mb-5">White</span>
         <span>None</span>
