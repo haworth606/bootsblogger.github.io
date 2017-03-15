@@ -249,11 +249,7 @@ function postsDefault(json) {
     }
 
     // Base class' start
-    if (config.clickable.active === true) {
-      html += '<article class="post post-clickable ' + config.classes.post + '" id="' + postID + '" data-url="' + postURL + '">'
-    } else {
-      html += '<article class="post ' + config.classes.post + '" id="' + postID + '">'
-    }
+    html += '<article class="post ' + config.classes.post + '" id="' + postID + '">'
 
     // Header
     if (config.author.placement === 'header' || config.date.placement === 'header' || config.numComments.placement === 'header' || config.labels.placement === 'header') {

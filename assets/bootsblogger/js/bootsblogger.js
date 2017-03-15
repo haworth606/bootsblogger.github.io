@@ -9,23 +9,6 @@
 
   $(function () {
 
-    $('.post-clickable').on('click', function () {
-      window.location = $(this).attr('data-url')
-    })
-
-    $('.post-clickable a').on('click', function (e) {
-      e.stopPropagation()
-    })
-
-  })
-
-}(jQuery));
-
-(function ($) {
-  'use strict';
-
-  $(function () {
-
     // COLLAPSABLE WIDGET
     // ==================
 
