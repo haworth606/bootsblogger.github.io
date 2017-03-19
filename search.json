@@ -12,10 +12,6 @@
     
 
     
-
-    
-
-    
         {
             "title" : "Best practices",
             "url"   : "/getting-started/best-practices/"
@@ -45,13 +41,6 @@
 
     
         {
-            "title" : "Colors",
-            "url"   : "/utilities/colors/"
-        } ,
-    
-
-    
-        {
             "title" : "Contents",
             "url"   : "/getting-started/contents/"
         } ,
@@ -73,13 +62,6 @@
 
     
         {
-            "title" : "Donation",
-            "url"   : "/about/donation/"
-        } ,
-    
-
-    
-        {
             "title" : "Download",
             "url"   : "/getting-started/download/"
         } ,
@@ -96,13 +78,6 @@
         {
             "title" : "Head",
             "url"   : "/core-template/head/"
-        } ,
-    
-
-    
-        {
-            "title" : "History",
-            "url"   : "/about/history/"
         } ,
     
 
@@ -131,13 +106,6 @@
         {
             "title" : "Labels - select",
             "url"   : "/blogger-json-feeds/labels-select/"
-        } ,
-    
-
-    
-        {
-            "title" : "License FAQs",
-            "url"   : "/about/license/"
         } ,
     
 
@@ -194,13 +162,6 @@
         {
             "title" : "Spacing",
             "url"   : "/utilities/spacing/"
-        } ,
-    
-
-    
-        {
-            "title" : "Team",
-            "url"   : "/about/team/"
         } ,
     
 

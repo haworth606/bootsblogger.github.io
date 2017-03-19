@@ -23,11 +23,11 @@
 }
 .bd-booticon.outline {
   background-color: transparent;
-  border: 1px solid #ffd9ba;
+  border: 1px solid #ffe5d0;
 }
 
 .bd-navbar .navbar-nav .nav-link {
-  color: #a89586;
+  color: #a78f7c;
 }
 .bd-navbar .navbar-nav .nav-link.active, .bd-navbar .navbar-nav .nav-link:hover, .bd-navbar .navbar-nav .nav-link:focus {
   color: #292b2c;
@@ -44,7 +44,7 @@
 .bd-masthead {
   position: relative;
   padding: 3rem 15px 2rem;
-  color: #ffd9ba;
+  color: #ffe5d0;
   text-align: center;
   background-image: -webkit-linear-gradient(315deg, #893e00, #ef6c00, #ff943d);
   background-image: -o-linear-gradient(315deg, #893e00, #ef6c00, #ff943d);
@@ -52,8 +52,8 @@
 }
 .bd-masthead .bd-booticon {
   margin: 0 auto 2rem;
-  color: #ffd9ba;
-  border-color: #ffd9ba;
+  color: #ffe5d0;
+  border-color: #ffe5d0;
 }
 .bd-masthead h1 {
   font-weight: 300;
@@ -79,7 +79,7 @@
   border-color: #ffe484;
 }
 .bd-masthead .btn:hover {
-  color: #393029;
+  color: #463c34;
   background-color: #ffe484;
   border-color: #ffe484;
 }
@@ -355,7 +355,7 @@
 .bd-pageheader {
   padding: 2rem 15px;
   margin-bottom: 1.5rem;
-  color: #ffd9ba;
+  color: #ffe5d0;
   text-align: center;
   background-color: #ef6c00;
 }
@@ -955,13 +955,13 @@
 }
 .btn-bs {
   font-weight: 500;
-  color: #ff943d;
-  border-color: #ff943d;
+  color: #ff8f33;
+  border-color: #ff8f33;
 }
 .btn-bs:hover, .btn-bs:focus, .btn-bs:active {
   color: #fff;
-  background-color: #ff943d;
-  border-color: #ff943d;
+  background-color: #ff8f33;
+  border-color: #ff8f33;
 }
 
 .bd-callout {
@@ -1140,7 +1140,7 @@
   background-color: #ef6c00;
 }
 .color-swatches .bd-purple-light {
-  background-color: #ffd9ba;
+  background-color: #ffe5d0;
 }
 .color-swatches .bd-purple-lighter {
   background-color: #e5e1ea;
@@ -1181,6 +1181,14 @@
     display: block;
   }
 }
+.bd-example > .post:last-child,
+.bd-example > .post-group {
+  margin-bottom: 0;
+}
+
+.bd-example.bd-example-widget {
+  background-color: #7d7d7d;
+}
 .bd-example .wg-basic:not(.wg-columns),
 .bd-example .wg-box:not(.wg-columns),
 .bd-example .wg-panel:not(.wg-columns) {
@@ -1195,13 +1203,12 @@
   margin-bottom: 0;
 }
 .bd-example .wg-grid-example {
-  display: inline-block;
   max-width: none !important;
-  margin-bottom: -1.25rem !important;
 }
 
 .bd-example .navmenu {
   max-width: 20rem;
+  margin-bottom: 0;
 }
 .bd-example .navmenu-fixed-left,
 .bd-example .navmenu-fixed-right {
@@ -1209,14 +1216,12 @@
 }
 .bd-example .navmenu-fixed-left {
   float: left;
-  width: 15rem;
   margin-top: -1.5rem;
   margin-bottom: -1.5rem;
   margin-left: -1.5rem;
 }
 .bd-example .navmenu-fixed-right {
   float: right;
-  width: 15rem;
   margin-top: -1.5rem;
   margin-right: -1.5rem;
   margin-bottom: -1.5rem;

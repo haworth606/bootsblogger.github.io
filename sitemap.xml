@@ -13,16 +13,10 @@
 <loc>http://0.0.0.0:9001/getting-started/build-tools/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:9001/utilities/colors/</loc>
-</url>
-<url>
 <loc>http://0.0.0.0:9001/getting-started/contents/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9001/blogger-json-feeds/count/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/about/donation/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9001/getting-started/download/</loc>
@@ -32,9 +26,6 @@
 </url>
 <url>
 <loc>http://0.0.0.0:9001/core-template/head/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/about/history/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9001/</loc>
@@ -50,9 +41,6 @@
 </url>
 <url>
 <loc>http://0.0.0.0:9001/blogger-json-feeds/labels-select/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/about/license/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9001/components/navmenu/</loc>
@@ -80,9 +68,6 @@
 </url>
 <url>
 <loc>http://0.0.0.0:9001/utilities/spacing/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/about/team/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9001/components/widget-basic/</loc>
