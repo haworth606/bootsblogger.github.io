@@ -1186,26 +1186,6 @@
   margin-bottom: 0;
 }
 
-.bd-example.bd-example-widget {
-  background-color: #7d7d7d;
-}
-.bd-example .wg-basic:not(.wg-columns),
-.bd-example .wg-box:not(.wg-columns),
-.bd-example .wg-panel:not(.wg-columns) {
-  max-width: 20rem;
-}
-.bd-example .wg-basic:last-child,
-.bd-example .wg-box:last-child,
-.bd-example .wg-panel:not(.wg-panel-group):last-child {
-  margin-bottom: -1rem;
-}
-.bd-example .wg-panel-group:last-child {
-  margin-bottom: 0;
-}
-.bd-example .wg-grid-example {
-  max-width: none !important;
-}
-
 .bd-example .navmenu {
   max-width: 20rem;
   margin-bottom: 0;
@@ -1225,6 +1205,19 @@
   margin-top: -1.5rem;
   margin-right: -1.5rem;
   margin-bottom: -1.5rem;
+}
+
+.bd-example.bd-example-widget {
+  background-color: #7d7d7d;
+}
+.bd-example .wg:not(.wg-columns):not(.wg-grid-example) {
+  max-width: 20rem;
+}
+.bd-example .wg:not(.wg-panel-group):last-child {
+  margin-bottom: -1rem;
+}
+.bd-example .wg-panel-group:last-child {
+  margin-bottom: 0;
 }
 
 .table-includes .highlight {

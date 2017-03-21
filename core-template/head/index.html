@@ -370,36 +370,8 @@
           
 
           <li class="">
-            <a href="/components/widget-basic/">
-              Widget basic
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/widget-box/">
-              Widget box
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/widget-panel/">
-              Widget panel
+            <a href="/components/widget/">
+              Widget
             </a>
 
             
@@ -460,20 +432,6 @@
           <li class="">
             <a href="/utilities/figures/">
               Figures
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/utilities/widget/">
-              Widget
             </a>
 
             
@@ -683,7 +641,7 @@
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchQuery'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Search results page --&gt;</span>
-  <span class="nt">&lt;title&gt;</span>Search Results for -<span class="nt">&lt;data:blog</span><span class="err">.</span><span class="na">searchQuery</span><span class="nt">/&gt;</span>- | <span class="nt">&lt;data:blog</span><span class="err">.</span><span class="na">title</span><span class="nt">/&gt;&lt;/title&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Search Results for *<span class="nt">&lt;data:blog</span><span class="err">.</span><span class="na">searchQuery</span><span class="nt">/&gt;</span>* | <span class="nt">&lt;data:blog</span><span class="err">.</span><span class="na">title</span><span class="nt">/&gt;&lt;/title&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;archive&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Archive page --&gt;</span>
@@ -737,7 +695,7 @@
   <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.postImageThumbnailUrl'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- 72 x 72 --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'data:blog.postThumbnailUrl'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:else/&gt;</span><span class="c">&lt;!-- No image --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'https://placehold.it/512/eee/png?text=NO+IMAGE+AVAILABLE'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.title'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;static_page&amp;quot;'</span><span class="nt">/&gt;</span>
@@ -747,37 +705,36 @@
   <span class="nt">&lt;b:else/&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.pageName'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'https://placehold.it/256/eee/png?text=Page'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.title'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchLabel'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Label/category page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.labelPage }}'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/png?text=&amp;quot; + data:blog.pageName'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Showing posts with label *&amp;quot; + data:blog.pageName + &amp;quot;*.&amp;quot;'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.pageName'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchQuery'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Search results page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.searchResultsPage }}'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'https://placehold.it/256/eee/png?text=Search'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Search Results for *&amp;quot; + data:blog.searchQuery + &amp;quot;*.&amp;quot;'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'https://placehold.it/512/eee/777?text=Search+Results'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;archive&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Archive page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.archivePage }}'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/png?text=&amp;quot; + data:blog.pageName'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Archive for &amp;quot; + data:blog.pageName + &amp;quot;.&amp;quot;'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">expr:href=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.pageName'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;error_page&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Error page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.description.errorPage }}'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'https://placehold.it/256/eee/png?text=404'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'404: sorry, the page you were looking for in this blog does not exist.'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'https://placehold.it/512/eee/777?text=404'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:else/&gt;</span>
   <span class="c">&lt;!-- Homepage and default (https://example.blogspot.com/search) --&gt;</span>
   <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.metaDescription'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.metaDescription'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:else/&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.description.homePage }}'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.title'</span> <span class="na">name=</span><span class="s">'description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.keywords }}'</span> <span class="na">name=</span><span class="s">'keywords'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'{{ blog.social.image }}'</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">''</span> <span class="na">rel=</span><span class="s">'image_src'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
 <h3 id="twitter-cards-meta-tags-twitterxml">Twitter Cards <small class="text-muted">meta-tags-twitter.xml</small></h3>
@@ -790,8 +747,8 @@
   <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'summary'</span> <span class="na">name=</span><span class="s">'twitter:card'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span>
 
-<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ social.twitterUsernameWebsite }}'</span> <span class="na">name=</span><span class="s">'twitter:site'</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ social.twitterUsernameCreator }}'</span> <span class="na">name=</span><span class="s">'twitter:creator'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">''</span> <span class="na">name=</span><span class="s">'twitter:site'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">''</span> <span class="na">name=</span><span class="s">'twitter:creator'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.pageType != &amp;quot;error_page&amp;quot;'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.canonicalUrl'</span> <span class="na">name=</span><span class="s">'twitter:url'</span><span class="nt">/&gt;</span>
@@ -813,7 +770,7 @@
   <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.postImageThumbnailUrl'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- 72 x 72 --&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.postThumbnailUrl'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:else/&gt;</span><span class="c">&lt;!-- No image --&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/512/eee/png?text=NO+IMAGE+AVAILABLE'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;static_page&amp;quot;'</span><span class="nt">/&gt;</span>
@@ -824,41 +781,41 @@
   <span class="nt">&lt;b:else/&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.pageName'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/256/eee/png?text=Page'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchLabel'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Label/category page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.labelPage }}'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.labelPage }}'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/png?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.pageName + &amp;quot; | &amp;quot; + data:blog.title'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Showing posts with label *&amp;quot; + data:blog.pageName + &amp;quot;*.&amp;quot;'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchQuery'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Search results page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.searchResultsPage }}'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.searchResultsPage }}'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/256/eee/png?text=Search'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Search Results for *&amp;quot; + data:blog.searchQuery + &amp;quot;* | &amp;quot; + data:blog.title'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Search Results for *&amp;quot; + data:blog.searchQuery + &amp;quot;*.&amp;quot;'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/512/eee/777?text=Search+Results'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;archive&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Archive page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.archivePage }}'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.archivePage }}'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/png?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Archive for &amp;quot; + data:blog.pageName + &amp;quot; | &amp;quot; + data:blog.title'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Archive for &amp;quot; + data:blog.pageName + &amp;quot;.&amp;quot;'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;error_page&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Error page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.title.errorPage }}'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.description.errorPage }}'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/256/eee/png?text=404'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'Page Not Found'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'404: sorry, the page you were looking for in this blog does not exist.'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/512/eee/777?text=404'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:else/&gt;</span>
   <span class="c">&lt;!-- Homepage and default (https://example.blogspot.com/search) --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.homePage }}'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.title'</span> <span class="na">name=</span><span class="s">'twitter:title'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.metaDescription'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.metaDescription'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:else/&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.description.homePage }}'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.title'</span> <span class="na">name=</span><span class="s">'twitter:description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.social.image }}'</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">''</span> <span class="na">property=</span><span class="s">'twitter:image'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
 <h3 id="facebook-open-graph-meta-tags-facebookxml">Facebook Open Graph <small class="text-muted">meta-tags-facebook.xml</small></h3>
@@ -893,7 +850,7 @@
   <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.postImageThumbnailUrl'</span><span class="nt">/&gt;</span><span class="c">&lt;!-- 72 x 72 --&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.postThumbnailUrl'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:else/&gt;</span><span class="c">&lt;!-- No image --&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/512/eee/png?text=NO+IMAGE+AVAILABLE'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;static_page&amp;quot;'</span><span class="nt">/&gt;</span>
@@ -904,41 +861,41 @@
   <span class="nt">&lt;b:else/&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.pageName'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/256/eee/png?text=Page'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchLabel'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Label/category page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.labelPage }}'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.labelPage }}'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/png?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.pageName + &amp;quot; | &amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Showing posts with label *&amp;quot; + data:blog.pageName + &amp;quot;*.&amp;quot;'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchQuery'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Search results page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.searchResultsPage }}'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.searchResultsPage }}'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/256/eee/png?text=Search'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Search Results for *&amp;quot; + data:blog.searchQuery + &amp;quot;* | &amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Search Results for *&amp;quot; + data:blog.searchQuery + &amp;quot;*.&amp;quot;'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/512/eee/777?text=Search+Results'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;archive&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Archive page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.archivePage }}'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.description.archivePage }}'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/png?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Archive for &amp;quot; + data:blog.pageName + &amp;quot; | &amp;quot; + data:blog.title'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;Archive for &amp;quot; + data:blog.pageName + &amp;quot;.&amp;quot;'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'&amp;quot;https://placehold.it/512/eee/777?text=&amp;quot; + data:blog.pageName'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;error_page&amp;quot;'</span><span class="nt">/&gt;</span>
   <span class="c">&lt;!-- Error page --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.title.errorPage }}'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.description.errorPage }}'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/256/eee/png?text=404'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'Page Not Found'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'404: sorry, the page you were looking for in this blog does not exist.'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'https://placehold.it/512/eee/777?text=404'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 
 <span class="nt">&lt;b:else/&gt;</span>
   <span class="c">&lt;!-- Homepage and default (https://example.blogspot.com/search) --&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'{{ blog.meta.title.homePage }}'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.title'</span> <span class="na">property=</span><span class="s">'og:title'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.metaDescription'</span><span class="nt">&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.metaDescription'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;b:else/&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.meta.description.homePage }}'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">expr:content=</span><span class="s">'data:blog.title'</span> <span class="na">property=</span><span class="s">'og:description'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/b:if&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">'{{ blog.social.image }}'</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">''</span> <span class="na">property=</span><span class="s">'og:image'</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
 <h2 id="remove-bloggers-default-css-blogger-css-hackxml">Remove Blogger’s default CSS <small class="text-muted">blogger-css-hack.xml</small></h2>

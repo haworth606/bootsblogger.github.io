@@ -70,15 +70,6 @@
 <loc>http://0.0.0.0:9001/utilities/spacing/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:9001/components/widget-basic/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/components/widget-box/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/components/widget-panel/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9001/utilities/widget/</loc>
+<loc>http://0.0.0.0:9001/components/widget/</loc>
 </url>
 </urlset>

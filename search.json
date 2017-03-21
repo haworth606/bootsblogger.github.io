@@ -12,6 +12,8 @@
     
 
     
+
+    
         {
             "title" : "Best practices",
             "url"   : "/getting-started/best-practices/"
@@ -168,28 +170,7 @@
     
         {
             "title" : "Widget",
-            "url"   : "/utilities/widget/"
-        } ,
-    
-
-    
-        {
-            "title" : "Widget basic",
-            "url"   : "/components/widget-basic/"
-        } ,
-    
-
-    
-        {
-            "title" : "Widget box",
-            "url"   : "/components/widget-box/"
-        } ,
-    
-
-    
-        {
-            "title" : "Widget panel",
-            "url"   : "/components/widget-panel/"
+            "url"   : "/components/widget/"
         } 
     
 
