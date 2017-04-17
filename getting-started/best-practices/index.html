@@ -574,7 +574,7 @@
   </li>
   <li><a href="#working-with-template-source-files" id="markdown-toc-working-with-template-source-files">Working with template source files</a>    <ul>
       <li><a href="#directory-structure" id="markdown-toc-directory-structure">Directory structure</a></li>
-      <li><a href="#include" id="markdown-toc-include">Include</a></li>
+      <li><a href="#inclusions" id="markdown-toc-inclusions">Inclusions</a></li>
     </ul>
   </li>
   <li><a href="#code-guide" id="markdown-toc-code-guide">Code guide</a></li>
@@ -590,7 +590,7 @@
 
 <h3 id="code-indentation">Code indentation</h3>
 
-<p>Selalu perhatikan indentasi kode, agar kode lebih mudah dibaca dan dipahami. Atur indentasi menggunakan dua spasi.</p>
+<p>Selalu perhatikan indentasi kode, agar kode lebih mudah dibaca dan dipahami. Atur indentasi menggunakan <code class="highlighter-rouge">2</code> spasi.</p>
 
 <h2 id="working-with-template-source-files">Working with template source files</h2>
 
@@ -598,52 +598,11 @@
 
 <h3 id="directory-structure">Directory structure</h3>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
-└── template-src/
-    ├── includes/
-    │   ├── assets
-    │   ├── blog-posts
-    │   └── head
-    ├── config.json
-    ├── style.css
-    └── index.xml</code></pre></figure>
+<p>Lihat <a href="/getting-started/contents/#bootsblogger-source-code">Bootsblogger source code</a></p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge">/includes</code></td>
-      <td>Wadah untuk berkas template terpisah.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">/includes/assets</code></td>
-      <td>Aset template.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">/includes/blog-posts</code></td>
-      <td>Bagian-bagian widget blog posting.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">/includes/head</code></td>
-      <td>Bagian-bagian yang ada di dalam <code class="highlighter-rouge">&lt;head&gt;</code>.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">/config.json</code></td>
-      <td>Berkas konfigurasi template.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">/style.css</code></td>
-      <td><em>Main CSS</em>.</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">/index.xml</code></td>
-      <td>Berkas utama template yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>.</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Catatan:</strong> Anda dapat membuat direktori dan/atau berkas baru sesuai dengan kebutuhan Anda, disarankan disimpan di dalam <code class="highlighter-rouge">template-src/content/</code>.</p>
 
-<p><strong>Catatan:</strong> Anda dapat membuat direktori dan/atau berkas baru sesuai dengan kebutuhan Anda, disarankan disimpan di dalam <code class="highlighter-rouge">/includes</code>.</p>
-
-<h3 id="include">Include</h3>
+<h3 id="inclusions">Inclusions</h3>
 
 <p>Menyertakan berkas template terpisah:</p>
 
@@ -653,9 +612,9 @@
 <span class="c">&lt;!-- Relative to the `basePath` (`template-src` directory) --&gt;</span>
 <span class="c">&lt;!--(bake /path/to/file)--&gt;</span></code></pre></figure>
 
-<p>Contoh menyertakan berkas <code class="highlighter-rouge">/includes/blog-posts/blog-posts.xml</code>:</p>
+<p>Contoh menyertakan berkas <code class="highlighter-rouge">/content/navbar.xml</code>:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /includes/blog-posts/blog-posts.xml)--&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--(bake /content/navbar.xml)--&gt;</span></code></pre></figure>
 
 <p>Contoh menyertakan berkas <code class="highlighter-rouge">/style.css</code>:</p>
 

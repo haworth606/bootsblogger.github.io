@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Body class">
-  <meta name="twitter:description" content="Terdapat kelas pada `<body>`, yang berbeda di setiap tipe halaman.">
+  <meta name="twitter:description" content="Terdapat kelas pada `<body>`, yang berbeda-beda berdasarkan tipe halaman.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,7 +24,7 @@
 
   <meta property="og:url" content="/core-template/body-class/">
   <meta property="og:title" content="Body class">
-  <meta property="og:description" content="Terdapat kelas pada `<body>`, yang berbeda di setiap tipe halaman.">
+  <meta property="og:description" content="Terdapat kelas pada `<body>`, yang berbeda-beda berdasarkan tipe halaman.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
@@ -561,42 +561,52 @@
         </div>
         <div class="col-12 col-md-9 pull-md-3 bd-content">
           <h1 class="bd-title" id="content">Body class</h1>
-          <p>Terdapat kelas pada <code class="highlighter-rouge">&lt;body&gt;</code>, yang berbeda di setiap tipe halaman.</p>
+          <p>Terdapat kelas pada <code class="highlighter-rouge">&lt;body&gt;</code>, yang berbeda-beda berdasarkan tipe halaman.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Menggunakan `ternary selector` --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">expr:class=</span><span class="s">'data:blog.url == data:blog.homepageUrl ? &amp;quot;blog-page-home&amp;quot; : data:blog.pageType == &amp;quot;item&amp;quot; ? &amp;quot;blog-page-item&amp;quot; : data:blog.pageType == &amp;quot;static_page&amp;quot; ? &amp;quot;blog-page-static&amp;quot; : data:blog.searchLabel ? &amp;quot;blog-page-label&amp;quot; : data:blog.searchQuery ? &amp;quot;blog-page-search&amp;quot; : data:blog.pageType == &amp;quot;archive&amp;quot; ? &amp;quot;blog-page-archive&amp;quot; : data:blog.pageType == &amp;quot;error_page&amp;quot; ? &amp;quot;blog-page-error&amp;quot; : &amp;quot;blog-page-default&amp;quot;'</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isHomepage'</span> <span class="na">name=</span><span class="s">'blog-view-home'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isPost'</span> <span class="na">name=</span><span class="s">'blog-view-item'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isPage'</span> <span class="na">name=</span><span class="s">'blog-view-static'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.search.label'</span> <span class="na">name=</span><span class="s">'blog-view-search-label'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.search.query'</span> <span class="na">name=</span><span class="s">'blog-view-search-query'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.search and !data:view.search.label and !data:view.search.query'</span> <span class="na">name=</span><span class="s">'blog-view-search-default'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isArchive'</span> <span class="na">name=</span><span class="s">'blog-view-archive'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isError'</span> <span class="na">name=</span><span class="s">'blog-view-error'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;b:class</span> <span class="na">cond=</span><span class="s">'data:view.isPreview'</span> <span class="na">name=</span><span class="s">'blog-view-preview'</span><span class="nt">/&gt;</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Homepage --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-home"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-home"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
-<span class="c">&lt;!-- Item/single page --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-item"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="c">&lt;!-- Item page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-item"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
 <span class="c">&lt;!-- Static page --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-static"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-static"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
-<span class="c">&lt;!-- Label/category page --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-label"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="c">&lt;!-- Search (label) page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-search-label"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
-<span class="c">&lt;!-- Search results page --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-search"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="c">&lt;!-- Search (query) page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-search-query"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Search (default) page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-search-default"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
 <span class="c">&lt;!-- Archive page --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-archive"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-archive"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
 <span class="c">&lt;!-- Error page --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-error"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-error"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span>
 
-<span class="c">&lt;!-- Default (https://example.blogspot.com/search) --&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-page-default"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+<span class="c">&lt;!-- Preview page --&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"blog-view-preview"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/body&gt;</span></code></pre></figure>
 
 <p>Contoh pemanfaatan:</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.blog-page-item</span> <span class="nc">.element</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.blog-view-item</span> <span class="nc">.element</span> <span class="p">{</span>
   <span class="nl">background-color</span><span class="p">:</span> <span class="m">#e07b53</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nc">.blog-page-label</span> <span class="nc">.element</span> <span class="p">{</span>
+<span class="nc">.blog-view-search-label</span> <span class="nc">.element</span> <span class="p">{</span>
   <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 

@@ -570,59 +570,60 @@
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#page-types" id="markdown-toc-page-types">Page types</a></li>
-  <li><a href="#conditional-tags" id="markdown-toc-conditional-tags">Conditional tags</a></li>
 </ul>
 
 <h2 id="page-types">Page types</h2>
 
-<p>Template dasar Bootsblogger mempunyai 8 tipe halaman, yang diciptakan dengan menggunakan <a href="#conditional-tags">tag kondisional di bawah</a>.</p>
+<p>Template dasar Bootsblogger menggunakan berbagai tipe halaman untuk mengatur kelas, tampilan blog, tampilan posting, dan lainnya. Di bawah ini adalah seleksi tipe halaman menggunakan <code class="highlighter-rouge">data:view</code>.</p>
 
-<ol>
-  <li>Homepage (halaman beranda).</li>
-  <li>Item/single page (halaman posting).</li>
-  <li>Static page (halaman statis).</li>
-  <li>Label/category page (halaman kategori).</li>
-  <li>Search results page (halaman hasil pencarian).</li>
-  <li>Archive page (halaman arsip posting).</li>
-  <li>Error page (halaman galat).</li>
-  <li>Default (<code class="highlighter-rouge">https://example.blogspot.com/search</code>).</li>
-</ol>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:comment&gt;</span>=== Homepage ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isHomepage'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<h2 id="conditional-tags">Conditional tags</h2>
+<span class="nt">&lt;b:comment&gt;</span>=== Item page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isPost'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/&lt;year&gt;/&lt;month&gt;/&lt;permalink&gt;.html --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<p>Tag kondisional untuk menciptakan 8 tipe halaman di atas.</p>
+<span class="nt">&lt;b:comment&gt;</span>=== Static page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isPage'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/p/&lt;permalink&gt;.html --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Homepage --&gt;</span>
-<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:blog.url == data:blog.homepageUrl'</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman beranda.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Search (label) page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.search.label'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/search/label/&lt;label name&gt; --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<span class="c">&lt;!-- Item/single page --&gt;</span>
-<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;item&amp;quot;'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman posting.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Search (query) page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.search.query'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/search?q=&lt;query&gt; --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<span class="c">&lt;!-- Static page --&gt;</span>
-<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;static_page&amp;quot;'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman statis.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Search (default) page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.search and !data:view.search.label and !data:view.search.query'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/search --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<span class="c">&lt;!-- Label/category page --&gt;</span>
-<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchLabel'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman kategori.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Archive page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isArchive'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/&lt;year&gt;_&lt;month&gt;_&lt;day&gt;_archive.html --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<span class="c">&lt;!-- Search results page --&gt;</span>
-<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.searchQuery'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman hasil pencarian.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Error page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isError'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://example.blogspot.com/404 --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<span class="c">&lt;!-- Archive page --&gt;</span>
-<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;archive&amp;quot;'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman arsip.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Preview page ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isPreview'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Preview page --&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span>
 
-<span class="c">&lt;!-- Error page --&gt;</span>
-<span class="nt">&lt;b:elseif</span> <span class="na">cond=</span><span class="s">'data:blog.pageType == &amp;quot;error_page&amp;quot;'</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman galat.<span class="nt">&lt;/p&gt;</span>
-
-<span class="c">&lt;!-- Default (https://example.blogspot.com/search) --&gt;</span>
-<span class="nt">&lt;b:else/&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Teks ini akan tampil di halaman dengan URL `https://example.blogspot.com/search`.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;b:comment&gt;</span>=== Layout mode ===<span class="nt">&lt;/b:comment&gt;</span>
+<span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:view.isLayoutMode'</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- https://www.blogger.com/blogger.g?blogID=&lt;your blog ID&gt;#pageelements --&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
 

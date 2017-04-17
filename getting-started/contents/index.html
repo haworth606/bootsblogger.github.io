@@ -589,16 +589,29 @@
 │   ├── bootstrap/
 │   └── _custom.scss
 └── template-src/
-    ├── includes/
+    ├── content/
+    ├── core/
     ├── config.json
-    ├── style.css
-    └── index.xml</code></pre></figure>
+    ├── index.xml
+    ├── script.js
+    └── style.css</code></pre></figure>
 
-<p>Di dalam direktori <code class="highlighter-rouge">scss/</code> dan <code class="highlighter-rouge">js/</code> adalah kode sumber untuk CSS dan JavaScript Bootstrap dan Bootsblogger, yang akan dikompilasi ke dalam <code class="highlighter-rouge">template-src/includes/assets</code>.</p>
+<p>Di dalam direktori <code class="highlighter-rouge">js/</code> dan <code class="highlighter-rouge">scss/</code> adalah kode sumber CSS dan JavaScript Bootstrap dan Bootsblogger, yang akan dikompilasi ke dalam <code class="highlighter-rouge">template-src/core/assets</code>.</p>
 
 <p>Berkas <code class="highlighter-rouge">scss/_custom.scss</code> digunakan untuk <a href="/getting-started/options/">mengubahsuaikan variabel Sass</a> Bootstrap dan Bootsblogger.</p>
 
-<p>Di dalam direktori <code class="highlighter-rouge">template-src/</code> adalah kode sumber untuk template, <code class="highlighter-rouge">index.xml</code> adalah berkas utama template yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>. Bootsblogger menggunakan <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong> untuk mengurai template menjadi beberapa bagian, sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur grunt-bake lainnya.</p>
+<p>Di dalam direktori <code class="highlighter-rouge">template-src/</code> adalah kode sumber template.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">content/</code> - digunakan untuk menyimpan berkas-berkas template terpisah, seperti komponen dan lainnya.</li>
+  <li><code class="highlighter-rouge">core/</code> - berisi berkas-berkas inti template.</li>
+  <li><code class="highlighter-rouge">config.json</code> - berkas konfigurasi template.</li>
+  <li><code class="highlighter-rouge">index.xml</code> - berkas yang akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>.</li>
+  <li><code class="highlighter-rouge">script.js</code> - template JavaScript.</li>
+  <li><code class="highlighter-rouge">style.css</code> - template CSS (<code class="highlighter-rouge">b:skin</code>).</li>
+</ul>
+
+<p>Bootsblogger menggunakan <strong><a href="https://github.com/MathiasPaumgarten/grunt-bake">grunt-bake</a></strong> untuk mengurai template menjadi beberapa bagian, sehingga akan mempermudah proses pembuatan dan pengeditan template, juga memanfaatkan fitur-fitur grunt-bake lainnya.</p>
 
         </div>
       </div>
