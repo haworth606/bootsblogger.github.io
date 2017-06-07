@@ -12,15 +12,6 @@
     
 
     
-
-    
-        {
-            "title" : "Best practices",
-            "url"   : "/getting-started/best-practices/"
-        } ,
-    
-
-    
         {
             "title" : "Blog posts",
             "url"   : "/core-template/blog-posts/"
@@ -45,13 +36,6 @@
         {
             "title" : "Contents",
             "url"   : "/getting-started/contents/"
-        } ,
-    
-
-    
-        {
-            "title" : "Count",
-            "url"   : "/blogger-json-feeds/count/"
         } ,
     
 
@@ -92,27 +76,6 @@
 
     
         {
-            "title" : "Labels - custom",
-            "url"   : "/blogger-json-feeds/labels-custom/"
-        } ,
-    
-
-    
-        {
-            "title" : "Labels - lists",
-            "url"   : "/blogger-json-feeds/labels-lists/"
-        } ,
-    
-
-    
-        {
-            "title" : "Labels - select",
-            "url"   : "/blogger-json-feeds/labels-select/"
-        } ,
-    
-
-    
-        {
             "title" : "Navmenu",
             "url"   : "/components/navmenu/"
         } ,
@@ -129,27 +92,6 @@
         {
             "title" : "Posts",
             "url"   : "/components/posts/"
-        } ,
-    
-
-    
-        {
-            "title" : "Posts - cards",
-            "url"   : "/blogger-json-feeds/posts-card/"
-        } ,
-    
-
-    
-        {
-            "title" : "Posts - default",
-            "url"   : "/blogger-json-feeds/posts-default/"
-        } ,
-    
-
-    
-        {
-            "title" : "Retrieving JSON feeds",
-            "url"   : "/blogger-json-feeds/retrieving-json-feeds/"
         } ,
     
 

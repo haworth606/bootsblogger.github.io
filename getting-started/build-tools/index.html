@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Build tools">
-  <meta name="twitter:description" content="Bootsblogger menggunakan Grunt, untuk membangun CSS, JavaScript, template, dan Jekyll untuk menulis dokumentasi.">
+  <meta name="twitter:description" content="Bootsblogger menggunakan Grunt untuk sistem pembuatan CSS, template, dan Jekyll untuk menulis dokumentasi.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,7 +24,7 @@
 
   <meta property="og:url" content="/getting-started/build-tools/">
   <meta property="og:title" content="Build tools">
-  <meta property="og:description" content="Bootsblogger menggunakan Grunt, untuk membangun CSS, JavaScript, template, dan Jekyll untuk menulis dokumentasi.">
+  <meta property="og:description" content="Bootsblogger menggunakan Grunt untuk sistem pembuatan CSS, template, dan Jekyll untuk menulis dokumentasi.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
@@ -37,23 +37,21 @@
 <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootsblogger core CSS -->
-<link href="/assets/bootsblogger/css/bootsblogger.min.css" rel="stylesheet">
+<link href="/assets/css/bootsblogger/bootsblogger.min.css" rel="stylesheet">
 
 <!-- Font Awesome -->
-<link href="/assets/icon-fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- Documentation extras -->
-<link href="/assets/css/docs.min.css" rel="stylesheet">
-
-<!-- Bootsblogger JSON -->
-<script src="/assets/bootsblogger/js/bootsblogger-json.min.js"></script>
+<link href="/assets/css/bootsblogger-docs.css" rel="stylesheet">
+<link href="/assets/css/bootsblogger-examples.css" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
 
   </head>
-  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+  <body class="bd-docs">
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
       <div class="container">
         <span class="skiplink-text">Skip to main content</span>
@@ -81,487 +79,282 @@
 </div>
 
 
-    <header class="navbar navbar-light navbar-toggleable-sm bd-navbar">
-  <nav class="container">
-    <div class="d-flex justify-content-between hidden-md-up">
-      <a class="navbar-brand" href="/">
-        Bootsblogger
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
+    <header class="navbar navbar-inverse navbar-toggleable-sm bd-navbar">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="Bootsblogger">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="bd-main-nav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-item nav-link " href="/">Bootsblogger</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="">Templates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
-        </li>
-      </ul>
+  <div class="collapse navbar-collapse" id="bd-main-nav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-item nav-link " href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-themes.blogspot.com">Themes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-expo.blogspot.com">Expo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-blog.blogspot.com">Blog</a>
+      </li>
+    </ul>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
+      </li>
+    </ul>
+  </div>
 </header>
 
 
-    <div class="bd-pageheader">
-      <div class="container">
-        
-  <h1>Getting started</h1>
-  <p class="lead">
-    Sebuah gambaran dari Bootsblogger, meliputi cara mengunduh dan menggunakannya, membangun template, dan lain-lain.
-  </p>
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <div class="navmenu navmenu-light navmenu-expand-md bd-sidebar-navmenu">
+  <div class="navmenu-form">
+    <form class="bd-search d-flex align-items-center">
+      <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+      <button class="btn-link bd-search-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+      </button>
+      <div class="dropdown-menu bd-search-results" id="search-results"></div>
+    </form>
+  </div>
 
-
-        
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
-          <form class="bd-search hidden-sm-down">
-  <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
-  <div class="dropdown-menu bd-search-results" id="search-results"></div>
-</form>
-
-<nav class="bd-links" id="docsNavbarContent">
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item active">
+  <div class="collapse navmenu-collapse" id="bd-docs-nav">
+    <nav class="navmenu-nav mt-3">
       
-        <a class="bd-toc-link" href="/getting-started/introduction/">
       
-      Getting started
-      </a>
+      
+      
+      
+      
 
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
+      
 
-          
+      <div class="nav-item nav-item-bordered active">
+        <a class="nav-link active" href="/getting-started/introduction/">
+          Getting started
+        </a>
 
-          <li class="">
-            <a href="/getting-started/introduction/">
+        <div class="sub">
+          
+            
+            
+
+            
+
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/introduction/">
               Introduction
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/download/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/download/">
               Download
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/contents/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/contents/">
               Contents
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="active bd-sidenav-active">
-            <a href="/getting-started/build-tools/">
+            <a class="nav-item nav-link nav-link-sm small active" href="/getting-started/build-tools/">
               Build tools
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/options/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/options/">
               Options
             </a>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/core-template/overview/">
+          Core template
+        </a>
+
+        <div class="sub">
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/best-practices/">
-              Best practices
-            </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item ">
-      
-        <a class="bd-toc-link" href="/core-template/overview/">
-      
-      Core template
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/core-template/overview/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/overview/">
               Overview
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/core-template/head/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/head/">
               Head
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/core-template/body-class/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/body-class/">
               Body class
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/core-template/blog-posts/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/blog-posts/">
               Blog posts
             </a>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/components/posts/">
+          Components
+        </a>
+
+        <div class="sub">
+          
+            
+            
 
             
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
 
-    
-
-    <div class="bd-toc-item ">
-      
-        <a class="bd-toc-link" href="/components/posts/">
-      
-      Components
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/posts/">
+            <a class="nav-item nav-link nav-link-sm small " href="/components/posts/">
               Posts
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/components/navmenu/">
+            <a class="nav-item nav-link nav-link-sm small " href="/components/navmenu/">
               Navmenu
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/components/widget/">
+            <a class="nav-item nav-link nav-link-sm small " href="/components/widget/">
               Widget
             </a>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/utilities/sizing/">
+          Utilities
+        </a>
+
+        <div class="sub">
+          
+            
+            
 
             
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
 
-    
-
-    <div class="bd-toc-item ">
-      
-        <a class="bd-toc-link" href="/utilities/sizing/">
-      
-      Utilities
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/utilities/sizing/">
+            <a class="nav-item nav-link nav-link-sm small " href="/utilities/sizing/">
               Sizing
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/utilities/spacing/">
+            <a class="nav-item nav-link nav-link-sm small " href="/utilities/spacing/">
               Spacing
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/utilities/figures/">
+            <a class="nav-item nav-link nav-link-sm small " href="/utilities/figures/">
               Figures
             </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item ">
+          
+        </div>
+      </div>
       
-        <a class="bd-toc-link" href="/blogger-json-feeds/retrieving-json-feeds/">
-      
-      Blogger JSON feeds
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/retrieving-json-feeds/">
-              Retrieving JSON feeds
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/posts-default/">
-              Posts default
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/posts-card/">
-              Posts card
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/labels-lists/">
-              Labels lists
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/labels-custom/">
-              Labels custom
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/labels-select/">
-              Labels select
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/count/">
-              Count
-            </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-</nav>
+    </nav>
+  </div>
+</div>
 
         </div>
-        <div class="col-12 col-md-9 pull-md-3 bd-content">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Build tools</h1>
-          <p>Bootsblogger menggunakan <a href="http://gruntjs.com">Grunt</a>, untuk membangun CSS, JavaScript, template, dan Jekyll untuk menulis dokumentasi. Di dalam Gruntfile, terdapat kumpulan perintah Grunt yang akan memberikan kemudahan dalam bekerja dengan Bootsblogger, seperti untuk kompilasi kode, menjalankan pengujian, dan lainnya.</p>
+          <p class="bd-lead">Bootsblogger menggunakan Grunt untuk sistem pembuatan CSS, template, dan Jekyll untuk menulis dokumentasi.</p>
+          <p>Gruntfile Bootsblogger (<code class="highlighter-rouge">bootsblogger/Gruntfile.js</code>) menyediakan berbagai perintah Grunt untuk memberikan kemudahan dalam bekerja dengan Bootsblogger, seperti untuk kompilasi kode, menjalankan pengujian, dan lainnya.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#tooling-setup" id="markdown-toc-tooling-setup">Tooling setup</a></li>
+  <li><a href="#using-grunt" id="markdown-toc-using-grunt">Using Grunt</a></li>
+  <li><a href="#local-documentation" id="markdown-toc-local-documentation">Local documentation</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
+</ul>
 
 <h2 id="tooling-setup">Tooling setup</h2>
 
@@ -569,20 +362,20 @@
 
 <ol>
   <li><a href="https://nodejs.org/download">Unduh dan pasang Node</a>, yang digunakan untuk manajemen dependensi.</li>
-  <li>Pasang <em>Grunt command line tools</em>, <code class="highlighter-rouge">grunt-cli</code>, dengan menjalankan perintah <code class="highlighter-rouge">npm install -g grunt-cli</code> pada <em>command line</em>.</li>
-  <li>Dari <em>command line</em>, pindah ke direktori <code class="highlighter-rouge">/bootsblogger</code> dan jalankan perintah <code class="highlighter-rouge">npm install</code> untuk instalasi dependensi yang sudah terdaftar di dalam berkas <code class="highlighter-rouge">package.json</code>.</li>
-  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Pasang Ruby</a>, kemudian pasang <a href="https://bundler.io/">Bundler</a> dengan perintah <code class="highlighter-rouge">gem install bundler</code>, dan terakhir jalankan perintah <code class="highlighter-rouge">bundle install</code>. Ini akan memasang semua dependensi Ruby, seperti Jekyll dan <em>plugins</em>.
+  <li>Pasang <em>Grunt command line tools</em>, <code class="highlighter-rouge">grunt-cli</code>, dengan <code class="highlighter-rouge">npm install -g grunt-cli</code>.</li>
+  <li>Pindah ke direktori <em>root</em> <code class="highlighter-rouge">/bootsblogger</code> dan jalankan perintah <code class="highlighter-rouge">npm install</code> untuk instalasi dependensi yang sudah terdaftar di dalam berkas <code class="highlighter-rouge">bootsblogger/package.json</code>.</li>
+  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Pasang Ruby</a>, pasang <a href="https://bundler.io/">Bundler</a> dengan <code class="highlighter-rouge">gem install bundler</code>, dan terakhir jalankan perintah <code class="highlighter-rouge">bundle install</code>. Ini akan memasang semua dependensi Ruby, seperti Jekyll dan <em>plugins</em>.
     <ul>
       <li><strong>Pengguna Windows:</strong> Baca <a href="http://jekyll-windows.juthilo.com/"><em>unofficial guide</em> ini</a> agar Jekyll berjalan lancar tanpa masalah.</li>
     </ul>
   </li>
 </ol>
 
-<p>Setelah selesai, Anda akan dapat menjalankan berbagai perintah Grunt yang tersedia.</p>
+<p>Setelah selesai, Anda dapat menjalankan berbagai perintah Grunt yang disediakan dari <em>command line</em>.</p>
 
 <h2 id="using-grunt">Using Grunt</h2>
 
-<p>Beberapa perintah Grunt yang dapat Anda gunakan:</p>
+<p>Gruntfile Bootsblogger meliputi <em>commands</em> dan <em>tasks</em> berikut:</p>
 
 <table>
   <thead>
@@ -594,23 +387,15 @@
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">grunt</code></td>
-      <td>Jalankan perintah <code class="highlighter-rouge">grunt</code> untuk menjalankan pengujian secara lokal dan kompilasi CSS dan JavaScript Bootstrap dan Bootsblogger ke dalam <code class="highlighter-rouge">/template-src/core/assets</code>; kompilasi template ke dalam<code class="highlighter-rouge">/dist</code>; kompilasi aset dokumentasi. <strong>Menggunakan <a href="https://github.com/gruntjs/grunt-contrib-sass">Sass (grunt-contrib-sass)</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="https://github.com/gruntjs/grunt-contrib-uglify">UglifyJS (grunt-contrib-uglify)</a>, dan <a href="https://github.com/MathiasPaumgarten/grunt-bake">bake (grunt-bake)</a>.</strong></td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">grunt dist</code></td>
-      <td><code class="highlighter-rouge">grunt dist</code> akan membuat direktori <code class="highlighter-rouge">/dist</code> dan <code class="highlighter-rouge">/template-src/core/assets/&lt;bootstrap dan bootsblogger&gt;</code> dengan berkas terkompilasi. <strong>Menggunakan <a href="https://github.com/gruntjs/grunt-contrib-sass">Sass (grunt-contrib-sass)</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="https://github.com/gruntjs/grunt-contrib-uglify">UglifyJS (grunt-contrib-uglify)</a>, dan <a href="https://github.com/MathiasPaumgarten/grunt-bake">bake (grunt-bake)</a>.</strong></td>
+      <td>Jalankan perintah <code class="highlighter-rouge">grunt</code> untuk menjalankan pengujian dan kompilasi CSS dan template.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt test</code></td>
-      <td>Menjalankan <a href="https://github.com/ahmednuaman/grunt-scss-lint">scss-lint (grunt-scss-lint)</a>, <a href="https://github.com/jscs-dev/grunt-jscs">JSCS (grunt-jscs)</a>, <a href="https://github.com/jzaefferer/grunt-html">HTML validation (grunt-html)</a>, dan <a href="https://github.com/yaniswang/grunt-htmlhint">HTML validation (grunt-htmlhint)</a> (digunakan untuk CI).</td>
-    </tr>
-    <tr>
-      <td><code class="highlighter-rouge">grunt docs</code></td>
-      <td>Membangun dan menguji CSS, JavaScript, dan aset lainnya yang digunakan dalam menjalankan dokumentasi secara lokal via <code class="highlighter-rouge">jekyll serve</code>.</td>
+      <td>Jalankan perintah <code class="highlighter-rouge">grunt test</code> jika Anda hanya ingin menjalankan pengujian.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">grunt watch</code></td>
-      <td>Ini adalah metode paling nyaman untuk memonitor perubahan pada berkas Sass, JavaScript, dan template, dan secara otomatis akan melakukan pengujian dan kompilasi setiap kali Anda menyimpannya.</td>
+      <td>Ini adalah metode paling nyaman untuk memonitor perubahan pada berkas Sass dan template, dan secara otomatis akan melakukan pengujian dan kompilasi setiap kali Anda menyimpannya.</td>
     </tr>
   </tbody>
 </table>
@@ -621,8 +406,8 @@
 
 <ol>
   <li>Pastikan sudah menyelesaikan <a href="#tooling-setup"><em>tooling setup</em></a> di atas untuk instalasi Jekyll (<em>the site builder</em>) dan dependensi Ruby lainnya dengan <code class="highlighter-rouge">bundle install</code>.</li>
-  <li>Dari direktori <code class="highlighter-rouge">/bootsblogger</code>, jalankan perintah <code class="highlighter-rouge">bundle exec jekyll serve</code>.</li>
-  <li>Buka <a href="http://localhost:9001">http://localhost:9001</a> di <em>browser</em> Anda, selesai.</li>
+  <li>Dari direktori <em>root</em> <code class="highlighter-rouge">/bootsblogger</code>, jalankan perintah <code class="highlighter-rouge">bundle exec jekyll serve</code>.</li>
+  <li>Buka <a href="http://localhost:9002">http://localhost:9002</a> di <em>browser</em> Anda, selesai.</li>
 </ol>
 
 <p>Pelajari lebih lanjut tentang penggunaan Jekyll dengan membaca <a href="https://jekyllrb.com/docs/home/">dokumentasinya</a>.</p>
@@ -631,37 +416,42 @@
 
 <p>Jika Anda mendapat masalah ketika instalasi, hapus direktori <code class="highlighter-rouge">node_modules</code> dan jalankan kembali perintah <code class="highlighter-rouge">npm install</code>.</p>
 
-        </div>
+        </main>
       </div>
     </div>
 
-    <footer class="bd-footer text-muted text-center">
+    <footer class="bd-footer">
   <div class="container">
     <ul class="bd-footer-links">
+      <li><a href="https://bootsblogger-themes.blogspot.com">Themes</a></li>
+      <li><a href="https://bootsblogger-expo.blogspot.com">Expo</a></li>
+      <li><a href="https://bootsblogger-blog.blogspot.com">Blog</a></li>
       <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
-      <li><a href="https://twitter.com/">Twitter</a></li>
-      <li><a href="https://plus.google.com/">Google+</a></li>
-      <li><a href="https://facebook.com/">Facebook</a></li>
-      <li><a href="#">Donation</a></li>
+      <li><a href="https://paypal.me/igoynawamreh">Donation</a></li>
     </ul>
-    <p><i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">friends</a>.</p>
+    <p>&lt;&gt; with &lt;3 by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">friends</a>.</p>
     <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
   </div>
 </footer>
 
-<script src="/assets/js/vendor/jquery-slim.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
 <script src="/assets/js/vendor/tether.min.js"></script>
 
+<script src="/assets/js/vendor/anchor.min.js"></script>
+
+<script src="/assets/js/vendor/clipboard.min.js"></script>
+
+<script src="/assets/js/vendor/holder.min.js"></script>
+
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="/assets/bootsblogger/js/bootsblogger.min.js"></script>
-
-<script src="/assets/js/docs.min.js"></script>
+<script src="/assets/js/docs.js"></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="/assets/js/ie-emulation-modes-warning.js"></script>
+<script src="/assets/js/ie/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/ie/ie-emulation-modes-warning.js"></script>
 
 
   <script src="/assets/js/vendor/jekyll-search.min.js"></script>

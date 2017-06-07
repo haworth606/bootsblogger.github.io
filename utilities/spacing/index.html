@@ -37,23 +37,21 @@
 <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootsblogger core CSS -->
-<link href="/assets/bootsblogger/css/bootsblogger.min.css" rel="stylesheet">
+<link href="/assets/css/bootsblogger/bootsblogger.min.css" rel="stylesheet">
 
 <!-- Font Awesome -->
-<link href="/assets/icon-fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- Documentation extras -->
-<link href="/assets/css/docs.min.css" rel="stylesheet">
-
-<!-- Bootsblogger JSON -->
-<script src="/assets/bootsblogger/js/bootsblogger-json.min.js"></script>
+<link href="/assets/css/bootsblogger-docs.css" rel="stylesheet">
+<link href="/assets/css/bootsblogger-examples.css" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
 
   </head>
-  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+  <body class="bd-docs">
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
       <div class="container">
         <span class="skiplink-text">Skip to main content</span>
@@ -81,487 +79,272 @@
 </div>
 
 
-    <header class="navbar navbar-light navbar-toggleable-sm bd-navbar">
-  <nav class="container">
-    <div class="d-flex justify-content-between hidden-md-up">
-      <a class="navbar-brand" href="/">
-        Bootsblogger
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
+    <header class="navbar navbar-inverse navbar-toggleable-sm bd-navbar">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="Bootsblogger">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="bd-main-nav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-item nav-link " href="/">Bootsblogger</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="">Templates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsbloggerexpo.blogspot.com">Expo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsbloggerblog.blogspot.com">Blog</a>
-        </li>
-      </ul>
+  <div class="collapse navbar-collapse" id="bd-main-nav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-item nav-link " href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-themes.blogspot.com">Themes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-expo.blogspot.com">Expo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-blog.blogspot.com">Blog</a>
+      </li>
+    </ul>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
+      </li>
+    </ul>
+  </div>
 </header>
 
 
-    <div class="bd-pageheader">
-      <div class="container">
-        
-  <h1>Utilities</h1>
-  <p class="lead">
-    Kelas-kelas utilitas untuk membantu mengurangi deklarasi yang sering digunakan.
-  </p>
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <div class="navmenu navmenu-light navmenu-expand-md bd-sidebar-navmenu">
+  <div class="navmenu-form">
+    <form class="bd-search d-flex align-items-center">
+      <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+      <button class="btn-link bd-search-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+      </button>
+      <div class="dropdown-menu bd-search-results" id="search-results"></div>
+    </form>
+  </div>
 
-
-        
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
-          <form class="bd-search hidden-sm-down">
-  <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
-  <div class="dropdown-menu bd-search-results" id="search-results"></div>
-</form>
-
-<nav class="bd-links" id="docsNavbarContent">
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item ">
+  <div class="collapse navmenu-collapse" id="bd-docs-nav">
+    <nav class="navmenu-nav mt-3">
       
-        <a class="bd-toc-link" href="/getting-started/introduction/">
       
-      Getting started
-      </a>
+      
+      
+      
+      
 
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
+      
 
-          
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/getting-started/introduction/">
+          Getting started
+        </a>
 
-          <li class="">
-            <a href="/getting-started/introduction/">
+        <div class="sub">
+          
+            
+            
+
+            
+
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/introduction/">
               Introduction
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/download/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/download/">
               Download
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/contents/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/contents/">
               Contents
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/build-tools/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/build-tools/">
               Build tools
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/options/">
+            <a class="nav-item nav-link nav-link-sm small " href="/getting-started/options/">
               Options
             </a>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/core-template/overview/">
+          Core template
+        </a>
+
+        <div class="sub">
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/getting-started/best-practices/">
-              Best practices
-            </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item ">
-      
-        <a class="bd-toc-link" href="/core-template/overview/">
-      
-      Core template
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/core-template/overview/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/overview/">
               Overview
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/core-template/head/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/head/">
               Head
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/core-template/body-class/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/body-class/">
               Body class
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/core-template/blog-posts/">
+            <a class="nav-item nav-link nav-link-sm small " href="/core-template/blog-posts/">
               Blog posts
             </a>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/components/posts/">
+          Components
+        </a>
+
+        <div class="sub">
+          
+            
+            
 
             
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
 
-    
-
-    <div class="bd-toc-item ">
-      
-        <a class="bd-toc-link" href="/components/posts/">
-      
-      Components
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/components/posts/">
+            <a class="nav-item nav-link nav-link-sm small " href="/components/posts/">
               Posts
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/components/navmenu/">
+            <a class="nav-item nav-link nav-link-sm small " href="/components/navmenu/">
               Navmenu
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/components/widget/">
+            <a class="nav-item nav-link nav-link-sm small " href="/components/widget/">
               Widget
             </a>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered active">
+        <a class="nav-link active" href="/utilities/sizing/">
+          Utilities
+        </a>
+
+        <div class="sub">
+          
+            
+            
 
             
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
 
-    
-
-    <div class="bd-toc-item active">
-      
-        <a class="bd-toc-link" href="/utilities/sizing/">
-      
-      Utilities
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/utilities/sizing/">
+            <a class="nav-item nav-link nav-link-sm small " href="/utilities/sizing/">
               Sizing
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="active bd-sidenav-active">
-            <a href="/utilities/spacing/">
+            <a class="nav-item nav-link nav-link-sm small active" href="/utilities/spacing/">
               Spacing
             </a>
+          
+            
+            
 
             
-          </li>
-        
-          
-          
-          
 
-          
-
-          <li class="">
-            <a href="/utilities/figures/">
+            <a class="nav-item nav-link nav-link-sm small " href="/utilities/figures/">
               Figures
             </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-    
-    
-    
-
-    
-
-    <div class="bd-toc-item ">
+          
+        </div>
+      </div>
       
-        <a class="bd-toc-link" href="/blogger-json-feeds/retrieving-json-feeds/">
-      
-      Blogger JSON feeds
-      </a>
-
-      <ul class="nav bd-sidenav">
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/retrieving-json-feeds/">
-              Retrieving JSON feeds
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/posts-default/">
-              Posts default
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/posts-card/">
-              Posts card
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/labels-lists/">
-              Labels lists
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/labels-custom/">
-              Labels custom
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/labels-select/">
-              Labels select
-            </a>
-
-            
-          </li>
-        
-          
-          
-          
-
-          
-
-          <li class="">
-            <a href="/blogger-json-feeds/count/">
-              Count
-            </a>
-
-            
-          </li>
-        
-      </ul>
-    </div><!-- /.bd-toc-item -->
-  
-</nav>
+    </nav>
+  </div>
+</div>
 
         </div>
-        <div class="col-12 col-md-9 pull-md-3 bd-content">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Spacing</h1>
-          <p>Kelas tambahan untuk <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">Bootstrap spacing utilities</a>.</p>
+          <p class="bd-lead">Kelas tambahan untuk Bootstrap spacing utilities.</p>
+          <p>Baca dokumentasi <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">Bootstrap spacing utilities</a>.</p>
 
 <h2 id="negative-margin">Negative margin</h2>
 
@@ -635,37 +418,42 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
-        </div>
+        </main>
       </div>
     </div>
 
-    <footer class="bd-footer text-muted text-center">
+    <footer class="bd-footer">
   <div class="container">
     <ul class="bd-footer-links">
+      <li><a href="https://bootsblogger-themes.blogspot.com">Themes</a></li>
+      <li><a href="https://bootsblogger-expo.blogspot.com">Expo</a></li>
+      <li><a href="https://bootsblogger-blog.blogspot.com">Blog</a></li>
       <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
-      <li><a href="https://twitter.com/">Twitter</a></li>
-      <li><a href="https://plus.google.com/">Google+</a></li>
-      <li><a href="https://facebook.com/">Facebook</a></li>
-      <li><a href="#">Donation</a></li>
+      <li><a href="https://paypal.me/igoynawamreh">Donation</a></li>
     </ul>
-    <p><i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">friends</a>.</p>
+    <p>&lt;&gt; with &lt;3 by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">friends</a>.</p>
     <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
   </div>
 </footer>
 
-<script src="/assets/js/vendor/jquery-slim.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
 <script src="/assets/js/vendor/tether.min.js"></script>
 
+<script src="/assets/js/vendor/anchor.min.js"></script>
+
+<script src="/assets/js/vendor/clipboard.min.js"></script>
+
+<script src="/assets/js/vendor/holder.min.js"></script>
+
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 
-<script src="/assets/bootsblogger/js/bootsblogger.min.js"></script>
-
-<script src="/assets/js/docs.min.js"></script>
+<script src="/assets/js/docs.js"></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="/assets/js/ie-emulation-modes-warning.js"></script>
+<script src="/assets/js/ie/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/ie/ie-emulation-modes-warning.js"></script>
 
 
   <script src="/assets/js/vendor/jekyll-search.min.js"></script>
