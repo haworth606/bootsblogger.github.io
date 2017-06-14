@@ -1,10 +1,9 @@
 /* ==============================================
-   Posts
+   Custom card
    ============================================== */
 
-.bd-example > .post:last-child,
-.bd-example > .post-group {
-  margin-bottom: 0;
+.card-img-cover.holderjs {
+  background-size: cover !important;
 }
 
 
@@ -42,7 +41,7 @@
   background-color: #7d7d7d;
 }
 
-.bd-example .wg:not(.wg-columns):not(.wg-grid-example) {
+.bd-example .wg:not(.wg-grid-example) {
   max-width: 20rem;
 }
 .bd-example .wg:not(.wg-panel-group):last-child {

@@ -34,8 +34,8 @@
 
     
         {
-            "title" : "Contents",
-            "url"   : "/getting-started/contents/"
+            "title" : "Custom card",
+            "url"   : "/components/custom-card/"
         } ,
     
 
@@ -43,13 +43,6 @@
         {
             "title" : "Customization options",
             "url"   : "/getting-started/options/"
-        } ,
-    
-
-    
-        {
-            "title" : "Download",
-            "url"   : "/getting-started/download/"
         } ,
     
 
@@ -90,8 +83,8 @@
 
     
         {
-            "title" : "Posts",
-            "url"   : "/components/posts/"
+            "title" : "Page types",
+            "url"   : "/core-template/page-types/"
         } ,
     
 

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+    Custom card &middot; Bootsblogger
+  
+</title>
+
+<!-- Twitter -->
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Custom card">
+  <meta name="twitter:description" content="Fitur tambahan untuk komponen card yang tidak disediakan oleh Bootstrap, yang sangat berguna untuk sebuah blog.">
+  <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
+
+
+<!-- Facebook -->
+
+  <meta property="og:url" content="/components/custom-card/">
+  <meta property="og:title" content="Custom card">
+  <meta property="og:description" content="Fitur tambahan untuk komponen card yang tidak disediakan oleh Bootstrap, yang sangat berguna untuk sebuah blog.">
+
+<meta property="og:image" content="/assets/brand/bootstrap-social.png">
+
+<!-- Meta -->
+<meta name="description" content="Blogger + Bootstrap + <3">
+<meta name="author" content="Igoy Nawamreh">
+
+
+<!-- Bootstrap core CSS -->
+<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootsblogger core CSS -->
+<link href="/assets/css/bootsblogger/bootsblogger.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="/assets/icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="/assets/css/bootsblogger-docs.css" rel="stylesheet">
+<link href="/assets/css/bootsblogger-examples.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+
+  </head>
+  <body class="bd-docs">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <div class="modal fade image-blogger-layout" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/blogger-layout.png" alt="Blogger layout">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade image-post-options" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/post-options.png" alt="Post options">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-inverse navbar-toggleable-sm bd-navbar">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="Bootsblogger">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="bd-main-nav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-item nav-link " href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-themes.blogspot.com">Themes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-expo.blogspot.com">Expo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-blog.blogspot.com">Blog</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <div class="navmenu navmenu-expand-md bd-navmenu">
+  <div class="navmenu-form">
+    <form class="bd-search d-flex align-items-center">
+      <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+      <button class="btn-link bd-search-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+      </button>
+      <div class="dropdown-menu bd-search-results" id="search-results"></div>
+    </form>
+  </div>
+
+  <div class="collapse navmenu-collapse" id="bd-docs-nav">
+    <nav class="navmenu-nav mt-3">
+      
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/getting-started/introduction/">
+          Getting started
+        </a>
+
+        <div class="sub">
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/getting-started/introduction/">
+                Introduction
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/getting-started/build-tools/">
+                Build tools
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/getting-started/options/">
+                Options
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/core-template/overview/">
+          Core template
+        </a>
+
+        <div class="sub">
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/overview/">
+                Overview
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/page-types/">
+                Page types
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/head/">
+                Head
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/body-class/">
+                Body class
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/blog-posts/">
+                Blog posts
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered active">
+        <a class="nav-link active" href="/components/custom-card/">
+          Components
+        </a>
+
+        <div class="sub">
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm active" href="/components/custom-card/">
+                Custom card
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/components/navmenu/">
+                Navmenu
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/components/widget/">
+                Widget
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+      
+
+      <div class="nav-item nav-item-bordered ">
+        <a class="nav-link " href="/utilities/figures/">
+          Utilities
+        </a>
+
+        <div class="sub">
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/utilities/figures/">
+                Figures
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/utilities/sizing/">
+                Sizing
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/utilities/spacing/">
+                Spacing
+              </a>
+            </div>
+          
+        </div>
+      </div>
+      
+    </nav>
+  </div>
+</div>
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Custom card</h1>
+          <p class="bd-lead">Fitur tambahan untuk komponen card yang tidak disediakan oleh Bootstrap, yang sangat berguna untuk sebuah blog.</p>
+          <p>Baca dokumentasi <a href="https://v4-alpha.getbootstrap.com/components/card/">Bootstrap card</a>.</p>
+
+<h2 id="left-and-right-image-caps">Left and right image caps</h2>
+
+<p>Untuk membuat gambar dan konten tampil secara horizontal membutuhkan penggunaan sistem grid dan kelas-kelas berikut:</p>
+
+<p>Gambar:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.card-img-left</code></li>
+  <li><code class="highlighter-rouge">.card-img-right</code></li>
+</ul>
+
+<p>Elemen pembungkus untuk <code class="highlighter-rouge">.card-img-left</code> dan <code class="highlighter-rouge">.card-img-right</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.card-block-img-left</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-left-sm</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-left-md</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-left-lg</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-left-xl</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-right</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-right-sm</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-right-md</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-right-lg</code></li>
+  <li><code class="highlighter-rouge">.card-block-img-right-xl</code></li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>Pelajari beberapa contoh di bawah ini.</p>
+
+<h4 id="always">Always</h4>
+
+<div class="bd-example">
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-3 col-sm-4">
+        <div class="card-block-img-left">
+          <img class="card-img-left" data-src="holder.js/100px180/?auto=yes" alt="Card image cap" />
+        </div>
+      </div>
+      <div class="col-9 col-sm-8">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-9 col-sm-8">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="col-3 col-sm-4">
+        <div class="card-block-img-right">
+          <img class="card-img-right" data-src="holder.js/100px180/?auto=yes" alt="Card image cap" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row no-gutters"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3 col-sm-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block-img-left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-left"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9 col-sm-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row no-gutters"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9 col-sm-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3 col-sm-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block-img-right"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-right"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h4 id="responsive">Responsive</h4>
+
+<div class="bd-example">
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-sm-3 col-md-4">
+        <div class="card-block-img-left-sm">
+          <img class="card-img-left" data-src="holder.js/100px180/?auto=yes" alt="Card image cap" />
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-8">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-9 col-lg-8">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-4">
+        <div class="card-block-img-right-md">
+          <img class="card-img-right" data-src="holder.js/100px180/?auto=yes" alt="Card image cap" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- `sm` --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row no-gutters"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-3 col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block-img-left-sm"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-left"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-9 col-md-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- `md` --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row no-gutters"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-9 col-lg-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3 col-lg-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block-img-right-md"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-right"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h4 id="background-images">Background images</h4>
+
+<p>Tampilkan gambar dengan CSS <code class="highlighter-rouge">background-image</code>, tambahkan <code class="highlighter-rouge">.card-img-cover</code>, membutuhkan CSS <code class="highlighter-rouge">min-height</code>.</p>
+
+<div class="bd-example">
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-sm-3 col-md-4">
+        <div class="card-block-img-left-sm card-img-cover holderjs" style="min-height: 180px;" data-background-src="?holder.js/800x180/?text=B"></div>
+      </div>
+      <div class="col-sm-9 col-md-8">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row no-gutters"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-3 col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block-img-left-sm card-img-cover"</span> <span class="na">style=</span><span class="s">"min-height: 180px; background-image: url(...);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-9 col-md-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+        </main>
+      </div>
+    </div>
+
+    <footer class="bd-footer">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="https://bootsblogger-themes.blogspot.com">Themes</a></li>
+      <li><a href="https://bootsblogger-expo.blogspot.com">Expo</a></li>
+      <li><a href="https://bootsblogger-blog.blogspot.com">Blog</a></li>
+      <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
+      <li><a href="https://paypal.me/igoynawamreh">Donation</a></li>
+    </ul>
+    <p>&lt;&gt; with &lt;3 by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">friends</a>.</p>
+    <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="/assets/js/vendor/jquery-slim.min.js"></script>
+
+<script src="/assets/js/vendor/tether.min.js"></script>
+
+<script src="/assets/js/vendor/anchor.min.js"></script>
+
+<script src="/assets/js/vendor/clipboard.min.js"></script>
+
+<script src="/assets/js/vendor/holder.min.js"></script>
+
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/docs.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/ie/ie-emulation-modes-warning.js"></script>
+
+
+  <script src="/assets/js/vendor/jekyll-search.min.js"></script>
+  <script>
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    searchResultTemplate: '<a class="dropdown-item" href="{url}">{title}</a>',
+    noResultsText: '<div class="dropdown-item no-results">Sorry, there are no results for that search.</div>',
+    json: '/search.json'
+  })
+  </script>
+
+
+<script>
+Holder.addTheme('gray', {
+  bg: '#777',
+  fg: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+})
+</script>
+
+  </body>
+</html>

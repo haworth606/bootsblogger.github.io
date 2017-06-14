@@ -10,10 +10,7 @@
 <loc>http://0.0.0.0:9002/getting-started/build-tools/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:9002/getting-started/contents/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:9002/getting-started/download/</loc>
+<loc>http://0.0.0.0:9002/components/custom-card/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9002/utilities/figures/</loc>
@@ -37,7 +34,7 @@
 <loc>http://0.0.0.0:9002/core-template/overview/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:9002/components/posts/</loc>
+<loc>http://0.0.0.0:9002/core-template/page-types/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:9002/utilities/sizing/</loc>
