@@ -3,6 +3,29 @@
  * Copyright 2017 Igoy Nawamreh
  * Licensed under MIT (https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE)
  */
+.card-title-link {
+  color: #292b2c;
+  text-decoration: none;
+}
+.card-title-link:hover, .card-title-link:focus {
+  color: #014c8c;
+  text-decoration: none;
+}
+
+.card-title-link-inverse {
+  color: #fff;
+  text-decoration: none;
+}
+.card-title-link-inverse:hover, .card-title-link-inverse:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-img-left,
+.card-img-right {
+  width: 100%;
+}
+
 .card-block-img-left {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -203,7 +226,6 @@
 
 .navmenu {
   padding: 1.25rem 1.25rem;
-  margin-bottom: 1rem;
   border-radius: 0.25rem;
 }
 
@@ -213,7 +235,6 @@
   top: 0;
   bottom: 0;
   z-index: 1030;
-  margin-bottom: 0;
   overflow-y: auto;
   border-radius: 0;
 }
@@ -273,6 +294,7 @@
   border-top: 1px solid transparent;
 }
 
+.navmenu-header,
 .navmenu-form,
 .navmenu-btn,
 .navmenu-text {
@@ -282,8 +304,20 @@
   margin-left: -1.25rem;
 }
 
+.navmenu-header {
+  margin-bottom: 0.5rem;
+}
+
 .navmenu-text p:last-child {
   margin-bottom: 0;
+}
+
+.navmenu-divider {
+  height: 0;
+  margin-right: -1.25rem;
+  margin-left: -1.25rem;
+  overflow: hidden;
+  border-top: 1px solid transparent;
 }
 
 .navmenu-nav + .navmenu-nav,
@@ -302,7 +336,27 @@
 .navmenu-text + .navmenu-nav,
 .navmenu-text + .navmenu-form,
 .navmenu-text + .navmenu-btn {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+
+.navmenu-brand + .navmenu-header,
+.navmenu-brand + .navmenu-nav,
+.navmenu-brand + .navmenu-form,
+.navmenu-brand + .navmenu-btn,
+.navmenu-brand + .navmenu-text {
+  margin-top: 0.625rem;
+}
+
+.navmenu-nav + .navmenu-header,
+.navmenu-form + .navmenu-header,
+.navmenu-btn + .navmenu-header,
+.navmenu-text + .navmenu-header {
+  margin-top: 1.25rem;
+}
+
+.navmenu-divider {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 576px) {
@@ -358,6 +412,12 @@
 .navmenu-light .navmenu-nav .nav-item-bordered {
   border-color: rgba(0, 0, 0, 0.05);
 }
+.navmenu-light .navmenu-header {
+  color: rgba(0, 0, 0, 0.2);
+}
+.navmenu-light .navmenu-divider {
+  border-color: rgba(0, 0, 0, 0.05);
+}
 
 .navmenu-inverse .navmenu-brand {
   color: white;
@@ -380,13 +440,18 @@
 .navmenu-inverse .navmenu-nav .nav-item-bordered {
   border-color: rgba(0, 0, 0, 0.25);
 }
+.navmenu-inverse .navmenu-header {
+  color: rgba(255, 255, 255, 0.4);
+}
+.navmenu-inverse .navmenu-divider {
+  border-color: rgba(0, 0, 0, 0.25);
+}
 
 .wg > .widget {
   margin-bottom: 1rem;
 }
 
 .wg > .widget > .title {
-  margin-top: 0;
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.1;
@@ -494,7 +559,7 @@
 }
 
 .wg-box > .widget > .title {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .wg-box .widget-content > .list-group-flush {

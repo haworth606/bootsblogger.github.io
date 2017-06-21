@@ -34,7 +34,7 @@
 
 
 <!-- Bootstrap core CSS -->
-<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootsblogger core CSS -->
 <link href="/assets/css/bootsblogger/bootsblogger.min.css" rel="stylesheet">
@@ -363,7 +363,7 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Blog posts</h1>
           <p class="bd-lead">Gadget Blog dirancang untuk memberikan kemudahan dalam mengatur tampilan posting, dan juga dirancang untuk dapat membuat tampilan posting yang berbeda di setiap tipe halaman.</p>
-          <p>Bagian-bagian kode untuk posting blog hanya dapat disertakan di dalam widget yang bertipe <code class="highlighter-rouge">Blog</code> (<code class="highlighter-rouge">&lt;b:widget type='Blog'&gt;</code>).</p>
+          <p>Bagian-bagian kode untuk posting blog hanya dapat disertakan di dalam widget <code class="highlighter-rouge">Blog</code> (<code class="highlighter-rouge">&lt;b:widget type='Blog'&gt;</code>).</p>
 
 <h2 id="contents">Contents</h2>
 
@@ -407,44 +407,98 @@
       </li>
     </ul>
   </li>
-  <li><a href="#includes" id="markdown-toc-includes">Includes</a>    <ul>
-      <li><a href="#custom-headerbyline-and-footerbylines" id="markdown-toc-custom-headerbyline-and-footerbylines">Custom headerByline and footerBylines</a>        <ul>
-          <li><a href="#header" id="markdown-toc-header">Header</a>            <ul>
-              <li><a href="#source-7" id="markdown-toc-source-7">Source</a></li>
-              <li><a href="#includable-7" id="markdown-toc-includable-7">Includable</a></li>
-              <li><a href="#usage" id="markdown-toc-usage">Usage</a></li>
-            </ul>
-          </li>
-          <li><a href="#footer" id="markdown-toc-footer">Footer</a>            <ul>
-              <li><a href="#source-8" id="markdown-toc-source-8">Source</a></li>
-              <li><a href="#includable-8" id="markdown-toc-includable-8">Includable</a></li>
-              <li><a href="#usage-1" id="markdown-toc-usage-1">Usage</a></li>
-            </ul>
-          </li>
+  <li><a href="#includes-main" id="markdown-toc-includes-main">Includes <small class="text-muted">main</small></a>    <ul>
+      <li><a href="#breadcrumb" id="markdown-toc-breadcrumb">Breadcrumb</a>        <ul>
+          <li><a href="#source-7" id="markdown-toc-source-7">Source</a></li>
+          <li><a href="#includable-7" id="markdown-toc-includable-7">Includable</a></li>
         </ul>
       </li>
-      <li><a href="#images" id="markdown-toc-images">Images</a>        <ul>
+      <li><a href="#status-message" id="markdown-toc-status-message">Status message</a>        <ul>
+          <li><a href="#source-8" id="markdown-toc-source-8">Source</a></li>
+          <li><a href="#includable-8" id="markdown-toc-includable-8">Includable</a></li>
+        </ul>
+      </li>
+      <li><a href="#comments" id="markdown-toc-comments">Comments</a>        <ul>
           <li><a href="#source-9" id="markdown-toc-source-9">Source</a></li>
           <li><a href="#includable-9" id="markdown-toc-includable-9">Includable</a></li>
+          <li><a href="#alternative" id="markdown-toc-alternative">Alternative</a></li>
+        </ul>
+      </li>
+      <li><a href="#pager" id="markdown-toc-pager">Pager</a>        <ul>
+          <li><a href="#source-10" id="markdown-toc-source-10">Source</a></li>
+          <li><a href="#includable-10" id="markdown-toc-includable-10">Includable</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#includes-byline-items" id="markdown-toc-includes-byline-items">Includes <small class="text-muted">byline items</small></a>    <ul>
+      <li><a href="#headerbyline" id="markdown-toc-headerbyline">headerByline</a>        <ul>
+          <li><a href="#source-11" id="markdown-toc-source-11">Source</a></li>
+          <li><a href="#includable-11" id="markdown-toc-includable-11">Includable</a></li>
+          <li><a href="#usage" id="markdown-toc-usage">Usage</a></li>
+        </ul>
+      </li>
+      <li><a href="#footerbylines" id="markdown-toc-footerbylines">footerBylines</a>        <ul>
+          <li><a href="#source-12" id="markdown-toc-source-12">Source</a></li>
+          <li><a href="#includable-12" id="markdown-toc-includable-12">Includable</a></li>
+          <li><a href="#usage-1" id="markdown-toc-usage-1">Usage</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#includes-individual" id="markdown-toc-includes-individual">Includes <small class="text-muted">individual</small></a>    <ul>
+      <li><a href="#author-name" id="markdown-toc-author-name">Author name</a>        <ul>
+          <li><a href="#source-13" id="markdown-toc-source-13">Source</a></li>
+          <li><a href="#includable-13" id="markdown-toc-includable-13">Includable</a></li>
           <li><a href="#usage-2" id="markdown-toc-usage-2">Usage</a></li>
         </ul>
       </li>
-      <li><a href="#background-images" id="markdown-toc-background-images">Background images</a>        <ul>
-          <li><a href="#source-10" id="markdown-toc-source-10">Source</a></li>
-          <li><a href="#includable-10" id="markdown-toc-includable-10">Includable</a></li>
+      <li><a href="#author-image" id="markdown-toc-author-image">Author image</a>        <ul>
+          <li><a href="#source-14" id="markdown-toc-source-14">Source</a></li>
+          <li><a href="#includable-14" id="markdown-toc-includable-14">Includable</a></li>
           <li><a href="#usage-3" id="markdown-toc-usage-3">Usage</a></li>
         </ul>
       </li>
-      <li><a href="#snippets" id="markdown-toc-snippets">Snippets</a>        <ul>
-          <li><a href="#source-11" id="markdown-toc-source-11">Source</a></li>
-          <li><a href="#includable-11" id="markdown-toc-includable-11">Includable</a></li>
+      <li><a href="#dates" id="markdown-toc-dates">Dates</a>        <ul>
+          <li><a href="#source-15" id="markdown-toc-source-15">Source</a></li>
+          <li><a href="#includable-15" id="markdown-toc-includable-15">Includable</a></li>
           <li><a href="#usage-4" id="markdown-toc-usage-4">Usage</a></li>
         </ul>
       </li>
-      <li><a href="#read-more" id="markdown-toc-read-more">Read more</a>        <ul>
-          <li><a href="#source-12" id="markdown-toc-source-12">Source</a></li>
-          <li><a href="#includable-12" id="markdown-toc-includable-12">Includable</a></li>
+      <li><a href="#number-of-comments" id="markdown-toc-number-of-comments">Number of comments</a>        <ul>
+          <li><a href="#source-16" id="markdown-toc-source-16">Source</a></li>
+          <li><a href="#includable-16" id="markdown-toc-includable-16">Includable</a></li>
           <li><a href="#usage-5" id="markdown-toc-usage-5">Usage</a></li>
+        </ul>
+      </li>
+      <li><a href="#labels" id="markdown-toc-labels">Labels</a>        <ul>
+          <li><a href="#source-17" id="markdown-toc-source-17">Source</a></li>
+          <li><a href="#includable-17" id="markdown-toc-includable-17">Includable</a></li>
+          <li><a href="#usage-6" id="markdown-toc-usage-6">Usage</a></li>
+        </ul>
+      </li>
+      <li><a href="#images" id="markdown-toc-images">Images</a>        <ul>
+          <li><a href="#source-18" id="markdown-toc-source-18">Source</a></li>
+          <li><a href="#includable-18" id="markdown-toc-includable-18">Includable</a></li>
+          <li><a href="#usage-7" id="markdown-toc-usage-7">Usage</a></li>
+        </ul>
+      </li>
+      <li><a href="#background-images" id="markdown-toc-background-images">Background images</a>        <ul>
+          <li><a href="#source-19" id="markdown-toc-source-19">Source</a></li>
+          <li><a href="#includable-19" id="markdown-toc-includable-19">Includable</a></li>
+          <li><a href="#usage-8" id="markdown-toc-usage-8">Usage</a></li>
+        </ul>
+      </li>
+      <li><a href="#snippets" id="markdown-toc-snippets">Snippets</a>        <ul>
+          <li><a href="#source-20" id="markdown-toc-source-20">Source</a></li>
+          <li><a href="#includable-20" id="markdown-toc-includable-20">Includable</a></li>
+          <li><a href="#usage-9" id="markdown-toc-usage-9">Usage</a></li>
+        </ul>
+      </li>
+      <li><a href="#jump-link" id="markdown-toc-jump-link">Jump link</a>        <ul>
+          <li><a href="#source-21" id="markdown-toc-source-21">Source</a></li>
+          <li><a href="#includable-21" id="markdown-toc-includable-21">Includable</a></li>
+          <li><a href="#usage-10" id="markdown-toc-usage-10">Usage</a></li>
         </ul>
       </li>
     </ul>
@@ -454,6 +508,8 @@
 <h2 id="post-layout-and-styles">Post layout and styles</h2>
 
 <p>Posting dibagi menjadi beberapa bagian berdasarkan tipe halaman. Untuk membuat tampilan posting yang berbeda di setiap tipe halaman, Anda hanya perlu menyesuaikan tampilan posting pada masing-masing bagian.</p>
+
+<p><strong>Catatan:</strong> Anda tidak perlu menyertakan bagian-bagian di bawah ini karena secara <em>default</em> sudah disertakan, lihat <code class="highlighter-rouge">&lt;b:includable id='main'&gt;</code>.</p>
 
 <h3 id="homepage">Homepage</h3>
 
@@ -539,113 +595,426 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post-archive'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
-<h2 id="includes">Includes</h2>
+<h2 id="includes-main">Includes <small class="text-muted">main</small></h2>
 
-<p>Bagian-bagian kode yang dapat disertakan di bagian lain yang membutuhkannya.</p>
+<p>Bagian-bagian di bawah ini hanya disertakan di dalam <code class="highlighter-rouge">&lt;b:includable id='main'&gt;</code>.</p>
 
-<h3 id="custom-headerbyline-and-footerbylines">Custom headerByline and footerBylines</h3>
+<p><strong>Catatan:</strong> Anda tidak perlu menyertakan bagian-bagian di bawah ini karena secara <em>default</em> sudah disertakan, lihat <code class="highlighter-rouge">&lt;b:includable id='main'&gt;</code>.</p>
 
-<p>Untuk menampilkan <em>item</em> posting yang berada di dalam <em>header</em> dan <em>footer</em> pada konfigurasi posting blog.</p>
+<h3 id="breadcrumb">Breadcrumb</h3>
 
-<h4 id="header">Header</h4>
+<p>Untuk menunjukkan lokasi halaman saat ini.</p>
 
 <h6 id="source-7">Source</h6>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/customHeaderByline.xml</code></pre></figure>
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/content/blog-posts/main.breadcrumb.xml</code></pre></figure>
 
 <h6 id="includable-7">Includable</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'customHeaderByline'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main.breadcrumb'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h3 id="status-message">Status message</h3>
+
+<p>Pesan yang akan muncul di atas posting, pesan hanya akan muncul di halaman hasil pencarian, halaman label, halaman arsip, dan halaman galat (404).</p>
+
+<h6 id="source-8">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/content/blog-posts/main.statusMessage.xml</code></pre></figure>
+
+<h6 id="includable-8">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main.statusMessage'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h3 id="comments">Comments</h3>
+
+<p>Sistem komentar bawaan Bootsblogger.</p>
+
+<h6 id="source-9">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/content/blog-posts/main.comments.xml</code></pre></figure>
+
+<h6 id="includable-9">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main.comments'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="alternative">Alternative</h6>
+
+<p>Jika Anda ingin menggunakan sistem komentar alternatif, Anda dapat menggunakan sistem komentar <a href="https://disqus.com">Disqus</a>, <a href="https://support.google.com/blogger/answer/1752748">Google+</a>, <a href="https://developers.facebook.com/docs/plugins/comments/">Facebook</a>, atau lainnya.</p>
+
+<h3 id="pager">Pager</h3>
+
+<p>Tautan untuk menuju halaman berikutnya atau sebelumnya.</p>
+
+<h6 id="source-10">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/content/blog-posts/main.pager.xml</code></pre></figure>
+
+<h6 id="includable-10">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main.pager'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h2 id="includes-byline-items">Includes <small class="text-muted">byline items</small></h2>
+
+<p>Untuk menampilkan <em>item</em> posting yang ada dalam daftar konfigurasi posting blog.</p>
+
+<h3 id="headerbyline">headerByline</h3>
+
+<p>Bagian <em>header</em>.</p>
+
+<h6 id="source-11">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/byline.header.xml</code></pre></figure>
+
+<h6 id="includable-11">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'byline.header'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
 <h6 id="usage">Usage</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:headerByline.items.notEmpty'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'wrapper'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'customHeaderByline'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'byline.header'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
-<h4 id="footer">Footer</h4>
+<h3 id="footerbylines">footerBylines</h3>
 
-<h6 id="source-8">Source</h6>
+<p>Bagian <em>footer</em>.</p>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/customFooterBylines.xml</code></pre></figure>
+<h6 id="source-12">Source</h6>
 
-<h6 id="includable-8">Includable</h6>
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/byline.footer.xml</code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'customFooterBylines'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+<h6 id="includable-12">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'byline.footer'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
 <h6 id="usage-1">Usage</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:footerBylines.notEmpty'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'wrapper'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'customFooterBylines'</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'byline.footer'</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
 
-<h3 id="images">Images</h3>
+<h2 id="includes-individual">Includes <small class="text-muted">individual</small></h2>
 
-<p>Untuk membuat <em>featured image</em>.</p>
+<p>Gunakan dari beberapa berikut sesuai kebutuhan:</p>
 
-<h6 id="source-9">Source</h6>
+<h3 id="author-name">Author name</h3>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.image.xml</code></pre></figure>
+<p>Untuk menampilkan nama penulis.</p>
 
-<h6 id="includable-9">Includable</h6>
+<h6 id="source-13">Source</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.image'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.authorName.xml</code></pre></figure>
+
+<h6 id="includable-13">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.authorName'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
 <h6 id="usage-2">Usage</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, aspectRatioWidth: number, aspectRatioHeight: number, link: true|false, class: &amp;quot;class-name&amp;quot; }'</span> <span class="na">name=</span><span class="s">'post.image'</span><span class="nt">/&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ class: "class-name", noUrlClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorName'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h3 id="background-images">Background images</h3>
+<h3 id="author-image">Author image</h3>
 
-<p>Untuk membuat <em>featured image</em> dengan <code class="highlighter-rouge">background-image</code>.</p>
+<p>Untuk menampilkan foto penulis.</p>
 
-<h6 id="source-10">Source</h6>
+<h6 id="source-14">Source</h6>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.imageBg.xml</code></pre></figure>
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.authorImage.xml</code></pre></figure>
 
-<h6 id="includable-10">Includable</h6>
+<h6 id="includable-14">Includable</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.imageBg'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.authorImage'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
 <h6 id="usage-3">Usage</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, aspectRatioWidth: number, aspectRatioHeight: number, class: &amp;quot;class-name&amp;quot;, style: &amp;quot;min-height: 250px;&amp;quot; }'</span> <span class="na">name=</span><span class="s">'post.imageBg'</span><span class="nt">/&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, aspectRatioWidth: number, aspectRatioHeight: number, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorImage'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h3 id="snippets">Snippets</h3>
+<h3 id="dates">Dates</h3>
 
-<p>Untuk membuat ringkasan posting.</p>
+<p>Untuk menampilkan tanggal diterbitkannya posting dan tanggal terakhir posting diperbarui.</p>
 
-<h6 id="source-11">Source</h6>
+<h6 id="source-15">Source</h6>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.snippet.xml</code></pre></figure>
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">- template-src/core/blog-posts/post.datePublished.xml
+- template-src/core/blog-posts/post.dateUpdated.xml</code></pre></figure>
 
-<h6 id="includable-11">Includable</h6>
+<h6 id="includable-15">Includable</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.snippet'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.datePublished'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span>
+<span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.dateUpdated'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
 <h6 id="usage-4">Usage</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ length: number, links: true|false, linebreaks: true|false, ellipsis: true|false }'</span> <span class="na">name=</span><span class="s">'post.snippet'</span><span class="nt">/&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">Published: <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ customFormat: "dd/MM/YYYY"|false, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.datePublished'</span><span class="nt">/&gt;</span>
+Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ customFormat: "dd/MM/YYYY"|false, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.dateUpdated'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h3 id="read-more">Read more</h3>
+<p>Format:</p>
 
-<p>Untuk membuat <em>read more link</em>.</p>
+<table class="table-responsive">
+  <thead>
+    <tr>
+      <th>Period</th>
+      <th>Symbol</th>
+      <th>Example output</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Year</td>
+      <td><code>YY</code></td>
+      <td><code>17</code></td>
+      <td>Year, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>YYYY</code></td>
+      <td><code>2017</code></td>
+      <td>Year, 4 digits</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Month</td>
+      <td><code>M</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Month, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>MM</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Month, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>MMM</code></td>
+      <td><code>Jan</code>, <code>Nov</code></td>
+      <td>Month, 3 Letters</td>
+    </tr>
+    <tr>
+      <td><code>MMMM</code></td>
+      <td><code>January</code>, <code>November</code></td>
+      <td>Month, full name</td>
+    </tr>
+    <tr>
+      <td><code>MMMMM</code></td>
+      <td><code>J</code>, <code>N</code></td>
+      <td>Month, 1st letter</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Week</td>
+      <td><code>w</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Week of the year, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>ww</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Week of the year, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>W</code></td>
+      <td><code>4</code></td>
+      <td>Week of the month, 1 digit</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Day</td>
+      <td><code>d</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Day of the month, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>dd</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Day of the month, 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>D</code></td>
+      <td><code>1</code>, <code>55</code>, <code>362</code></td>
+      <td>Day of the year, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>DD</code></td>
+      <td><code>01</code>, <code>55</code>, <code>362</code></td>
+      <td>Day of the year, minimum 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>DDD</code></td>
+      <td><code>001</code>, <code>055</code>, <code>362</code></td>
+      <td>Day of the year, minimum 3 digits</td>
+    </tr>
+    <tr>
+      <td><code>F</code></td>
+      <td><code>3</code></td>
+      <td>Xth day of the month. Example, the 3rd Tuesday of the month.</td>
+    </tr>
+    <tr>
+      <td><code>E</code></td>
+      <td><code>M</code>, <code>T</code></td>
+      <td>Name of the day of the week. 1 letter</td>
+    </tr>
+    <tr>
+      <td><code>EE</code></td>
+      <td><code>Mo</code>, <code>Tu</code></td>
+      <td>Name of the day of the week. 2 letters</td>
+    </tr>
+    <tr>
+      <td><code>EEE</code></td>
+      <td><code>Mon</code>, <code>Tue</code></td>
+      <td>Name of the day of the week. 3 letters</td>
+    </tr>
+    <tr>
+      <td><code>EEEE</code></td>
+      <td><code>Monday</code>, <code>Tuesday</code></td>
+      <td>Full name of the day of the week.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Time of day</td>
+      <td><code>aaaa</code></td>
+      <td><code>AM</code>, <code>PM</code></td>
+      <td rowspan="3">Names may vary depending on the region.</td>
+    </tr>
+    <tr>
+      <td><code>bbbb</code></td>
+      <td rowspan="2"><code>Morning</code>, <code>Afternoon</code>, <code>Evening</code></td>
+    </tr>
+    <tr>
+      <td><code>BBBB</code></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hour</td>
+      <td><code>h</code></td>
+      <td><code>1</code>, <code>11</code></td>
+      <td>Time [1-12], minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>hh</code></td>
+      <td><code>01</code>, <code>11</code></td>
+      <td>Time [1-12], 2 digits</td>
+    </tr>
+    <tr>
+      <td><code>H</code></td>
+      <td><code>1</code>, <code>21</code></td>
+      <td>Time [0-23], minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>HH</code></td>
+      <td><code>01</code>, <code>21</code></td>
+      <td>Time [0-23], 2 digits</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Minute</td>
+      <td><code>m</code></td>
+      <td><code>1</code>, <code>59</code></td>
+      <td>Minute, minimum 1 digit</td>
+    </tr>
+    <tr>
+      <td><code>mm</code></td>
+      <td><code>01</code>, <code>59</code></td>
+      <td>Minute, 2 digits</td>
+    </tr>
+  </tbody>
+</table>
 
-<h6 id="source-12">Source</h6>
+<h3 id="number-of-comments">Number of comments</h3>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.readMore.xml</code></pre></figure>
+<p>Untuk menampilkan jumlah komentar per posting.</p>
 
-<h6 id="includable-12">Includable</h6>
+<h6 id="source-16">Source</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.readMore'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.numComments.xml</code></pre></figure>
+
+<h6 id="includable-16">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.numComments'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
 <h6 id="usage-5">Usage</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ class: &amp;quot;btn btn-primary&amp;quot; }'</span> <span class="na">name=</span><span class="s">'post.readMore'</span><span class="nt">/&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:if</span> <span class="na">cond=</span><span class="s">'data:post.allowComments'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.numComments'</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/b:if&gt;</span></code></pre></figure>
+
+<h3 id="labels">Labels</h3>
+
+<p>Untuk menampilkan label posting.</p>
+
+<h6 id="source-17">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.labels.xml</code></pre></figure>
+
+<h6 id="includable-17">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.labels'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-6">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ comma: true|false, max-results: number, class: "class-name", unlabelledClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.labels'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="images">Images</h3>
+
+<p>Untuk menampilkan <em>featured image</em>.</p>
+
+<h6 id="source-18">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.image.xml</code></pre></figure>
+
+<h6 id="includable-18">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.image'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-7">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, ratioWidth: number, ratioHeight: number, link: true|false, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.image'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="background-images">Background images</h3>
+
+<p>Untuk menampilkan <em>featured image</em> dengan CSS <code class="highlighter-rouge">background-image</code>.</p>
+
+<h6 id="source-19">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.imageBg.xml</code></pre></figure>
+
+<h6 id="includable-19">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.imageBg'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-8">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, ratioWidth: number, ratioHeight: number, class: "class-name", style: "min-height: 180px;" }'</span> <span class="na">name=</span><span class="s">'post.imageBg'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h3 id="snippets">Snippets</h3>
+
+<p>Untuk menampilkan ringkasan posting.</p>
+
+<h6 id="source-20">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.snippet.xml</code></pre></figure>
+
+<h6 id="includable-20">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.snippet'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-9">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ length: number, links: true|false, linebreaks: true|false, ellipsis: true|false, notHasJumpLink: true|false }'</span> <span class="na">name=</span><span class="s">'post.snippet'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p>Ketika posting menggunakan <em>jump break</em> dan <code class="highlighter-rouge">notHasJumpLink: true</code> maka yang ditampilkan adalah <code class="highlighter-rouge">data:post.body</code>.</p>
+
+<h3 id="jump-link">Jump link</h3>
+
+<p>Untuk menampilkan <em>jump link</em>.</p>
+
+<h6 id="source-21">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/core/blog-posts/post.jumpLink.xml</code></pre></figure>
+
+<h6 id="includable-21">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'post.jumpLink'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-10">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ class: "btn btn-primary" }'</span> <span class="na">name=</span><span class="s">'post.jumpLink'</span><span class="nt">/&gt;</span></code></pre></figure>
 
 
         </main>
@@ -677,7 +1046,7 @@
 
 <script src="/assets/js/vendor/holder.min.js"></script>
 
-<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
 
 <script src="/assets/js/docs.js"></script>
 
