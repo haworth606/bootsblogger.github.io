@@ -79,7 +79,7 @@
 </div>
 
 
-    <header class="navbar navbar-inverse navbar-toggleable-sm bd-navbar">
+    <header class="navbar navbar-toggleable-sm navbar-inverse bd-navbar">
   <a class="navbar-brand" href="/">
     <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="Bootsblogger">
   </a>
@@ -88,7 +88,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="bd-main-nav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mt-2 mt-sm-0">
       <li class="nav-item">
         <a class="nav-item nav-link " href="/">Home</a>
       </li>
@@ -118,8 +118,8 @@
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          <div class="navmenu navmenu-expand-md bd-navmenu">
-  <div class="navmenu-form">
+          <div class="navmenu bd-navmenu">
+  <div class="navmenu-content">
     <form class="bd-search d-flex align-items-center">
       <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
       <button class="btn-link bd-search-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
@@ -128,9 +128,11 @@
       <div class="dropdown-menu bd-search-results" id="search-results"></div>
     </form>
   </div>
+</div>
 
-  <div class="collapse navmenu-collapse" id="bd-docs-nav">
-    <nav class="navmenu-nav mt-3">
+<div class="collapse bd-navmenu-scroll d-md-block" id="bd-docs-nav">
+  <div class="navmenu bd-navmenu">
+    <nav class="navmenu-nav">
       
       
       
@@ -140,8 +142,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered ">
-        <a class="nav-link " href="/getting-started/introduction/">
+      <div class="nav-item ">
+        <a class="nav-link nav-link-sm " href="/getting-started/introduction/">
           Getting started
         </a>
 
@@ -190,8 +192,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered active">
-        <a class="nav-link active" href="/core-template/overview/">
+      <div class="nav-item active">
+        <a class="nav-link nav-link-sm active" href="/core-template/overview/">
           Core template
         </a>
 
@@ -225,17 +227,6 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/head/">
-                Head
-              </a>
-            </div>
-          
-            
-            
-
-            
-
-            <div class="nav-item">
               <a class="nav-link nav-link-sm " href="/core-template/body-class/">
                 Body class
               </a>
@@ -247,8 +238,30 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/blog-posts/">
-                Blog posts
+              <a class="nav-link nav-link-sm " href="/core-template/includes-head/">
+                Includes - Head
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/includes-blog-posts/">
+                Includes - Blog posts
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/includes-assets/">
+                Includes - Assets
               </a>
             </div>
           
@@ -262,8 +275,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered ">
-        <a class="nav-link " href="/components/custom-card/">
+      <div class="nav-item ">
+        <a class="nav-link nav-link-sm " href="/components/custom-card/">
           Components
         </a>
 
@@ -312,8 +325,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered ">
-        <a class="nav-link " href="/utilities/figures/">
+      <div class="nav-item ">
+        <a class="nav-link nav-link-sm " href="/utilities/figures/">
           Utilities
         </a>
 
@@ -391,7 +404,7 @@
 
     <script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
-<script src="/assets/js/vendor/tether.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script>
 
 <script src="/assets/js/vendor/anchor.min.js"></script>
 

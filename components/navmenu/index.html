@@ -79,7 +79,7 @@
 </div>
 
 
-    <header class="navbar navbar-inverse navbar-toggleable-sm bd-navbar">
+    <header class="navbar navbar-toggleable-sm navbar-inverse bd-navbar">
   <a class="navbar-brand" href="/">
     <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="Bootsblogger">
   </a>
@@ -88,7 +88,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="bd-main-nav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mt-2 mt-sm-0">
       <li class="nav-item">
         <a class="nav-item nav-link " href="/">Home</a>
       </li>
@@ -118,8 +118,8 @@
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          <div class="navmenu navmenu-expand-md bd-navmenu">
-  <div class="navmenu-form">
+          <div class="navmenu bd-navmenu">
+  <div class="navmenu-content">
     <form class="bd-search d-flex align-items-center">
       <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
       <button class="btn-link bd-search-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
@@ -128,9 +128,11 @@
       <div class="dropdown-menu bd-search-results" id="search-results"></div>
     </form>
   </div>
+</div>
 
-  <div class="collapse navmenu-collapse" id="bd-docs-nav">
-    <nav class="navmenu-nav mt-3">
+<div class="collapse bd-navmenu-scroll d-md-block" id="bd-docs-nav">
+  <div class="navmenu bd-navmenu">
+    <nav class="navmenu-nav">
       
       
       
@@ -140,8 +142,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered ">
-        <a class="nav-link " href="/getting-started/introduction/">
+      <div class="nav-item ">
+        <a class="nav-link nav-link-sm " href="/getting-started/introduction/">
           Getting started
         </a>
 
@@ -190,8 +192,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered ">
-        <a class="nav-link " href="/core-template/overview/">
+      <div class="nav-item ">
+        <a class="nav-link nav-link-sm " href="/core-template/overview/">
           Core template
         </a>
 
@@ -225,17 +227,6 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/head/">
-                Head
-              </a>
-            </div>
-          
-            
-            
-
-            
-
-            <div class="nav-item">
               <a class="nav-link nav-link-sm " href="/core-template/body-class/">
                 Body class
               </a>
@@ -247,8 +238,30 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/blog-posts/">
-                Blog posts
+              <a class="nav-link nav-link-sm " href="/core-template/includes-head/">
+                Includes - Head
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/includes-blog-posts/">
+                Includes - Blog posts
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/includes-assets/">
+                Includes - Assets
               </a>
             </div>
           
@@ -262,8 +275,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered active">
-        <a class="nav-link active" href="/components/custom-card/">
+      <div class="nav-item active">
+        <a class="nav-link nav-link-sm active" href="/components/custom-card/">
           Components
         </a>
 
@@ -312,8 +325,8 @@
 
       
 
-      <div class="nav-item nav-item-bordered ">
-        <a class="nav-link " href="/utilities/figures/">
+      <div class="nav-item ">
+        <a class="nav-link nav-link-sm " href="/utilities/figures/">
           Utilities
         </a>
 
@@ -373,10 +386,8 @@
       <li><a href="#brand" id="markdown-toc-brand">Brand</a></li>
       <li><a href="#nav" id="markdown-toc-nav">Nav</a></li>
       <li><a href="#headers" id="markdown-toc-headers">Headers</a></li>
-      <li><a href="#forms" id="markdown-toc-forms">Forms</a></li>
-      <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a></li>
-      <li><a href="#text" id="markdown-toc-text">Text</a></li>
       <li><a href="#dividers" id="markdown-toc-dividers">Dividers</a></li>
+      <li><a href="#with-navmenu-content" id="markdown-toc-with-navmenu-content">With <code class="highlighter-rouge">.navmenu-content</code></a></li>
       <li><a href="#mix-and-match" id="markdown-toc-mix-and-match">Mix and match</a></li>
     </ul>
   </li>
@@ -687,74 +698,6 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<h3 id="forms">Forms</h3>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
-  <div class="navmenu-form">
-    <form>
-      <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
-    </form>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-form"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;form&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span> <span class="na">aria-label=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
-  <div class="navmenu-form">
-    <form class="d-flex align-items-center">
-      <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
-      <button class="btn btn-primary ml-2" type="submit">Go!</button>
-    </form>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-form"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span> <span class="na">aria-label=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary ml-2"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Go!<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<h3 id="buttons">Buttons</h3>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
-  <div class="navmenu-btn">
-    <a class="btn btn-block btn-primary" href="#">Go somewhere</a>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-block btn-primary"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Go somewhere<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
-<h3 id="text">Text</h3>
-
-<div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light bg-faded">
-  <div class="navmenu-text">
-    <p class="text-success">Hello, world!</p>
-  </div>
-</nav>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>Hello, world!<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
-
 <h3 id="dividers">Dividers</h3>
 
 <div class="bd-example" data-example-id="">
@@ -790,6 +733,72 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
+<h3 id="with-navmenu-content">With <code class="highlighter-rouge">.navmenu-content</code></h3>
+
+<p>Dengan <code class="highlighter-rouge">.navmenu-content</code>, Anda dapat memasukkan elemen sesuai dengan yang Anda inginkan. Lihat beberapa contoh berikut:</p>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <div class="navmenu-content">
+    <form>
+      <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
+    </form>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span> <span class="na">aria-label=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <div class="navmenu-content">
+    <form class="d-flex align-items-center">
+      <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
+      <button class="btn btn-primary ml-2" type="submit">Go!</button>
+    </form>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span> <span class="na">aria-label=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary ml-2"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Go!<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <div class="navmenu-content">
+    <a class="btn btn-block btn-primary" href="#">Go somewhere</a>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-block btn-primary"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Go somewhere<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<nav class="navmenu navmenu-light bg-faded">
+  <div class="navmenu-content">
+    <p class="text-success mb-0">Hello, world!</p>
+  </div>
+</nav>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-success mb-0"</span><span class="nt">&gt;</span>Hello, world!<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
 <h3 id="mix-and-match">Mix and match</h3>
 
 <div class="bd-example" data-example-id="">
@@ -808,7 +817,7 @@
   <div class="navmenu-divider"></div>
 
   <h6 class="navmenu-header">Form</h6>
-  <div class="navmenu-form">
+  <div class="navmenu-content">
     <form>
       <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
     </form>
@@ -817,7 +826,7 @@
   <div class="navmenu-divider"></div>
 
   <h6 class="navmenu-header">Button</h6>
-  <div class="navmenu-btn d-flex flex-wrap flex-column">
+  <div class="navmenu-content d-flex flex-wrap flex-column">
     <div class="btn-group">
       <a class="btn btn-secondary w-100" href="#">Action 1</a>
       <a class="btn btn-secondary w-100" href="#">Action 2</a>
@@ -827,8 +836,8 @@
   <div class="navmenu-divider"></div>
 
   <h6 class="navmenu-header">Text</h6>
-  <div class="navmenu-text">
-    <p class="text-muted">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  <div class="navmenu-content">
+    <p class="text-muted mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
   </div>
 </nav>
 </div>
@@ -847,7 +856,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
   <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"navmenu-header"</span><span class="nt">&gt;</span>Form<span class="nt">&lt;/h6&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-form"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;form&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span> <span class="na">aria-label=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
@@ -856,7 +865,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
   <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"navmenu-header"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/h6&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn d-flex flex-wrap flex-column"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content d-flex flex-wrap flex-column"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-secondary w-100"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action 1<span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-secondary w-100"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action 2<span class="nt">&lt;/a&gt;</span>
@@ -866,8 +875,8 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
   <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"navmenu-header"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/h6&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted mb-0"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
@@ -924,9 +933,11 @@
       Nav item collapse
     </a>
     <div class="collapse" id="navmenuNavCollapseDemo02">
-      <a class="nav-item nav-item-bordered nav-link nav-link-sm small" href="#">Nav item</a>
-      <a class="nav-item nav-item-bordered nav-link nav-link-sm small" href="#">Nav item again</a>
-      <a class="nav-item nav-item-bordered nav-link nav-link-sm small" href="#">Another nav item</a>
+      <div>
+        <a class="nav-item nav-item-bordered nav-link nav-link-sm small" href="#">Nav item</a>
+        <a class="nav-item nav-item-bordered nav-link nav-link-sm small" href="#">Nav item again</a>
+        <a class="nav-item nav-item-bordered nav-link nav-link-sm small" href="#">Another nav item</a>
+      </div>
     </div>
     <a class="nav-item nav-link" href="#">Nav item again</a>
     <a class="nav-item nav-link" href="#">Another nav item</a>
@@ -940,9 +951,11 @@
       Nav item collapse
     <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse"</span> <span class="na">id=</span><span class="s">"navmenuNavCollapseDemo02"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-item-bordered nav-link nav-link-sm small"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-item-bordered nav-link nav-link-sm small"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-item-bordered nav-link nav-link-sm small"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-item-bordered nav-link nav-link-sm small"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-item-bordered nav-link nav-link-sm small"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-item-bordered nav-link nav-link-sm small"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nav item again<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-item nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another nav item<span class="nt">&lt;/a&gt;</span>
@@ -1115,7 +1128,7 @@
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light bg-faded">
-  <div class="navmenu-btn">
+  <div class="navmenu-content">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo0" aria-controls="navmenuTogglerDemo0" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
 
@@ -1129,7 +1142,7 @@
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo0"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo0"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
@@ -1146,7 +1159,7 @@
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light navmenu-expand-sm bg-faded">
-  <div class="navmenu-btn navmenu-toggler">
+  <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo01" aria-controls="navmenuTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
 
@@ -1160,7 +1173,7 @@
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-sm bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn navmenu-toggler"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo01"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo01"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
@@ -1177,7 +1190,7 @@
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light navmenu-expand-md bg-faded">
-  <div class="navmenu-btn navmenu-toggler">
+  <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo02" aria-controls="navmenuTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
 
@@ -1191,7 +1204,7 @@
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-md bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn navmenu-toggler"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo02"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo02"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
@@ -1208,7 +1221,7 @@
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light navmenu-expand-lg bg-faded">
-  <div class="navmenu-btn navmenu-toggler">
+  <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo03" aria-controls="navmenuTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
 
@@ -1222,7 +1235,7 @@
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-lg bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn navmenu-toggler"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo03"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo03"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
@@ -1239,7 +1252,7 @@
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light navmenu-expand-xl bg-faded">
-  <div class="navmenu-btn navmenu-toggler">
+  <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo04" aria-controls="navmenuTogglerDemo04" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
 
@@ -1253,7 +1266,7 @@
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-xl bg-faded"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-btn navmenu-toggler"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo04"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo04"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 
@@ -1288,7 +1301,7 @@
 
     <script src="/assets/js/vendor/jquery-slim.min.js"></script>
 
-<script src="/assets/js/vendor/tether.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script>
 
 <script src="/assets/js/vendor/anchor.min.js"></script>
 

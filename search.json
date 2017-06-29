@@ -13,13 +13,6 @@
 
     
         {
-            "title" : "Blog posts",
-            "url"   : "/core-template/blog-posts/"
-        } ,
-    
-
-    
-        {
             "title" : "Body class",
             "url"   : "/core-template/body-class/"
         } ,
@@ -55,8 +48,22 @@
 
     
         {
-            "title" : "Head",
-            "url"   : "/core-template/head/"
+            "title" : "Includes - Assets",
+            "url"   : "/core-template/includes-assets/"
+        } ,
+    
+
+    
+        {
+            "title" : "Includes - Blog posts",
+            "url"   : "/core-template/includes-blog-posts/"
+        } ,
+    
+
+    
+        {
+            "title" : "Includes - Head",
+            "url"   : "/core-template/includes-head/"
         } ,
     
 
