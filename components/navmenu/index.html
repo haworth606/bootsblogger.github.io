@@ -465,7 +465,7 @@
 
 <h2 id="supported-content">Supported content</h2>
 
-<p>Navmenu mendukung beberapa sub-komponen. Pilih dari beberapa berikut sesuai kebutuhan:</p>
+<p>Konten di dalam navmenu:</p>
 
 <h3 id="brand">Brand</h3>
 
@@ -615,7 +615,7 @@
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<p><strong>Small nav</strong> - <em>Item</em> nav dengan <em>padding</em> atas dan bawah yang lebih kecil, tambahkan <code class="highlighter-rouge">.nav-link-sm</code> ke <code class="highlighter-rouge">.nav-link</code>:</p>
+<p><strong>Small nav</strong> - <em>Nav items</em> dengan <em>padding</em> atas dan bawah yang lebih kecil, tambahkan <code class="highlighter-rouge">.nav-link-sm</code> ke <code class="highlighter-rouge">.nav-link</code>:</p>
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light bg-faded">
@@ -634,7 +634,7 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<p><strong>Bordered nav</strong> - <em>Item</em> nav dengan <em>border</em> atas dan bawah, tambahkan <code class="highlighter-rouge">.nav-item-bordered</code> ke <code class="highlighter-rouge">.nav-item</code>:</p>
+<p><strong>Bordered nav</strong> - <em>Nav items</em> dengan <em>border</em> atas dan bawah, tambahkan <code class="highlighter-rouge">.nav-item-bordered</code> ke <code class="highlighter-rouge">.nav-item</code>:</p>
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light bg-faded">
@@ -1118,13 +1118,13 @@
 
 <p>Dengan menggunakan <code class="highlighter-rouge">.navmenu-toggler</code>, <code class="highlighter-rouge">.navmenu-collapse</code>, dan <code class="highlighter-rouge">.navmenu-expand{-sm|-md|-lg|-xl}</code> Anda dapat menentukan kapan menampilkan atau menyembunyikan elemen navmenu.</p>
 
-<p>Jika ingin elemen navmenu selalu tersembunyi, jangan tambahkan <code class="highlighter-rouge">.navmenu-expand-*</code>, dan juga dapat menghilangkan penggunaan <code class="highlighter-rouge">.navmenu-toggler</code> dan <code class="highlighter-rouge">.navmenu-collapse</code>.</p>
-
 <p>Kelas untuk <code class="highlighter-rouge">xs</code> tidak tersedia (<code class="highlighter-rouge">.navmenu-expand</code>).</p>
 
 <h3 id="toggler">Toggler</h3>
 
 <p>Always:</p>
+
+<p>Tidak membutuhkan <code class="highlighter-rouge">.navmenu-expand-*</code>, <code class="highlighter-rouge">.navmenu-toggler</code>, dan <code class="highlighter-rouge">.navmenu-collapse</code>.</p>
 
 <div class="bd-example" data-example-id="">
 <nav class="navmenu navmenu-light bg-faded">
@@ -1155,10 +1155,10 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<p><code class="highlighter-rouge">sm</code> (≤576px):</p>
+<p><code class="highlighter-rouge">sm</code> (&lt;576px):</p>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light navmenu-expand-sm bg-faded">
+<nav class="navmenu navmenu-expand-sm navmenu-light bg-faded">
   <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo01" aria-controls="navmenuTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
@@ -1172,7 +1172,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-sm bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-expand-sm navmenu-light bg-faded"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo01"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo01"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1186,10 +1186,10 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<p><code class="highlighter-rouge">md</code> (≤768px):</p>
+<p><code class="highlighter-rouge">md</code> (&lt;768px):</p>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light navmenu-expand-md bg-faded">
+<nav class="navmenu navmenu-expand-md navmenu-light bg-faded">
   <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo02" aria-controls="navmenuTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
@@ -1203,7 +1203,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-md bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-expand-md navmenu-light bg-faded"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo02"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo02"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1217,10 +1217,10 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<p><code class="highlighter-rouge">lg</code> (≤992px):</p>
+<p><code class="highlighter-rouge">lg</code> (&lt;992px):</p>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light navmenu-expand-lg bg-faded">
+<nav class="navmenu navmenu-expand-lg navmenu-light bg-faded">
   <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo03" aria-controls="navmenuTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
@@ -1234,7 +1234,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-lg bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-expand-lg navmenu-light bg-faded"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo03"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo03"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1248,10 +1248,10 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<p><code class="highlighter-rouge">xl</code> (≤1200px):</p>
+<p><code class="highlighter-rouge">xl</code> (&lt;1200px):</p>
 
 <div class="bd-example" data-example-id="">
-<nav class="navmenu navmenu-light navmenu-expand-xl bg-faded">
+<nav class="navmenu navmenu-expand-xl navmenu-light bg-faded">
   <div class="navmenu-content navmenu-toggler">
     <button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#navmenuTogglerDemo04" aria-controls="navmenuTogglerDemo04" aria-expanded="false" aria-label="Toggle navigation">Toggle nav</button>
   </div>
@@ -1265,7 +1265,7 @@
   </div>
 </nav>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-light navmenu-expand-xl bg-faded"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navmenu navmenu-expand-xl navmenu-light bg-faded"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navmenu-content navmenu-toggler"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-block"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navmenuTogglerDemo04"</span> <span class="na">aria-controls=</span><span class="s">"navmenuTogglerDemo04"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>Toggle nav<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>

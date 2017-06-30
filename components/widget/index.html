@@ -405,13 +405,15 @@
   <li><a href="#grid" id="markdown-toc-grid">Grid</a>    <ul>
       <li><a href="#options" id="markdown-toc-options">Options</a></li>
       <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+      <li><a href="#equal-height-columns" id="markdown-toc-equal-height-columns">Equal height columns</a></li>
     </ul>
   </li>
+  <li><a href="#wg-section-no-mb" id="markdown-toc-wg-section-no-mb"><code class="highlighter-rouge">.wg-section-no-mb</code></a></li>
 </ul>
 
 <h2 id="base-class">Base class</h2>
 
-<p>Komponen widget membutuhkan penggunaan kelas dasar <code class="highlighter-rouge">.wg</code>. <code class="highlighter-rouge">.wg</code> hanya mengatur <code class="highlighter-rouge">margin</code> dan ukuran judul widget (dapat diubah menggunakan kelas pengubah <a href="#font-size">ukuran judul widget</a>).</p>
+<p>Komponen widget membutuhkan penggunaan kelas dasar <code class="highlighter-rouge">.wg</code> untuk mengatur <em>margin</em> dan ukuran judul widget (dapat diubah menggunakan kelas pengubah <a href="#font-size">ukuran judul widget</a>).</p>
 
 <p><strong>Catatan:</strong> komponen widget tidak mengubah warna konten yang berada di dalamnya (di dalam <code class="highlighter-rouge">.widget-content</code>), oleh karena itu, Anda perlu menyesuaikannya dengan <em>custom styles</em> atau kelas utilitas.</p>
 
@@ -894,7 +896,7 @@
 
 <h3 id="list-groups">List groups</h3>
 
-<p>Buat daftar konten di dalam widget-box dengan <em>flush list group</em>.</p>
+<p><em>Flush list group</em> di dalam widget-box.</p>
 
 <div class="bd-example">
   <div class="wg wg-box wg-box-white wg-title-gray-dark">
@@ -1169,7 +1171,7 @@
 
 <p>Tambahkan <code class="highlighter-rouge">.wg-panel-sm</code>.</p>
 
-<div class="bd-example bd-example-widget-inverse text-gray-dark">
+<div class="bd-example">
   <div class="wg wg-panel wg-panel-sm wg-panel-orange wg-title-gray-dark">
     <div class="widget">
       <h3 class="title">Widget title</h3>
@@ -1187,7 +1189,7 @@
 
 <p>Tambahkan <code class="highlighter-rouge">.wg-panel-group</code>.</p>
 
-<div class="bd-example bd-example-widget-inverse text-gray-dark">
+<div class="bd-example">
   <div class="wg wg-panel wg-panel-group wg-panel-teal wg-title-white">
     <div class="widget">
       <h3 class="title">Widget title</h3>
@@ -1215,7 +1217,7 @@
 
 <h3 id="list-groups-1">List groups</h3>
 
-<p>Buat daftar konten di dalam widget-panel dengan <em>flush list group</em>.</p>
+<p><em>Flush list group</em> di dalam widget-panel.</p>
 
 <div class="bd-example">
   <div class="wg wg-panel wg-panel-purple wg-title-white">
@@ -1326,7 +1328,7 @@
   </tbody>
 </table>
 
-<p>Grid widget menggunakan <code class="highlighter-rouge">calc()</code> untuk mengkalkulasi lebar dan jarak widget. Menggunakan <code class="highlighter-rouge">calc()</code> adalah untuk menghindari penggunaan <code class="highlighter-rouge">padding</code> pada <code class="highlighter-rouge">.widget</code>, agar tidak terjadi konflik dengan CSS widget lainnya.</p>
+<p>Grid widget menggunakan <code class="highlighter-rouge">margin-left</code> dan <code class="highlighter-rouge">margin-right</code> untuk membuat <em>gutters</em>/jarak antara widget, dan menggunakan <code class="highlighter-rouge">calc()</code> untuk mengkalkulasi lebar dan jarak widget. Menggunakan <em>margin</em> dan <code class="highlighter-rouge">calc()</code> adalah untuk menghindari penggunaan <code class="highlighter-rouge">padding</code> pada <code class="highlighter-rouge">.widget</code>, agar tidak terjadi konflik dengan CSS widget lainnya.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -1362,7 +1364,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-title-white wg-sm-6 wg-md-4 wg-lg-3'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
-<div class="bd-example bd-example-widget-inverse text-gray-dark">
+<div class="bd-example">
   <div class="wg wg-box wg-box-orange wg-title-black wg-sm-6 wg-md-4 wg-grid-example">
     <div class="widget">
       <h3 class="title">Widget title</h3>
@@ -1394,7 +1396,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-box wg-box-orange wg-title-black wg-sm-6 wg-md-4'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
 
-<div class="bd-example bd-example-widget-inverse text-gray-dark">
+<div class="bd-example">
   <div class="wg wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-grid-example">
     <div class="widget">
       <h3 class="title">Widget title</h3>
@@ -1425,6 +1427,172 @@
 <!-- /.bd-example -->
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-panel wg-panel-orange wg-title-black wg-sm-6'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+
+<h3 id="equal-height-columns">Equal height columns</h3>
+
+<p>Tambahkan <code class="highlighter-rouge">.wg-equal-height-cols</code> untuk membuat kolom sama tinggi.</p>
+
+<div class="bd-example">
+  <div class="wg wg-box wg-box-orange wg-title-black wg-sm-6 wg-equal-height-cols wg-grid-example">
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-box wg-box-orange wg-title-black wg-sm-6 wg-equal-height-cols'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+  <div class="wg wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-equal-height-cols wg-grid-example">
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+    <div class="widget">
+      <h3 class="title">Widget title</h3>
+      <div class="widget-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div><!-- /.widget -->
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-equal-height-cols'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span></code></pre></figure>
+
+<h2 id="wg-section-no-mb"><code class="highlighter-rouge">.wg-section-no-mb</code></h2>
+
+<p>Gunakan <code class="highlighter-rouge">.wg-section-no-mb</code> untuk menghilangkan <em>margin</em> bawah pada widget baris terakhir.</p>
+
+<div class="bd-example">
+  <div class="p-3 bg-faded d-inline-block">
+    <div class="wg wg-box wg-box-orange wg-title-black wg-section-no-mb">
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'p-3 bg-faded'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-box wg-box-orange wg-title-black wg-section-no-mb'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Grup:</p>
+
+<div class="bd-example">
+  <div class="p-3 bg-faded d-inline-block">
+    <div class="wg wg-panel wg-panel-group wg-panel-orange wg-title-black wg-section-no-mb">
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'p-3 bg-faded'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-panel wg-panel-group wg-panel-orange wg-title-black wg-section-no-mb'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Dengan grid:</p>
+
+<div class="bd-example">
+  <div class="p-3 bg-faded">
+    <div class="wg wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-section-no-mb wg-grid-example">
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+      <div class="widget">
+        <h3 class="title">Widget title</h3>
+        <div class="widget-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div><!-- /.widget -->
+    </div>
+  </div>
+</div>
+<!-- /.bd-example -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'p-3 bg-faded'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'wg wg-panel wg-panel-orange wg-title-black wg-sm-6 wg-section-no-mb'</span> <span class="na">id=</span><span class="s">'sectionId'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
         </main>

@@ -3,20 +3,20 @@
  * Copyright 2017 Igoy Nawamreh
  * Licensed under MIT (https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE)
  */
-.card-title-link {
+.card:not(.card-inverse) .card-title-link {
   color: inherit;
   text-decoration: none;
 }
-.card-title-link:hover, .card-title-link:focus {
+.card:not(.card-inverse) .card-title-link:focus, .card:not(.card-inverse) .card-title-link:hover {
   color: #014c8c;
   text-decoration: none;
 }
 
-.card-title-link-inverse {
+.card.card-inverse .card-title-link {
   color: #fff;
   text-decoration: none;
 }
-.card-title-link-inverse:hover, .card-title-link-inverse:focus {
+.card.card-inverse .card-title-link:focus, .card.card-inverse .card-title-link:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -1209,6 +1209,41 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.wg-1.wg-equal-height-cols,
+.wg-2.wg-equal-height-cols,
+.wg-3.wg-equal-height-cols,
+.wg-4.wg-equal-height-cols,
+.wg-5.wg-equal-height-cols,
+.wg-6.wg-equal-height-cols,
+.wg-7.wg-equal-height-cols,
+.wg-8.wg-equal-height-cols,
+.wg-9.wg-equal-height-cols,
+.wg-10.wg-equal-height-cols,
+.wg-11.wg-equal-height-cols,
+.wg-12.wg-equal-height-cols {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.wg-1.wg-equal-height-cols .widget-content,
+.wg-2.wg-equal-height-cols .widget-content,
+.wg-3.wg-equal-height-cols .widget-content,
+.wg-4.wg-equal-height-cols .widget-content,
+.wg-5.wg-equal-height-cols .widget-content,
+.wg-6.wg-equal-height-cols .widget-content,
+.wg-7.wg-equal-height-cols .widget-content,
+.wg-8.wg-equal-height-cols .widget-content,
+.wg-9.wg-equal-height-cols .widget-content,
+.wg-10.wg-equal-height-cols .widget-content,
+.wg-11.wg-equal-height-cols .widget-content,
+.wg-12.wg-equal-height-cols .widget-content {
+  height: 100%;
 }
 .wg-1 .widget,
 .wg-2 .widget,
@@ -1422,6 +1457,41 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wg-sm-1.wg-equal-height-cols,
+  .wg-sm-2.wg-equal-height-cols,
+  .wg-sm-3.wg-equal-height-cols,
+  .wg-sm-4.wg-equal-height-cols,
+  .wg-sm-5.wg-equal-height-cols,
+  .wg-sm-6.wg-equal-height-cols,
+  .wg-sm-7.wg-equal-height-cols,
+  .wg-sm-8.wg-equal-height-cols,
+  .wg-sm-9.wg-equal-height-cols,
+  .wg-sm-10.wg-equal-height-cols,
+  .wg-sm-11.wg-equal-height-cols,
+  .wg-sm-12.wg-equal-height-cols {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wg-sm-1.wg-equal-height-cols .widget-content,
+  .wg-sm-2.wg-equal-height-cols .widget-content,
+  .wg-sm-3.wg-equal-height-cols .widget-content,
+  .wg-sm-4.wg-equal-height-cols .widget-content,
+  .wg-sm-5.wg-equal-height-cols .widget-content,
+  .wg-sm-6.wg-equal-height-cols .widget-content,
+  .wg-sm-7.wg-equal-height-cols .widget-content,
+  .wg-sm-8.wg-equal-height-cols .widget-content,
+  .wg-sm-9.wg-equal-height-cols .widget-content,
+  .wg-sm-10.wg-equal-height-cols .widget-content,
+  .wg-sm-11.wg-equal-height-cols .widget-content,
+  .wg-sm-12.wg-equal-height-cols .widget-content {
+    height: 100%;
   }
   .wg-sm-1 .widget,
   .wg-sm-2 .widget,
@@ -1635,6 +1705,41 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wg-md-1.wg-equal-height-cols,
+  .wg-md-2.wg-equal-height-cols,
+  .wg-md-3.wg-equal-height-cols,
+  .wg-md-4.wg-equal-height-cols,
+  .wg-md-5.wg-equal-height-cols,
+  .wg-md-6.wg-equal-height-cols,
+  .wg-md-7.wg-equal-height-cols,
+  .wg-md-8.wg-equal-height-cols,
+  .wg-md-9.wg-equal-height-cols,
+  .wg-md-10.wg-equal-height-cols,
+  .wg-md-11.wg-equal-height-cols,
+  .wg-md-12.wg-equal-height-cols {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wg-md-1.wg-equal-height-cols .widget-content,
+  .wg-md-2.wg-equal-height-cols .widget-content,
+  .wg-md-3.wg-equal-height-cols .widget-content,
+  .wg-md-4.wg-equal-height-cols .widget-content,
+  .wg-md-5.wg-equal-height-cols .widget-content,
+  .wg-md-6.wg-equal-height-cols .widget-content,
+  .wg-md-7.wg-equal-height-cols .widget-content,
+  .wg-md-8.wg-equal-height-cols .widget-content,
+  .wg-md-9.wg-equal-height-cols .widget-content,
+  .wg-md-10.wg-equal-height-cols .widget-content,
+  .wg-md-11.wg-equal-height-cols .widget-content,
+  .wg-md-12.wg-equal-height-cols .widget-content {
+    height: 100%;
   }
   .wg-md-1 .widget,
   .wg-md-2 .widget,
@@ -1848,6 +1953,41 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wg-lg-1.wg-equal-height-cols,
+  .wg-lg-2.wg-equal-height-cols,
+  .wg-lg-3.wg-equal-height-cols,
+  .wg-lg-4.wg-equal-height-cols,
+  .wg-lg-5.wg-equal-height-cols,
+  .wg-lg-6.wg-equal-height-cols,
+  .wg-lg-7.wg-equal-height-cols,
+  .wg-lg-8.wg-equal-height-cols,
+  .wg-lg-9.wg-equal-height-cols,
+  .wg-lg-10.wg-equal-height-cols,
+  .wg-lg-11.wg-equal-height-cols,
+  .wg-lg-12.wg-equal-height-cols {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wg-lg-1.wg-equal-height-cols .widget-content,
+  .wg-lg-2.wg-equal-height-cols .widget-content,
+  .wg-lg-3.wg-equal-height-cols .widget-content,
+  .wg-lg-4.wg-equal-height-cols .widget-content,
+  .wg-lg-5.wg-equal-height-cols .widget-content,
+  .wg-lg-6.wg-equal-height-cols .widget-content,
+  .wg-lg-7.wg-equal-height-cols .widget-content,
+  .wg-lg-8.wg-equal-height-cols .widget-content,
+  .wg-lg-9.wg-equal-height-cols .widget-content,
+  .wg-lg-10.wg-equal-height-cols .widget-content,
+  .wg-lg-11.wg-equal-height-cols .widget-content,
+  .wg-lg-12.wg-equal-height-cols .widget-content {
+    height: 100%;
   }
   .wg-lg-1 .widget,
   .wg-lg-2 .widget,
@@ -2061,6 +2201,41 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wg-xl-1.wg-equal-height-cols,
+  .wg-xl-2.wg-equal-height-cols,
+  .wg-xl-3.wg-equal-height-cols,
+  .wg-xl-4.wg-equal-height-cols,
+  .wg-xl-5.wg-equal-height-cols,
+  .wg-xl-6.wg-equal-height-cols,
+  .wg-xl-7.wg-equal-height-cols,
+  .wg-xl-8.wg-equal-height-cols,
+  .wg-xl-9.wg-equal-height-cols,
+  .wg-xl-10.wg-equal-height-cols,
+  .wg-xl-11.wg-equal-height-cols,
+  .wg-xl-12.wg-equal-height-cols {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .wg-xl-1.wg-equal-height-cols .widget-content,
+  .wg-xl-2.wg-equal-height-cols .widget-content,
+  .wg-xl-3.wg-equal-height-cols .widget-content,
+  .wg-xl-4.wg-equal-height-cols .widget-content,
+  .wg-xl-5.wg-equal-height-cols .widget-content,
+  .wg-xl-6.wg-equal-height-cols .widget-content,
+  .wg-xl-7.wg-equal-height-cols .widget-content,
+  .wg-xl-8.wg-equal-height-cols .widget-content,
+  .wg-xl-9.wg-equal-height-cols .widget-content,
+  .wg-xl-10.wg-equal-height-cols .widget-content,
+  .wg-xl-11.wg-equal-height-cols .widget-content,
+  .wg-xl-12.wg-equal-height-cols .widget-content {
+    height: 100%;
   }
   .wg-xl-1 .widget,
   .wg-xl-2 .widget,
@@ -2254,6 +2429,13 @@
     max-width: calc(8.33333333% - 30px);
   }
 }
+.wg-section-no-mb {
+  margin-bottom: -1rem;
+}
+.wg-section-no-mb.wg-panel-group {
+  margin-bottom: 0;
+}
+
 .figure-align-right {
   display: table;
   float: right;
