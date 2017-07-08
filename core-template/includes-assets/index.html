@@ -16,7 +16,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Includes - Assets">
-  <meta name="twitter:description" content="CSS, JavaScript, dan lainnya.">
+  <meta name="twitter:description" content="CSS, JavaScript, images, icons, dan lainnya.">
   <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
 
 
@@ -24,7 +24,7 @@
 
   <meta property="og:url" content="/core-template/includes-assets/">
   <meta property="og:title" content="Includes - Assets">
-  <meta property="og:description" content="CSS, JavaScript, dan lainnya.">
+  <meta property="og:description" content="CSS, JavaScript, images, icons, dan lainnya.">
 
 <meta property="og:image" content="/assets/brand/bootstrap-social.png">
 
@@ -375,52 +375,66 @@
         </div>
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Includes - Assets</h1>
-          <p class="bd-lead">CSS, JavaScript, dan lainnya.</p>
+          <p class="bd-lead">CSS, JavaScript, images, icons, dan lainnya.</p>
           <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#core-css-and-javascript" id="markdown-toc-core-css-and-javascript">Core CSS and JavaScript</a>    <ul>
+  <li><a href="#css-and-javascript" id="markdown-toc-css-and-javascript">CSS and JavaScript</a>    <ul>
       <li><a href="#bootstrap-css" id="markdown-toc-bootstrap-css">Bootstrap CSS</a>        <ul>
-          <li><a href="#source" id="markdown-toc-source">Source</a></li>
+          <li><a href="#source-compiled" id="markdown-toc-source-compiled">Source <small>(Compiled)</small></a></li>
           <li><a href="#includable" id="markdown-toc-includable">Includable</a></li>
           <li><a href="#usage" id="markdown-toc-usage">Usage</a></li>
         </ul>
       </li>
       <li><a href="#bootstrap-js" id="markdown-toc-bootstrap-js">Bootstrap JS</a>        <ul>
-          <li><a href="#source-1" id="markdown-toc-source-1">Source</a></li>
+          <li><a href="#source-cdn" id="markdown-toc-source-cdn">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></a></li>
           <li><a href="#includable-1" id="markdown-toc-includable-1">Includable</a></li>
           <li><a href="#usage-1" id="markdown-toc-usage-1">Usage</a></li>
         </ul>
       </li>
       <li><a href="#bootsblogger-css" id="markdown-toc-bootsblogger-css">Bootsblogger CSS</a>        <ul>
-          <li><a href="#source-2" id="markdown-toc-source-2">Source</a></li>
+          <li><a href="#source-compiled-1" id="markdown-toc-source-compiled-1">Source <small>(Compiled)</small></a></li>
           <li><a href="#includable-2" id="markdown-toc-includable-2">Includable</a></li>
           <li><a href="#usage-2" id="markdown-toc-usage-2">Usage</a></li>
         </ul>
       </li>
-    </ul>
-  </li>
-  <li><a href="#images-and-icons" id="markdown-toc-images-and-icons">Images and Icons</a>    <ul>
       <li><a href="#font-awesome" id="markdown-toc-font-awesome">Font Awesome</a>        <ul>
-          <li><a href="#source-3" id="markdown-toc-source-3">Source</a></li>
+          <li><a href="#source-cdn-1" id="markdown-toc-source-cdn-1">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></a></li>
           <li><a href="#includable-3" id="markdown-toc-includable-3">Includable</a></li>
           <li><a href="#usage-3" id="markdown-toc-usage-3">Usage</a></li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a>    <ul>
-      <li><a href="#jquery" id="markdown-toc-jquery">jQuery</a>        <ul>
-          <li><a href="#source-4" id="markdown-toc-source-4">Source</a></li>
+  <li><a href="#icons" id="markdown-toc-icons">Icons</a>    <ul>
+      <li><a href="#blogger" id="markdown-toc-blogger">Blogger</a>        <ul>
+          <li><a href="#source" id="markdown-toc-source">Source</a></li>
           <li><a href="#includable-4" id="markdown-toc-includable-4">Includable</a></li>
           <li><a href="#usage-4" id="markdown-toc-usage-4">Usage</a></li>
+          <li><a href="#example" id="markdown-toc-example">Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#bootsblogger" id="markdown-toc-bootsblogger">Bootsblogger</a>        <ul>
+          <li><a href="#source-1" id="markdown-toc-source-1">Source</a></li>
+          <li><a href="#includable-5" id="markdown-toc-includable-5">Includable</a></li>
+          <li><a href="#usage-5" id="markdown-toc-usage-5">Usage</a></li>
+          <li><a href="#example-1" id="markdown-toc-example-1">Example</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a>    <ul>
+      <li><a href="#jquery" id="markdown-toc-jquery">jQuery</a>        <ul>
+          <li><a href="#source-cdn-2" id="markdown-toc-source-cdn-2">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></a></li>
+          <li><a href="#includable-6" id="markdown-toc-includable-6">Includable</a></li>
+          <li><a href="#usage-6" id="markdown-toc-usage-6">Usage</a></li>
         </ul>
       </li>
       <li><a href="#popperjs" id="markdown-toc-popperjs">Popper.js</a>        <ul>
-          <li><a href="#source-5" id="markdown-toc-source-5">Source</a></li>
-          <li><a href="#includable-5" id="markdown-toc-includable-5">Includable</a></li>
-          <li><a href="#usage-5" id="markdown-toc-usage-5">Usage</a></li>
+          <li><a href="#source-cdn-3" id="markdown-toc-source-cdn-3">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></a></li>
+          <li><a href="#includable-7" id="markdown-toc-includable-7">Includable</a></li>
+          <li><a href="#usage-7" id="markdown-toc-usage-7">Usage</a></li>
         </ul>
       </li>
     </ul>
@@ -428,17 +442,11 @@
   <li><a href="#example-usage-css-and-javascript" id="markdown-toc-example-usage-css-and-javascript">Example usage: CSS and JavaScript</a></li>
 </ul>
 
-<h2 id="core-css-and-javascript">Core CSS and JavaScript</h2>
-
-<p>CSS dan JavaScript inti.</p>
+<h2 id="css-and-javascript">CSS and JavaScript</h2>
 
 <h3 id="bootstrap-css">Bootstrap CSS</h3>
 
-<ul>
-  <li>Source: Compiled</li>
-</ul>
-
-<h6 id="source">Source</h6>
+<h6 id="source-compiled">Source <small>(Compiled)</small></h6>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includes/assets/css/bootstrap/bootstrap.min.css</code></pre></figure>
 
@@ -454,11 +462,7 @@
 
 <h3 id="bootstrap-js">Bootstrap JS</h3>
 
-<ul>
-  <li>Source: <abbr title="Content Delivery Network">CDN</abbr></li>
-</ul>
-
-<h6 id="source-1">Source</h6>
+<h6 id="source-cdn">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></h6>
 
 <p>Lihat <code class="highlighter-rouge">template-src/config.json</code>:</p>
 
@@ -481,11 +485,7 @@
 
 <h3 id="bootsblogger-css">Bootsblogger CSS</h3>
 
-<ul>
-  <li>Source: Compiled</li>
-</ul>
-
-<h6 id="source-2">Source</h6>
+<h6 id="source-compiled-1">Source <small>(Compiled)</small></h6>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includes/assets/css/bootsblogger/bootsblogger.min.css</code></pre></figure>
 
@@ -499,19 +499,11 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'css.bootsblogger'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h2 id="images-and-icons">Images and Icons</h2>
-
-<p>Aset untuk keperluan gambar dan ikon.</p>
-
 <h3 id="font-awesome">Font Awesome</h3>
 
-<ul>
-  <li>Homepage: <a href="http://fontawesome.io">http://fontawesome.io</a></li>
-  <li>Source: <abbr title="Content Delivery Network">CDN</abbr></li>
-  <li>Version: <code class="highlighter-rouge">4.7.0</code></li>
-</ul>
+<p><a href="http://fontawesome.io">http://fontawesome.io</a></p>
 
-<h6 id="source-3">Source</h6>
+<h6 id="source-cdn-1">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></h6>
 
 <p>Lihat <code class="highlighter-rouge">template-src/config.json</code>:</p>
 
@@ -532,19 +524,69 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'css.fontAwesome'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h2 id="dependencies">Dependencies</h2>
+<h2 id="icons">Icons</h2>
 
-<p>Aset yang harus digunakan untuk mendukung <em>plugin</em> (khususnya <em>plugin</em> Bootstrap) agar dapat bekerja.</p>
+<h3 id="blogger">Blogger</h3>
+
+<h6 id="source">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includes/assets/icons/icons.blogger.xml</code></pre></figure>
+
+<h6 id="includable-4">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'icons.blogger'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-4">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ width: number, height: number, fillBg: "#ff5722", fillB: "#fff", class: "class-name", style: "vertical-align: middle;" }'</span> <span class="na">name=</span><span class="s">'icons.blogger'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h6 id="example">Example</h6>
+
+<div class="bd-example">
+  <svg class="" width="24" height="24" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false" style="vertical-align: middle;">
+    <title>Blogger</title>
+    <path fill="#ff5722" d="M612, 510c0, 56.1-45.9, 102-102, 102H102C45.9, 612, 0, 566.1, 0, 510V102C0, 45.9, 45.9, 0, 102, 0h408 c56.1, 0, 102, 45.9, 102, 102V510z"></path>
+    <path fill="#fff" d="m 483.32742, 262.81768 c -7.88887, -3.44838 -41.73045, 0.38183 -51.13171, -8.29282 -6.63342, -6.25243 -7.05677, -17.56407 -9.6465, -32.65819 -4.33566, -25.27222 -6.14292, -30.99964 -10.65377, -40.95102 -16.41131, -35.46224 -55.75058, -65.82947 -91.48993, -65.82947 l -82.8361, 0 c -65.17519, 0 -118.42655, 54.35078 -118.42655, 120.6814 l 0, 140.71541 c 0, 66.2113 53.25136, 120.43083 118.42655, 120.43083 l 136.10207, 0 c 65.17226, 0 118.06159, -54.21953 118.43823, -120.43083 l 0.74743, -97.4615 c 0, 0 0, -12.05144 -9.52972, -16.20381 m -244.26024, -49.11258 65.67737, 0 c 12.5311, 0 22.68271, 10.33321 22.68271, 22.95738 0, 12.63611 -10.15161, 23.08864 -22.68271, 23.08864 l -65.67737, 0 c -12.53111, 0 -22.6827, -10.45253 -22.6827, -23.08864 0.003, -12.62417 10.15451, -22.95738 22.6827, -22.95738 m 133.47731, 183.9574 -133.47731, 0 c -12.53111, 0 -22.6827, -10.46447 -22.6827, -22.95739 0, -12.6361 10.15159, -22.96932 22.6827, -22.96932 l 133.47731, 0 c 12.40265, 0 22.55132, 10.33322 22.55132, 22.96932 0.003, 12.49292 -10.14867, 22.95739 -22.55132, 22.95739"></path>
+  </svg>
+  Blogger
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ width: 24, height: 24, fillBg: "#ff5722", fillB: "#fff", class: "", style: "vertical-align: middle;" }'</span> <span class="na">name=</span><span class="s">'icons.blogger'</span><span class="nt">/&gt;</span> Blogger</code></pre></figure>
+
+<h3 id="bootsblogger">Bootsblogger</h3>
+
+<h6 id="source-1">Source</h6>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">template-src/includes/assets/icons/icons.bootsblogger.xml</code></pre></figure>
+
+<h6 id="includable-5">Includable</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'icons.bootsblogger'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
+
+<h6 id="usage-5">Usage</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ width: number, height: number, class: "class-name", style: "vertical-align: middle;" }'</span> <span class="na">name=</span><span class="s">'icons.bootsblogger'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h6 id="example-1">Example</h6>
+
+<div class="bd-example">
+  <svg class="" width="24" height="24" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false" style="vertical-align: middle;">
+    <title>Blogger</title>
+    <path fill="#563D7C" d="M612, 510c0, 56.1-45.9, 102-102, 102H102C45.9, 612, 0, 566.1, 0, 510V102C0, 45.9, 45.9, 0, 102, 0h408 c56.1, 0, 102, 45.9, 102, 102V510z"></path>
+    <path fill="#fff" d="m 483.32742, 262.81768 c -7.88887, -3.44838 -41.73045, 0.38183 -51.13171, -8.29282 -6.63342, -6.25243 -7.05677, -17.56407 -9.6465, -32.65819 -4.33566, -25.27222 -6.14292, -30.99964 -10.65377, -40.95102 -16.41131, -35.46224 -55.75058, -65.82947 -91.48993, -65.82947 l -82.8361, 0 c -65.17519, 0 -118.42655, 54.35078 -118.42655, 120.6814 l 0, 140.71541 c 0, 66.2113 53.25136, 120.43083 118.42655, 120.43083 l 136.10207, 0 c 65.17226, 0 118.06159, -54.21953 118.43823, -120.43083 l 0.74743, -97.4615 c 0, 0 0, -12.05144 -9.52972, -16.20381 m -244.26024, -49.11258 65.67737, 0 c 12.5311, 0 22.68271, 10.33321 22.68271, 22.95738 0, 12.63611 -10.15161, 23.08864 -22.68271, 23.08864 l -65.67737, 0 c -12.53111, 0 -22.6827, -10.45253 -22.6827, -23.08864 0.003, -12.62417 10.15451, -22.95738 22.6827, -22.95738 m 133.47731, 183.9574 -133.47731, 0 c -12.53111, 0 -22.6827, -10.46447 -22.6827, -22.95739 0, -12.6361 10.15159, -22.96932 22.6827, -22.96932 l 133.47731, 0 c 12.40265, 0 22.55132, 10.33322 22.55132, 22.96932 0.003, 12.49292 -10.14867, 22.95739 -22.55132, 22.95739"></path>
+  </svg>
+  Bootsblogger
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ width: 24, height: 24, class: "", style: "vertical-align: middle;" }'</span> <span class="na">name=</span><span class="s">'icons.bootsblogger'</span><span class="nt">/&gt;</span> Bootsblogger</code></pre></figure>
+
+<h2 id="dependencies">Dependencies</h2>
 
 <h3 id="jquery">jQuery</h3>
 
-<ul>
-  <li>Homepage: <a href="https://jquery.com">https://jquery.com</a></li>
-  <li>Source: <abbr title="Content Delivery Network">CDN</abbr></li>
-  <li>Version: <code class="highlighter-rouge">3.1.1</code></li>
-</ul>
+<p><a href="https://jquery.com">https://jquery.com</a></p>
 
-<h6 id="source-4">Source</h6>
+<h6 id="source-cdn-2">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></h6>
 
 <p>Lihat <code class="highlighter-rouge">template-src/config.json</code>:</p>
 
@@ -557,23 +599,19 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre></figure>
 
-<h6 id="includable-4">Includable</h6>
+<h6 id="includable-6">Includable</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'js.jquery'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
-<h6 id="usage-4">Usage</h6>
+<h6 id="usage-6">Usage</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'js.jquery'</span><span class="nt">/&gt;</span></code></pre></figure>
 
 <h3 id="popperjs">Popper.js</h3>
 
-<ul>
-  <li>Homepage: <a href="https://popper.js.org">https://popper.js.org</a></li>
-  <li>Source: <abbr title="Content Delivery Network">CDN</abbr></li>
-  <li>Version: <code class="highlighter-rouge">1.10.1</code></li>
-</ul>
+<p><a href="https://popper.js.org">https://popper.js.org</a></p>
 
-<h6 id="source-5">Source</h6>
+<h6 id="source-cdn-3">Source <small>(<abbr title="Content Delivery Network">CDN</abbr>)</small></h6>
 
 <p>Lihat <code class="highlighter-rouge">template-src/config.json</code>:</p>
 
@@ -586,11 +624,11 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre></figure>
 
-<h6 id="includable-5">Includable</h6>
+<h6 id="includable-7">Includable</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'js.popper'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
 
-<h6 id="usage-5">Usage</h6>
+<h6 id="usage-7">Usage</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'js.popper'</span><span class="nt">/&gt;</span></code></pre></figure>
 
@@ -599,7 +637,7 @@
 <p>Untuk penggunaan CSS dan JavaScript, penempatannya harus diperhatikan.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
     <span class="c">&lt;!-- Bootstrap CSS first, then Bootsblogger CSS, then Font Awesome. --&gt;</span>
     <span class="nt">&lt;b:include</span> <span class="na">name=</span><span class="s">'css.bootstrap'</span><span class="nt">/&gt;</span>

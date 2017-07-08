@@ -514,6 +514,23 @@
 
 <p>Gunakan pada elemen yang di dalamnya terdapat tag <code class="highlighter-rouge">b:section</code>. Sesuaikan dengan kerangka template.</p>
 
+<table class="table table-bordered table-striped table-responsive">
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Grid behavior</th>
+      <td>Horizontal at all times</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.blogger-col-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'container'</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Main --&gt;</span>
   <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'main blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
@@ -528,31 +545,17 @@
 
 <p>Hasilnya akan seperti pada <a href="#" data-toggle="modal" data-target=".image-blogger-layout">gambar ini</a>.</p>
 
-<p>Contoh-contoh lainnya:</p>
+<p>Dengan grid Bootstrap:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'container'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'row'</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Main --&gt;</span>
-    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'main col-md-9 blogger-col-9'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'col-md-8 col-lg-9 main blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'b-section-main'</span> <span class="na">id=</span><span class="s">'b-section-main'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">name=</span><span class="s">'Main'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
     <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
 
     <span class="c">&lt;!-- Sidebar --&gt;</span>
-    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'sidebar col-md-3 blogger-col-3'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'b-section-sidebar'</span> <span class="na">id=</span><span class="s">'b-section-sidebar'</span> <span class="na">name=</span><span class="s">'Sidebar'</span><span class="nt">&gt;&lt;/section&gt;</span>
-    <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.row --&gt;</span>
-<span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.container --&gt;</span></code></pre></figure>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'container'</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'row'</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- Main --&gt;</span>
-    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">'main col-md-9 blogger-col-8'</span> <span class="na">id=</span><span class="s">'main'</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'b-section-main'</span> <span class="na">id=</span><span class="s">'b-section-main'</span> <span class="na">maxwidgets=</span><span class="s">'1'</span> <span class="na">name=</span><span class="s">'Main'</span> <span class="na">showaddelement=</span><span class="s">'no'</span><span class="nt">&gt;&lt;/b:section&gt;</span>
-    <span class="nt">&lt;/main&gt;</span><span class="c">&lt;!-- /.main --&gt;</span>
-
-    <span class="c">&lt;!-- Sidebar --&gt;</span>
-    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'sidebar col-md-3 blogger-col-4'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">'col-md-4 col-lg-3 sidebar blogger-col-4'</span> <span class="na">id=</span><span class="s">'sidebar'</span><span class="nt">&gt;</span>
       <span class="nt">&lt;b:section</span> <span class="na">class=</span><span class="s">'b-section-sidebar'</span> <span class="na">id=</span><span class="s">'b-section-sidebar'</span> <span class="na">name=</span><span class="s">'Sidebar'</span><span class="nt">&gt;&lt;/section&gt;</span>
     <span class="nt">&lt;/aside&gt;</span><span class="c">&lt;!-- /.sidebar --&gt;</span>
   <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.row --&gt;</span>

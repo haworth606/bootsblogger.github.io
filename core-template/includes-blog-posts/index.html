@@ -376,7 +376,7 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Includes - Blog posts</h1>
           <p class="bd-lead">Bagian-bagian kode untuk posting blog.</p>
-          <p>Bagian-bagian kode untuk posting blog hanya dapat disertakan di dalam widget <code class="highlighter-rouge">Blog</code> (<code class="highlighter-rouge">&lt;b:widget type='Blog'&gt;</code>).</p>
+          <p>Bagian-bagian kode untuk posting blog hanya dapat disertakan di dalam widget <code class="highlighter-rouge">Blog</code> (<code class="highlighter-rouge">&lt;b:widget type='Blog'&gt;&lt;/b:widget&gt;</code>).</p>
 
 <h2 id="contents">Contents</h2>
 
@@ -439,7 +439,6 @@
       <li><a href="#blog-comments" id="markdown-toc-blog-comments">Blog comments</a>        <ul>
           <li><a href="#source-10" id="markdown-toc-source-10">Source</a></li>
           <li><a href="#includable-10" id="markdown-toc-includable-10">Includable</a></li>
-          <li><a href="#alternative" id="markdown-toc-alternative">Alternative</a></li>
         </ul>
       </li>
       <li><a href="#blog-pager" id="markdown-toc-blog-pager">Blog pager</a>        <ul>
@@ -660,7 +659,7 @@
 
 <h3 id="blog-comments">Blog comments</h3>
 
-<p>Sistem komentar bawaan Bootsblogger.</p>
+<p>Sistem komentar bawaan Bootsblogger menggunakan <em>Google+ comments</em>.</p>
 
 <h6 id="source-10">Source</h6>
 
@@ -669,10 +668,6 @@
 <h6 id="includable-10">Includable</h6>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:includable</span> <span class="na">id=</span><span class="s">'main.blog-comments'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/b:includable&gt;</span></code></pre></figure>
-
-<h6 id="alternative">Alternative</h6>
-
-<p>Jika Anda ingin menggunakan sistem komentar alternatif, Anda dapat menggunakan sistem komentar <a href="https://disqus.com">Disqus</a>, <a href="https://support.google.com/blogger/answer/1752748">Google+</a>, <a href="https://developers.facebook.com/docs/plugins/comments/">Facebook</a>, atau lainnya.</p>
 
 <h3 id="blog-pager">Blog pager</h3>
 
@@ -1083,7 +1078,7 @@ Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span
 
 <h6 id="usage-10">Usage</h6>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ class: "btn btn-primary" }'</span> <span class="na">name=</span><span class="s">'post.jumpLink'</span><span class="nt">/&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ class: "btn btn-primary", parentClass: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.jumpLink'</span><span class="nt">/&gt;</span></code></pre></figure>
 
 
         </main>
