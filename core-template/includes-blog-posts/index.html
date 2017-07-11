@@ -474,7 +474,6 @@
           <li><a href="#source-15" id="markdown-toc-source-15">Source</a></li>
           <li><a href="#includable-15" id="markdown-toc-includable-15">Includable</a></li>
           <li><a href="#usage-3" id="markdown-toc-usage-3">Usage</a></li>
-          <li><a href="#example" id="markdown-toc-example">Example</a></li>
         </ul>
       </li>
       <li><a href="#dates" id="markdown-toc-dates">Dates</a>        <ul>
@@ -496,22 +495,21 @@
         </ul>
       </li>
       <li><a href="#featured-image" id="markdown-toc-featured-image">Featured image</a>        <ul>
-          <li><a href="#with-img" id="markdown-toc-with-img">With <code class="highlighter-rouge">&lt;img&gt;</code></a>            <ul>
+          <li><a href="#using-html-img" id="markdown-toc-using-html-img">Using HTML <code class="highlighter-rouge">&lt;img&gt;</code></a>            <ul>
               <li><a href="#source-19" id="markdown-toc-source-19">Source</a></li>
               <li><a href="#includable-19" id="markdown-toc-includable-19">Includable</a></li>
               <li><a href="#usage-7" id="markdown-toc-usage-7">Usage</a></li>
             </ul>
           </li>
-          <li><a href="#with-background-image" id="markdown-toc-with-background-image">With <code class="highlighter-rouge">background-image</code></a>            <ul>
+          <li><a href="#using-css-background-image" id="markdown-toc-using-css-background-image">Using CSS <code class="highlighter-rouge">background-image</code></a>            <ul>
               <li><a href="#source-20" id="markdown-toc-source-20">Source</a></li>
               <li><a href="#includable-20" id="markdown-toc-includable-20">Includable</a></li>
               <li><a href="#usage-8" id="markdown-toc-usage-8">Usage</a></li>
             </ul>
           </li>
-          <li><a href="#example-1" id="markdown-toc-example-1">Example</a></li>
         </ul>
       </li>
-      <li><a href="#snippets" id="markdown-toc-snippets">Snippets</a>        <ul>
+      <li><a href="#snippet" id="markdown-toc-snippet">Snippet</a>        <ul>
           <li><a href="#source-21" id="markdown-toc-source-21">Source</a></li>
           <li><a href="#includable-21" id="markdown-toc-includable-21">Includable</a></li>
           <li><a href="#usage-9" id="markdown-toc-usage-9">Usage</a></li>
@@ -763,13 +761,13 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, ratioWidth: number, ratioHeight: number, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorImage'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h6 id="example">Example</h6>
+<p><strong>Example:</strong></p>
 
 <p>Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 128, ratioWidth: 1, ratioHeight: 1, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+<p>128x128:</p>
 
-<p>Baca lebih lanjut tentang <a href="#featured-image">images</a>.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 128, ratioWidth: 1, ratioHeight: 1, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.authorImage'</span><span class="nt">/&gt;</span></code></pre></figure>
 
 <h3 id="dates">Dates</h3>
 
@@ -790,7 +788,7 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">Published: <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ customFormat: "dd/MM/YYYY"|false, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.datePublished'</span><span class="nt">/&gt;</span>
 Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ customFormat: "dd/MM/YYYY"|false, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.dateUpdated'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<p>Format:</p>
+<p><strong>Format:</strong></p>
 
 <table class="table-responsive">
   <thead>
@@ -992,9 +990,7 @@ Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span
 
 <p>Untuk menampilkan <em>featured image</em>.</p>
 
-<p><strong>Resources:</strong> <a href="https://en.wikipedia.org/wiki/Aspect_ratio_(image)">Aspect ratio (image)</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">responsive images (<code class="highlighter-rouge">srcset</code>, <code class="highlighter-rouge">sizes</code>)</a>.</p>
-
-<h5 id="with-img">With <code class="highlighter-rouge">&lt;img&gt;</code></h5>
+<h5 id="using-html-img">Using HTML <code class="highlighter-rouge">&lt;img&gt;</code></h5>
 
 <h6 id="source-19">Source</h6>
 
@@ -1008,9 +1004,31 @@ Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, sourceSet: [number]|false, sourceSizes: "sizes"|false, ratioWidth: number, ratioHeight: number, link: true|false, defaultNoImage: true|false, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h5 id="with-background-image">With <code class="highlighter-rouge">background-image</code></h5>
+<p><strong>Notation:</strong></p>
 
-<p><strong>Catatan:</strong> <code class="highlighter-rouge">post.featuredImageBg</code> tidak menggunakan <code class="highlighter-rouge">srcset</code> dan <code class="highlighter-rouge">sizes</code>.</p>
+<p>Non-responsive: Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
+
+<p>Responsive: Width = <code class="highlighter-rouge">sourceSet</code>, Height = ((<code class="highlighter-rouge">sourceSet</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
+
+<p><strong>Example without <code class="highlighter-rouge">srcset</code> and <code class="highlighter-rouge">sizes</code>:</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 512, sourceSet: false, sourceSizes: false, ratioWidth: 16, ratioHeight: 9, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Example with <code class="highlighter-rouge">srcset</code>, but without <code class="highlighter-rouge">sizes</code>:</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Example 1: `false` --&gt;</span>
+<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 256, sourceSet: [256, 512, 1280, 1600], sourceSizes: false, ratioWidth: 16, ratioHeight: 9, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Example 2: `100vw` --&gt;</span>
+<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 256, sourceSet: [256, 512, 1280, 1600], sourceSizes: "100vw", ratioWidth: 16, ratioHeight: 9, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<p><strong>Example with <code class="highlighter-rouge">srcset</code> and <code class="highlighter-rouge">sizes</code>:</strong></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 256, sourceSet: [256, 512, 1280, 1600], sourceSizes: "(max-width: 575px) 256px, (max-width: 767px) 512px, (max-width: 991px) 1280px, 1600px", ratioWidth: 16, ratioHeight: 9, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
+
+<h5 id="using-css-background-image">Using CSS <code class="highlighter-rouge">background-image</code></h5>
+
+<p><code class="highlighter-rouge">post.featuredImageBg</code> tidak menggunakan <code class="highlighter-rouge">srcset</code> dan <code class="highlighter-rouge">sizes</code>.</p>
 
 <h6 id="source-20">Source</h6>
 
@@ -1024,29 +1042,13 @@ Last updated: <span class="nt">&lt;b:include</span> <span class="na">data=</span
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: number, ratioWidth: number, ratioHeight: number, defaultNoImage: true|false, class: "class-name", style: "min-height: &lt;number&gt;&lt;units&gt;;" }'</span> <span class="na">name=</span><span class="s">'post.featuredImageBg'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<h5 id="example-1">Example</h5>
+<p><strong>Example:</strong></p>
 
 <p>Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- `post.featuredImage` --&gt;</span>
-<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 320, sourceSet: false, sourceSizes: false, ratioWidth: 320, ratioHeight: 180, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 320, sourceSet: false, sourceSizes: false, ratioWidth: 16, ratioHeight: 9, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 512, ratioWidth: 16, ratioHeight: 9, defaultNoImage: true|false, class: "class-name", style: "min-height: 180px;" }'</span> <span class="na">name=</span><span class="s">'post.featuredImageBg'</span><span class="nt">/&gt;</span></code></pre></figure>
 
-<span class="c">&lt;!-- `post.featuredImageBg` --&gt;</span>
-<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 320, ratioWidth: 320, ratioHeight: 180, defaultNoImage: true|false, class: "class-name", style: "min-height: 180px;" }'</span> <span class="na">name=</span><span class="s">'post.featuredImageBg'</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 320, ratioWidth: 16, ratioHeight: 9, defaultNoImage: true|false, class: "class-name", style: "min-height: 180px;" }'</span> <span class="na">name=</span><span class="s">'post.featuredImageBg'</span><span class="nt">/&gt;</span></code></pre></figure>
-
-<hr />
-
-<p>Original <code class="highlighter-rouge">src</code>: Width = <code class="highlighter-rouge">size</code>, Height = ((<code class="highlighter-rouge">size</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
-
-<p>Responsive: Width = <code class="highlighter-rouge">sourceSet</code>, Height = ((<code class="highlighter-rouge">sourceSet</code> * <code class="highlighter-rouge">ratioHeight</code>) / <code class="highlighter-rouge">ratioWidth</code>).</p>
-
-<p><code class="highlighter-rouge">sizes</code> atau <code class="highlighter-rouge">sourceSizes</code> memungkinkan kita untuk memilih resolusi terbaik sesuai lebar layar. Pelajari lebih lanjut tentang <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Different_sizes"><code class="highlighter-rouge">srcset</code> dan <code class="highlighter-rouge">sizes</code></a>.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;b:include</span> <span class="na">data=</span><span class="s">'{ size: 320, sourceSet: [320, 640, 1280, 1600], sourceSizes: "(max-width: 575px) 320px, (max-width: 767px) 640px, (max-width: 991px) 1280px, 1600px", ratioWidth: 16, ratioHeight: 9, link: true, defaultNoImage: true, class: "class-name" }'</span> <span class="na">name=</span><span class="s">'post.featuredImage'</span><span class="nt">/&gt;</span></code></pre></figure>
-
-<h3 id="snippets">Snippets</h3>
+<h3 id="snippet">Snippet</h3>
 
 <p>Untuk menampilkan ringkasan posting.</p>
 

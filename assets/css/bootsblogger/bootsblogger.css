@@ -576,10 +576,12 @@
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.wg-box.wg-title-hide .widget-content > .list-group-flush:first-child {
+.wg-box.wg-title-hide .widget-content > .list-group-flush:first-child,
+.wg-box .widget-content:first-child > .list-group-flush:first-child {
   margin-top: -1.25rem;
 }
-.wg-box.wg-title-hide .widget-content > .list-group-flush:first-child .list-group-item:first-child {
+.wg-box.wg-title-hide .widget-content > .list-group-flush:first-child .list-group-item:first-child,
+.wg-box .widget-content:first-child > .list-group-flush:first-child .list-group-item:first-child {
   border-top: 0;
   border-top-right-radius: calc(0.25rem - 1px);
   border-top-left-radius: calc(0.25rem - 1px);
@@ -726,7 +728,8 @@
   border-top-left-radius: 0;
 }
 
-.wg-panel.wg-title-hide > .widget > .widget-content {
+.wg-panel.wg-title-hide > .widget > .widget-content,
+.wg-panel > .widget > .widget-content:first-child {
   border-width: 1px;
   border-radius: 0.25rem;
 }
@@ -755,6 +758,10 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+.wg-panel-group > .widget:not(:first-child) > .widget-content:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
 
 .wg-panel .widget-content > .list-group-flush {
   margin-right: -1.25rem;
@@ -771,9 +778,15 @@
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.wg-panel.wg-title-hide .widget-content > .list-group-flush:first-child .list-group-item:first-child {
+.wg-panel.wg-title-hide .widget-content > .list-group-flush:first-child .list-group-item:first-child,
+.wg-panel .widget-content:first-child > .list-group-flush:first-child .list-group-item:first-child {
   border-top-right-radius: calc(0.25rem - 1px);
   border-top-left-radius: calc(0.25rem - 1px);
+}
+
+.wg-panel.wg-panel-group .widget:not(:first-child) .widget-content:first-child > .list-group-flush:first-child .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .wg-panel.wg-panel-group .widget:not(:last-child) .widget-content > .list-group-flush:last-child .list-group-item:last-child {
