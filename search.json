@@ -10,15 +10,6 @@
     
 
     
-
-    
-        {
-            "title" : "Body class",
-            "url"   : "/core-template/body-class/"
-        } ,
-    
-
-    
         {
             "title" : "Build tools",
             "url"   : "/getting-started/build-tools/"
@@ -41,29 +32,29 @@
 
     
         {
-            "title" : "Figures",
-            "url"   : "/utilities/figures/"
+            "title" : "Default markups",
+            "url"   : "/core-template/default-markups/"
         } ,
     
 
     
         {
-            "title" : "Includes - Assets",
-            "url"   : "/core-template/includes-assets/"
+            "title" : "Includable - Assets",
+            "url"   : "/core-template/includable-assets/"
         } ,
     
 
     
         {
-            "title" : "Includes - Blog posts",
-            "url"   : "/core-template/includes-blog-posts/"
+            "title" : "Includable - Head",
+            "url"   : "/core-template/includable-head/"
         } ,
     
 
     
         {
-            "title" : "Includes - Head",
-            "url"   : "/core-template/includes-head/"
+            "title" : "Includable - Post",
+            "url"   : "/core-template/includable-post/"
         } ,
     
 
@@ -71,6 +62,13 @@
         {
             "title" : "Introduction",
             "url"   : "/getting-started/introduction/"
+        } ,
+    
+
+    
+        {
+            "title" : "Layout mode CSS",
+            "url"   : "/core-template/layout-mode-css/"
         } ,
     
 
@@ -90,22 +88,8 @@
 
     
         {
-            "title" : "Page types",
-            "url"   : "/core-template/page-types/"
-        } ,
-    
-
-    
-        {
-            "title" : "Sizing",
-            "url"   : "/utilities/sizing/"
-        } ,
-    
-
-    
-        {
-            "title" : "Spacing",
-            "url"   : "/utilities/spacing/"
+            "title" : "Post",
+            "url"   : "/core-template/post/"
         } ,
     
 

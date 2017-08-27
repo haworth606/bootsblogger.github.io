@@ -1,11 +1,10 @@
-/* ==============================================
+/* ==========================================================================
    Navbar
-   ============================================== */
+   ========================================================================== */
 
 .bd-navbar {
   min-height: 4rem;
   background-color: #ff5722;
-  -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
 }
 
@@ -18,6 +17,14 @@
   }
 }
 
+.bd-navbar .navbar-brand {
+  color: #fff;
+}
+.bd-navbar .navbar-brand:focus,
+.bd-navbar .navbar-brand:hover {
+  color: #fff;
+}
+
 .bd-navbar .navbar-nav .nav-link {
   color: #ffccbc;
 }
@@ -25,85 +32,92 @@
 .bd-navbar .navbar-nav .nav-link:hover {
   color: #fff;
 }
+.bd-navbar .navbar-nav .nav-link.disabled {
+  color: #ffab91;
+}
+.bd-navbar .navbar-nav .show > .nav-link,
+.bd-navbar .navbar-nav .active > .nav-link,
+.bd-navbar .navbar-nav .nav-link.show,
 .bd-navbar .navbar-nav .nav-link.active {
   color: #fff;
 }
 
-.bd-navbar .navbar-toggler {
-  background-color: #ff7043;
-  border-color: #ff8a65;
+
+/* ==========================================================================
+   Masthead
+   ========================================================================== */
+
+.bd-masthead {
+  position: relative;
+  padding: 3rem 15px;
 }
-.bd-navbar .navbar-toggler:focus,
-.bd-navbar .navbar-toggler:hover {
-  background-color: #ff8a65;
-  border-color: #ffab91;
-}
-.bd-navbar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+@media (min-width: 576px) {
+  .bd-masthead {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
-
-/* ==============================================
-   Jumbotron
-   ============================================== */
-
-.bd-jumbotron {
-  margin-bottom: 0;
-  color: #fff;
-  text-align: center;
-  background-color: #ff5722;
+.bd-masthead h1 {
+  color: #ff6636;
+  line-height: 1;
 }
-
-.bd-jumbotron .lead {
-  margin-right: auto;
-  margin-bottom: 2rem;
-  margin-left: auto;
-}
-.bd-jumbotron .lead:last-child {
-  margin-bottom: 0;
-}
-
-.bd-jumbotron-version {
-  margin-top: -1rem;
-  color: #ffab91;
-}
-
 @media (min-width: 768px) {
-  .bd-jumbotron .lead {
-    font-size: 1.5rem
-  }
-}
-@media (min-width: 992px) {
-  .bd-jumbotron .lead {
-    width: 85%;
-    font-size: 2rem
+  .bd-masthead h1 {
+    font-size: 4rem;
   }
 }
 
 
-/* ==============================================
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn-bd {
+  color: #ff7043;
+  background-color: transparent;
+  border-color: #ff7043;
+}
+.btn-bd:active,
+.btn-bd:hover {
+  color: #fff;
+  background-color: #ff7043;
+  border-color: #ff7043;
+}
+.btn-bd:focus {
+  box-shadow: 0 0 0 3px rgba(255, 112, 67, 0.45);
+}
+
+.btn-bd-yellow {
+  color: #ffe484;
+  background-color: transparent;
+  border-color: #ffe484;
+}
+.btn-bd-yellow:active,
+.btn-bd-yellow:hover {
+  color: #463c34;
+  background-color: #ffe484;
+  border-color: #ffe484;
+}
+.btn-bd-yellow:focus {
+  box-shadow: 0 0 0 3px rgba(255, 228, 132, 0.45);
+}
+
+
+/* ==========================================================================
    Featurette
-   ============================================== */
+   ========================================================================== */
 
 .bd-featurette {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #555;
   text-align: center;
-  background-color: #fff;
-}
-.bd-featurette + .bd-featurette {
-  border-top: 1px solid #eee;
 }
 
 .bd-featurette-title {
   margin-bottom: .5rem;
   font-size: 2rem;
   font-weight: normal;
-  color: #333;
-  text-align: center;
 }
 
 .bd-featurette .lead {
@@ -111,22 +125,9 @@
   margin-bottom: 2rem;
   margin-left: auto;
   font-size: 1rem;
-  text-align: center;
-}
-
-.bd-featurette h4 {
-  margin-top: 1rem;
-  margin-bottom: .5rem;
-  font-weight: normal;
-  color: #333;
 }
 
 @media (min-width: 768px) {
-  .bd-featurette {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
   .bd-featurette-title {
     font-size: 2.5rem;
   }
@@ -139,20 +140,20 @@
   }
 }
 
-.bd-featurette-icon {
-  font-size: 6em;
-  color: #ff7043;
-}
-
-.bd-featurette-bpbph {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
-}
-.bd-featurette-bpbph .plus {
+.bd-featurette .row .plus {
   font-size: 2rem;
   font-weight: 500;
-  color: #777;
+}
+
+.bd-featurette .row h4 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  color: #333;
+}
+.bd-featurette .row .fa {
+  font-size: 6em;
+  color: #ff7043;
 }
 
 .half-rule {
@@ -161,37 +162,9 @@
 }
 
 
-/* ==============================================
-   Buttons
-   ============================================== */
-
-.btn-bd {
-  font-weight: 500;
-  color: #ff7043;
-  border-color: #ff7043;
-}
-.btn-bd:active,
-.btn-bd:hover {
-  color: #fff;
-  background-color: #ff7043;
-  border-color: #ff7043;
-}
-
-.btn-bd-yellow {
-  color: #ffe484;
-  border-color: #ffe484;
-}
-.btn-bd-yellow:active,
-.btn-bd-yellow:hover {
-  color: #463c34;
-  background-color: #ffe484;
-  border-color: #ffe484;
-}
-
-
-/* ==============================================
+/* ==========================================================================
    Content
-   ============================================== */
+   ========================================================================== */
 
 .bd-title {
   margin-top: 1rem;
@@ -216,15 +189,33 @@
   }
 }
 
-.bd-content h2[id]::before,
-.bd-content h3[id]::before {
-  position: relative;
-  z-index: -1;
+.bd-content > h2[id],
+.bd-content > h3[id],
+.bd-content > h4[id] {
+  pointer-events: none;
+}
+.bd-content > h2[id] > div,
+.bd-content > h2[id] > a,
+.bd-content > h3[id] > div,
+.bd-content > h3[id] > a,
+.bd-content > h4[id] > div,
+.bd-content > h4[id] > a {
+  pointer-events: auto;
+}
+.bd-content > h2[id]::before,
+.bd-content > h3[id]::before,
+.bd-content > h4[id]::before {
   display: block;
   height: 6rem;
   margin-top: -6rem;
   visibility: hidden;
   content: "";
+}
+.bd-content > h2:not(:first-child) {
+  margin-top: 3rem;
+}
+.bd-content > h3 {
+  margin-top: 1.5rem;
 }
 
 .bd-content > table {
@@ -261,13 +252,6 @@
   white-space: nowrap;
 }
 
-.bd-content > h2:not(:first-child) {
-  margin-top: 3rem;
-}
-.bd-content > h3 {
-  margin-top: 1.5rem;
-}
-
 .bd-content > ol li,
 .bd-content > ul li {
   margin-bottom: .25rem;
@@ -280,60 +264,14 @@
   }
 }
 
-#markdown-toc {
-  padding-left: 1rem;
-  margin-top: 1rem;
-  list-style: none;
-  border-left: 4px solid #FF8A65;
-}
-#markdown-toc ul {
-  padding-left: 1.5rem;
-  margin-top: .25rem;
-  margin-bottom: .25rem;
-  list-style: none;
-}
-#markdown-toc > li:first-child {
-  display: none;
-}
 
-
-/* ==============================================
+/* ==========================================================================
    Highlight and example
-   ============================================== */
+   ========================================================================== */
 
 .bd-highlight {
   background-color: rgba(239,108,0,.15);
   border: 1px solid rgba(239,108,0,.15);
-}
-
-.highlight {
-  padding: 1rem;
-  margin: 1rem -15px;
-  background-color: #f7f7f9;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-@media (min-width: 576px) {
-  .highlight {
-     padding: 1.5rem;
-     margin-right: 0;
-     margin-left: 0;
-  }
-}
-
-.highlight pre {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: transparent;
-  border: 0;
-}
-.highlight pre code {
-  font-size: inherit;
-  color: #292b2c;
-}
-
-.table-responsive .highlight pre {
-  white-space: normal;
 }
 
 .bd-clipboard {
@@ -341,15 +279,11 @@
   display: none;
   float: right;
 }
-.bd-clipboard + .highlight {
-  margin-top: 0;
-}
 @media (min-width: 768px) {
   .bd-clipboard {
     display: block;
   }
 }
-
 .btn-clipboard {
   position: absolute;
   top: .5rem;
@@ -390,12 +324,43 @@
     border-width: .2rem;
   }
 }
+.bd-example + p {
+  margin-top: 2rem;
+}
+
+.highlight {
+  padding: 1rem;
+  margin: 1rem -15px;
+  background-color: #f7f7f9;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+@media (min-width: 576px) {
+  .highlight {
+     padding: 1.5rem;
+     margin-right: 0;
+     margin-left: 0;
+  }
+}
+.highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+}
+.highlight pre code {
+  font-size: inherit;
+  color: #292b2c;
+}
+.bd-clipboard + .highlight {
+  margin-top: 0;
+}
+.table-responsive .highlight pre {
+  white-space: normal;
+}
 .bd-example + .highlight,
 .bd-example + .clipboard + .highlight {
   margin-top: 0;
-}
-.bd-example + p {
-  margin-top: 2rem;
 }
 
 .hll { background-color: #ffc; }
@@ -479,28 +444,33 @@
 }
 
 
-/* ==============================================
+/* ==========================================================================
    Sidebar
-   ============================================== */
+   ========================================================================== */
 
 .bd-sidebar {
   padding-right: 0;
   padding-left: 0;
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
 @media (min-width: 768px) {
   .bd-sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 4rem;
-    z-index: 1000;
-    max-height: calc(100vh - 4rem);
     border-right: 1px solid rgba(0,0,0,.1);
+  }
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .bd-sidebar {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 4rem;
+      z-index: 1000;
+      max-height: calc(100vh - 4rem);
+    }
   }
 }
 
 .bd-navmenu {
+  border: 0;
   border-radius: 0;
 }
 
@@ -508,9 +478,11 @@
   border-top: 1px solid rgba(0,0,0,.05);
 }
 @media (min-width: 768px) {
-  .bd-navmenu-scroll {
-    max-height: calc(100vh - 9rem);
-    overflow-y: auto;
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .bd-navmenu-scroll {
+      max-height: calc(100vh - 9rem);
+      overflow-y: auto;
+    }
   }
 }
 
@@ -588,10 +560,51 @@
   white-space: normal;
 }
 
+/* TOC
+   ========================================================================== */
 
-/* ==============================================
+.bd-toc {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: .875rem;
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .bd-toc {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid #eee;
+}
+.section-nav ul {
+  padding-left: 1rem;
+}
+.section-nav ul ul {
+  display: none;
+}
+.toc-entry {
+  display: block;
+}
+.toc-entry a {
+  display: block;
+  padding: .125rem 1.5rem;
+  color: #99979c;
+}
+.toc-entry a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+/* ==========================================================================
    Footer
-   ============================================== */
+   ========================================================================== */
 
 .bd-footer {
   padding: 4rem 0;
@@ -600,15 +613,14 @@
   color: #777;
   text-align: center;
   background-color: #f7f7f7;
-  border-top: 1px solid rgba(0,0,0,.1);
 }
-
 .bd-home .bd-footer {
   margin-top: 0;
 }
 @media (min-width: 768px) {
   .bd-docs .bd-footer {
     margin-top: -1px;
+    border-top: 1px solid rgba(0,0,0,.1);
   }
 }
 
@@ -618,7 +630,7 @@
 }
 .bd-footer a:focus,
 .bd-footer a:hover {
-  color: #0275d8;
+  color: #007bff;
 }
 
 .bd-footer p {
@@ -637,14 +649,13 @@
 }
 
 
-/* ==============================================
+/* ==========================================================================
    AnchorJS
-   ============================================== */
+   ========================================================================== */
 
 .anchorjs-link {
   color: inherit;
 }
-
 @media (max-width: 480px) {
   .anchorjs-link {
     display: none;

@@ -10,31 +10,37 @@
   
 </title>
 
-<!-- Twitter -->
-<meta name="twitter:site" content="@">
-<meta name="twitter:creator" content="@">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Introduction">
-  <meta name="twitter:description" content="Bootsblogger adalah sebuah template dasar, untuk membangun template Blogger menggunakan Bootstrap, yang dirancang untuk memberikan kemudahan dan keindahan.">
-  <meta name="twitter:image" content="/assets/brand/bootstrap-social-logo.png">
-
-
-<!-- Facebook -->
-
-  <meta property="og:url" content="/getting-started/introduction/">
-  <meta property="og:title" content="Introduction">
-  <meta property="og:description" content="Bootsblogger adalah sebuah template dasar, untuk membangun template Blogger menggunakan Bootstrap, yang dirancang untuk memberikan kemudahan dan keindahan.">
-
-<meta property="og:image" content="/assets/brand/bootstrap-social.png">
-
 <!-- Meta -->
 <meta name="description" content="Blogger + Bootstrap + <3">
 <meta name="author" content="Igoy Nawamreh">
 
+<!-- Twitter -->
+<meta name="twitter:site" content="@bootsblogger">
+<meta name="twitter:creator" content="@bootsblogger">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Introduction">
+  <meta name="twitter:description" content="Bootsblogger adalah sebuah template dasar, untuk membangun template Blogger menggunakan Bootstrap, yang dirancang untuk memberikan kemudahan dan keindahan.">
+  <meta name="twitter:image" content="http://localhost:9002/assets/brand/bootsblogger-social-logo.png">
+
+
+<!-- Facebook -->
+
+  <meta property="og:url" content="http://localhost:9002/getting-started/introduction/">
+  <meta property="og:title" content="Introduction">
+  <meta property="og:description" content="Bootsblogger adalah sebuah template dasar, untuk membangun template Blogger menggunakan Bootstrap, yang dirancang untuk memberikan kemudahan dan keindahan.">
+  <meta property="og:type" content="website">
+
+<meta property="og:image" content="http://localhost:9002/assets/brand/bootsblogger-social.png">
+<meta property="og:image:secure_url" content="http://localhost:9002/assets/brand/bootsblogger-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
 
 <!-- Bootstrap core CSS -->
-<link href="/assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootsblogger core CSS -->
 <link href="/assets/css/bootsblogger/bootsblogger.min.css" rel="stylesheet">
@@ -58,30 +64,9 @@
       </div>
     </a>
 
-    <div class="modal fade image-blogger-layout" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img class="img-fluid" src="/assets/img/blogger-layout.png" alt="Blogger layout">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade image-post-options" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img class="img-fluid" src="/assets/img/post-options.png" alt="Post options">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    <header class="navbar navbar-toggleable-sm navbar-inverse bd-navbar">
-  <a class="navbar-brand" href="/">
-    <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="Bootsblogger">
+    <header class="navbar navbar-expand-sm navbar-dark bd-navbar">
+  <a class="navbar-brand mr-2" href="/">
+    <img src="/assets/brand/bootsblogger-solid.svg" width="36" height="36" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -93,22 +78,22 @@
         <a class="nav-item nav-link " href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+        <a class="nav-item nav-link active" href="/getting-started/">Documentation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-item nav-link" href="https://bootsblogger-themes.blogspot.com">Themes</a>
+        <a class="nav-item nav-link" href="https://bootsblogger-themes.blogspot.com" target="_blank" rel="noopener">Themes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-item nav-link" href="https://bootsblogger-expo.blogspot.com">Expo</a>
+        <a class="nav-item nav-link" href="https://bootsblogger-expo.blogspot.com" target="_blank" rel="noopener">Expo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-item nav-link" href="https://bootsblogger-blog.blogspot.com">Blog</a>
+        <a class="nav-item nav-link" href="https://bootsblogger-blog.blogspot.com" target="_blank" rel="noopener">Blog</a>
       </li>
     </ul>
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com">Live preview</a>
+        <a class="nav-item nav-link" href="https://bootsblogger-demo.blogspot.com" target="_blank" rel="noopener">Live preview</a>
       </li>
     </ul>
   </div>
@@ -117,14 +102,14 @@
 
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+        <div class="col-12 col-md-3 col-xl-2 order-1 bd-sidebar">
           <div class="navmenu bd-navmenu">
   <div class="navmenu-content">
     <form class="bd-search d-flex align-items-center">
-      <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-      <button class="btn-link bd-search-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      <button class="btn-link bd-search-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
       </button>
+      <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
       <div class="dropdown-menu bd-search-results" id="search-results"></div>
     </form>
   </div>
@@ -216,8 +201,8 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/page-types/">
-                Page types
+              <a class="nav-link nav-link-sm " href="/core-template/post/">
+                Post
               </a>
             </div>
           
@@ -227,8 +212,8 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/body-class/">
-                Body class
+              <a class="nav-link nav-link-sm " href="/core-template/includable-head/">
+                Includable - Head
               </a>
             </div>
           
@@ -238,8 +223,8 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/includes-head/">
-                Includes - Head
+              <a class="nav-link nav-link-sm " href="/core-template/includable-post/">
+                Includable - Post
               </a>
             </div>
           
@@ -249,8 +234,8 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/includes-blog-posts/">
-                Includes - Blog posts
+              <a class="nav-link nav-link-sm " href="/core-template/includable-assets/">
+                Includable - Assets
               </a>
             </div>
           
@@ -260,8 +245,19 @@
             
 
             <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/core-template/includes-assets/">
-                Includes - Assets
+              <a class="nav-link nav-link-sm " href="/core-template/layout-mode-css/">
+                Layout mode CSS
+              </a>
+            </div>
+          
+            
+            
+
+            
+
+            <div class="nav-item">
+              <a class="nav-link nav-link-sm " href="/core-template/default-markups/">
+                Default markups
               </a>
             </div>
           
@@ -318,77 +314,28 @@
         </div>
       </div>
       
-      
-      
-      
-      
-
-      
-
-      <div class="nav-item ">
-        <a class="nav-link nav-link-sm " href="/utilities/figures/">
-          Utilities
-        </a>
-
-        <div class="sub">
-          
-            
-            
-
-            
-
-            <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/utilities/figures/">
-                Figures
-              </a>
-            </div>
-          
-            
-            
-
-            
-
-            <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/utilities/sizing/">
-                Sizing
-              </a>
-            </div>
-          
-            
-            
-
-            
-
-            <div class="nav-item">
-              <a class="nav-link nav-link-sm " href="/utilities/spacing/">
-                Spacing
-              </a>
-            </div>
-          
-        </div>
-      </div>
-      
     </nav>
   </div>
 </div>
 
         </div>
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        
+          <div class="d-none d-xl-block col-xl-2 order-3 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#quick-start">Quick start</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#compiled-template">Compiled template</a></li>
+<li class="toc-entry toc-h3"><a href="#source-files">Source files</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#bootstrap">Bootstrap</a></li>
+</ul>
+          </div>
+        
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 order-2 bd-content" role="main">
           <h1 class="bd-title" id="content">Introduction</h1>
           <p class="bd-lead">Bootsblogger adalah sebuah template dasar, untuk membangun template Blogger menggunakan Bootstrap, yang dirancang untuk memberikan kemudahan dan keindahan.</p>
           <p>Template dasar Bootsblogger sangat fleksibel, mudah dipahami, penulisan kode yang baik, terstruktur, dan menyediakan banyak fitur. Dengan itu semua, Anda dapat dengan mudah membangun template sesuai dengan yang Anda inginkan.</p>
-
-<h2 id="contents">Contents</h2>
-
-<ul id="markdown-toc">
-  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#quick-start" id="markdown-toc-quick-start">Quick start</a>    <ul>
-      <li><a href="#compiled-template" id="markdown-toc-compiled-template">Compiled template</a></li>
-      <li><a href="#source-files" id="markdown-toc-source-files">Source files</a></li>
-    </ul>
-  </li>
-  <li><a href="#bootstrap" id="markdown-toc-bootstrap">Bootstrap</a></li>
-</ul>
 
 <h2 id="quick-start">Quick start</h2>
 
@@ -396,17 +343,16 @@
 
 <h3 id="compiled-template">Compiled template</h3>
 
-<p>Membangun template langsung di editor HTML Blogger atau dapat juga menggunakan <em>text editor</em> favorit Anda.</p>
+<p>Membangun template langsung di editor HTML Blogger, atau Anda dapat menggunakan <em>text editor</em> favorit Anda.</p>
 
-<p><a href="" class="btn btn-bd">Download compiled template</a></p>
+<p><a href="https://github.com/bootsblogger/bootsblogger/releases/download/v1.0.0-beta/bootsblogger-1.0.0-beta-dist.zip" class="btn btn-bd">Download compiled template</a></p>
 
 <p><strong>Content:</strong></p>
 
 <p>Hanya berisi template terkompilasi.</p>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
-└── dist/
-    └── template.xml</code></pre></figure>
+└── template.xml</code></pre></figure>
 
 <p>Pasang <code class="highlighter-rouge">template.xml</code> di blog Anda, kemudian ubahsuaikan. Atau, ubahsuaikan menggunakan <em>text editor</em> favorit Anda, kemudian pasang template di blog Anda.</p>
 
@@ -414,11 +360,11 @@
 
 <p>Membangun template menggunakan <a href="/getting-started/build-tools/">build tools</a> dan <em>text editor</em> favorit Anda.</p>
 
-<p><a href="" class="btn btn-bd">Download source files</a></p>
+<p><a href="https://github.com/bootsblogger/bootsblogger/archive/v1.0.0-beta.zip" class="btn btn-bd">Download source files</a></p>
 
 <p><strong>Content:</strong></p>
 
-<p>Template terkompilasi, beserta kode sumber Sass, template, dan berkas dokumentasi. Untuk lebih jelas lihat struktur di bawah ini.</p>
+<p>Template terkompilasi, beserta kode sumber CSS, template, dan dokumentasi. Untuk lebih jelas lihat struktur di bawah ini.</p>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">bootsblogger/
 ├── dist/
@@ -426,43 +372,31 @@
 ├── docs/
 ├── scss/
 │   ├── bootsblogger/
-│   ├── bootstrap/
-│   └── _custom.scss
+│   └── bootstrap/
 └── template-src/
-    ├── components/
-    ├── includes/
-    ├── post-layout/
+    ├── default-markups/
+    ├── includable/
+    ├── partials/
+    ├── post/
     ├── widgets/
     ├── config.json
     ├── index.xml
+    ├── layout-mode.css
     ├── script.js
     └── skin.css</code></pre></figure>
+
+<p>Ubahsuaikan semua kode sumber, kemudian <a href="/getting-started/build-tools/">kompilasi</a>, dan pasang <code class="highlighter-rouge">dist/template.xml</code> di blog Anda.</p>
 
 <ul>
   <li><strong><code class="highlighter-rouge">dist/template.xml</code></strong> - Template terkompilasi.</li>
   <li><strong><code class="highlighter-rouge">docs/</code></strong> - Berkas-berkas dokumentasi.</li>
-  <li><strong><code class="highlighter-rouge">scss/</code></strong> - Kode sumber CSS Bootstrap dan Bootsblogger yang akan dikompilasi ke dalam <code class="highlighter-rouge">template-src/includes/assets/css</code>.
-    <ul>
-      <li><code class="highlighter-rouge">_custom.scss</code> - Digunakan untuk <a href="/getting-started/options/">mengubahsuaikan variabel Sass</a> Bootstrap dan Bootsblogger.</li>
-    </ul>
-  </li>
-  <li><strong><code class="highlighter-rouge">template-src/</code></strong> - Kode sumber template.
-    <ul>
-      <li><code class="highlighter-rouge">components/</code> - Bagian-bagian template untuk komponen.</li>
-      <li><code class="highlighter-rouge">includes/</code> - Bagian-bagian template untuk <a href="/core-template/includes-head/">head</a>, <a href="/core-template/includes-blog-posts/">blog posts</a>, dan <a href="/core-template/includes-assets/">assets</a>.</li>
-      <li><code class="highlighter-rouge">post-layout/</code> - Bagian-bagian template untuk mengatur tampilan posting.</li>
-      <li><code class="highlighter-rouge">widgets/</code> - Bagian-bagian template untuk widget.</li>
-      <li><code class="highlighter-rouge">index.xml</code> - Untuk menyertakan keseluruhan bagian-bagian template, dan akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>.</li>
-      <li><code class="highlighter-rouge">config.json</code> - Template config.</li>
-      <li><code class="highlighter-rouge">script.js</code> - Template JavaScript.</li>
-      <li><code class="highlighter-rouge">style.css</code> - Template Skin.</li>
-    </ul>
-  </li>
+  <li><strong><code class="highlighter-rouge">scss/</code></strong> - Kode sumber CSS Bootstrap dan Bootsblogger yang akan dikompilasi ke dalam <code class="highlighter-rouge">template-src/includable/assets/css</code>.</li>
+  <li><strong><code class="highlighter-rouge">template-src/index.xml</code></strong> - Untuk menyertakan keseluruhan bagian-bagian template, dan akan dikompilasi ke dalam <code class="highlighter-rouge">/dist</code>.</li>
 </ul>
 
 <h2 id="bootstrap">Bootstrap</h2>
 
-<p>Untuk dapat membuat template yang super keren, Anda harus menguasai Bootstrap atau minimal mengetahui dasarnya. Untuk mempelajarinya silakan kunjungi halaman dokumentasi Bootstrap di <a href="https://v4-alpha.getbootstrap.com">https://v4-alpha.getbootstrap.com</a>.</p>
+<p>Untuk dapat membuat template yang super keren, Anda harus menguasai Bootstrap atau minimal mengetahui dasarnya. Untuk mempelajarinya silakan kunjungi halaman dokumentasi Bootstrap di <a href="https://getbootstrap.com/">https://getbootstrap.com/</a>.</p>
 
         </main>
       </div>
@@ -471,14 +405,21 @@
     <footer class="bd-footer">
   <div class="container">
     <ul class="bd-footer-links">
-      <li><a href="https://bootsblogger-themes.blogspot.com">Themes</a></li>
-      <li><a href="https://bootsblogger-expo.blogspot.com">Expo</a></li>
-      <li><a href="https://bootsblogger-blog.blogspot.com">Blog</a></li>
-      <li><a href="https://github.com/bootsblogger/bootsblogger">GitHub</a></li>
-      <li><a href="https://paypal.me/igoynawamreh">Donation</a></li>
+      <li><a href="https://bootsblogger-themes.blogspot.com" target="_blank" rel="noopener">Themes</a></li>
+      <li><a href="https://bootsblogger-expo.blogspot.com" target="_blank" rel="noopener">Expo</a></li>
+      <li><a href="https://bootsblogger-blog.blogspot.com" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="https://github.com/bootsblogger/bootsblogger" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://twitter.com/bootsblogger" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="https://facebook.com/bootsblogger" target="_blank" rel="noopener">Facebook</a></li>
     </ul>
-    <p>&lt;&gt; with &lt;3 by <a href="https://twitter.com/igoynawamreh" target="_blank">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors">friends</a>.</p>
-    <p>Currently v1.0.0-alpha.1. Code licensed <a rel="license" href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+    <p><i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://twitter.com/igoynawamreh" target="_blank" rel="noopener">@igoynawamreh</a> and <a href="https://github.com/bootsblogger/bootsblogger/graphs/contributors" target="_blank" rel="noopener">friends</a>.</p>
+    <p>Currently v1.0.0-beta. Code licensed <a href="https://github.com/bootsblogger/bootsblogger/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+    <form class="mt-3" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="WHVAQWHFGY28Q">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img src="https://www.paypalobjects.com/id_ID/i/scr/pixel.gif" width="1" height="1" alt="">
+    </form>
   </div>
 </footer>
 
@@ -493,7 +434,7 @@
 
 <script src="/assets/js/vendor/holder.min.js"></script>
 
-<script src="/assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 
 <script src="/assets/js/docs.js"></script>
 
@@ -522,6 +463,37 @@ Holder.addTheme('gray', {
   fontweight: 'normal'
 })
 </script>
+
+
+    <div class="modal fade" id="modalImgBloggerLayout" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/blogger-layout.png" alt="Blogger Layout">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalImgBloggerLayoutGridExample" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/blogger-layout-grid-example.png" alt="Blogger Layout">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalImgBloggerConfigureBlogPosts" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="/assets/img/blogger-configure-blog-posts.png" alt="Blogger Configure Blog Posts">
+      </div>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
